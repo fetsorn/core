@@ -26,9 +26,9 @@
 <section class="tsd-panel">
 <h4>Implements</h4>
 <ul class="tsd-hierarchy">
-<li><a href="../interfaces/SyncKeyValueRWTransaction.html" class="tsd-signature-type tsd-kind-interface">SyncKeyValueRWTransaction</a></li></ul></section><aside class="tsd-sources">
+<li><a href="../interfaces/SyncRWTransaction.html" class="tsd-signature-type tsd-kind-interface">SyncRWTransaction</a></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e1a59b/src/backends/SyncStore.ts#L88">src/backends/SyncStore.ts:88</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/backends/SyncStore.ts#L88">src/backends/SyncStore.ts:88</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -46,13 +46,12 @@
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Methods</h3>
-<div class="tsd-index-list"><a href="SimpleSyncRWTransaction.html#_has" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_has</span></a>
-<a href="SimpleSyncRWTransaction.html#abort" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>abort</span></a>
+<div class="tsd-index-list"><a href="SimpleSyncRWTransaction.html#abort" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>abort</span></a>
 <a href="SimpleSyncRWTransaction.html#commit" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>commit</span></a>
-<a href="SimpleSyncRWTransaction.html#del" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>del</span></a>
 <a href="SimpleSyncRWTransaction.html#get" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get</span></a>
 <a href="SimpleSyncRWTransaction.html#markModified" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>mark<wbr/>Modified</span></a>
 <a href="SimpleSyncRWTransaction.html#put" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>put</span></a>
+<a href="SimpleSyncRWTransaction.html#remove" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>remove</span></a>
 <a href="SimpleSyncRWTransaction.html#stashOldValue" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>stash<wbr/>Old<wbr/>Value</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
@@ -69,51 +68,33 @@
 <h5><span class="tsd-kind-parameter">store</span>: <a href="../interfaces/SimpleSyncStore.html" class="tsd-signature-type tsd-kind-interface">SimpleSyncStore</a></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="SimpleSyncRWTransaction.html" class="tsd-signature-type tsd-kind-class">SimpleSyncRWTransaction</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e1a59b/src/backends/SyncStore.ts#L99">src/backends/SyncStore.ts:99</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/backends/SyncStore.ts#L99">src/backends/SyncStore.ts:99</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="modifiedKeys" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>modified<wbr/>Keys</span><a href="#modifiedKeys" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">modified<wbr/>Keys</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
+<div class="tsd-signature"><span class="tsd-kind-property">modified<wbr/>Keys</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 <div class="tsd-comment tsd-typography"><p>List of keys modified in this transaction, if any.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e1a59b/src/backends/SyncStore.ts#L97">src/backends/SyncStore.ts:97</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/backends/SyncStore.ts#L97">src/backends/SyncStore.ts:97</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="originalData" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>original<wbr/>Data</span><a href="#originalData" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">original<wbr/>Data</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>[<span class="tsd-kind-index-signature">key</span>: <span class="tsd-signature-type">string</span>]<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Uint8Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol"> = {}</span></div>
+<div class="tsd-signature"><span class="tsd-kind-property">original<wbr/>Data</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type ">Uint8Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 <div class="tsd-comment tsd-typography"><p>Stores data in the keys we modify prior to modifying them.
 Allows us to roll back commits.</p>
 </div>
-<div class="tsd-type-declaration">
-<h4>Type declaration</h4>
-<ul class="tsd-parameters">
-<li class="tsd-parameter-index-signature">
-<h5><span class="tsd-signature-symbol">[</span><span class="tsd-kind-parameter">key</span>: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type ">Uint8Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5></li></ul></div>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e1a59b/src/backends/SyncStore.ts#L93">src/backends/SyncStore.ts:93</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/backends/SyncStore.ts#L93">src/backends/SyncStore.ts:93</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="store" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>store</span><a href="#store" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">store</span><span class="tsd-signature-symbol">:</span> <a href="../interfaces/SimpleSyncStore.html" class="tsd-signature-type tsd-kind-interface">SimpleSyncStore</a></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e1a59b/src/backends/SyncStore.ts#L99">src/backends/SyncStore.ts:99</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/backends/SyncStore.ts#L99">src/backends/SyncStore.ts:99</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
-<section class="tsd-panel tsd-member tsd-is-private"><a id="_has" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_has</span><a href="#_has" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-is-private">
-<li class="tsd-signature tsd-anchor-link" id="_has._has-1"><span class="tsd-kind-call-signature">_has</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">key</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><a href="#_has._has-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">key</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e1a59b/src/backends/SyncStore.ts#L135">src/backends/SyncStore.ts:135</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="abort" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>abort</span><a href="#abort" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -123,9 +104,9 @@ Allows us to roll back commits.</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/SyncKeyValueRWTransaction.html">SyncKeyValueRWTransaction</a>.<a href="../interfaces/SyncKeyValueRWTransaction.html#abort">abort</a></p>
+<p>Implementation of <a href="../interfaces/SyncRWTransaction.html">SyncRWTransaction</a>.<a href="../interfaces/SyncRWTransaction.html#abort">abort</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e1a59b/src/backends/SyncStore.ts#L121">src/backends/SyncStore.ts:121</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/backends/SyncStore.ts#L121">src/backends/SyncStore.ts:121</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="commit" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>commit</span><a href="#commit" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -135,29 +116,9 @@ Allows us to roll back commits.</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/SyncKeyValueRWTransaction.html">SyncKeyValueRWTransaction</a>.<a href="../interfaces/SyncKeyValueRWTransaction.html#commit">commit</a></p>
+<p>Implementation of <a href="../interfaces/SyncRWTransaction.html">SyncRWTransaction</a>.<a href="../interfaces/SyncRWTransaction.html#commit">commit</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e1a59b/src/backends/SyncStore.ts#L117">src/backends/SyncStore.ts:117</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="del" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>del</span><a href="#del" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="del.del-1"><span class="tsd-kind-call-signature">del</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">key</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#del.del-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Deletes the data at the given key.</p>
-</div>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">key</span>: <span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>The key to delete from the store.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/SyncKeyValueRWTransaction.html">SyncKeyValueRWTransaction</a>.<a href="../interfaces/SyncKeyValueRWTransaction.html#del">del</a></p>
-<ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e1a59b/src/backends/SyncStore.ts#L112">src/backends/SyncStore.ts:112</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/backends/SyncStore.ts#L117">src/backends/SyncStore.ts:117</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="get" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get</span><a href="#get" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -177,9 +138,9 @@ or if the key does not exist.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Uint8Array</span></h4><p>The data stored under the key, or undefined if not present.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/SyncKeyValueRWTransaction.html">SyncKeyValueRWTransaction</a>.<a href="../interfaces/SyncKeyValueRWTransaction.html#get">get</a></p>
+<p>Implementation of <a href="../interfaces/SyncRWTransaction.html">SyncRWTransaction</a>.<a href="../interfaces/SyncRWTransaction.html#get">get</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e1a59b/src/backends/SyncStore.ts#L101">src/backends/SyncStore.ts:101</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/backends/SyncStore.ts#L101">src/backends/SyncStore.ts:101</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="markModified" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>mark<wbr/>Modified</span><a href="#markModified" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-private">
@@ -196,7 +157,7 @@ stashed already.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e1a59b/src/backends/SyncStore.ts#L156">src/backends/SyncStore.ts:156</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/backends/SyncStore.ts#L152">src/backends/SyncStore.ts:152</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="put" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>put</span><a href="#put" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -226,9 +187,29 @@ stashed already.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><p>True if storage succeeded, false otherwise.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/SyncKeyValueRWTransaction.html">SyncKeyValueRWTransaction</a>.<a href="../interfaces/SyncKeyValueRWTransaction.html#put">put</a></p>
+<p>Implementation of <a href="../interfaces/SyncRWTransaction.html">SyncRWTransaction</a>.<a href="../interfaces/SyncRWTransaction.html#put">put</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e1a59b/src/backends/SyncStore.ts#L107">src/backends/SyncStore.ts:107</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/backends/SyncStore.ts#L107">src/backends/SyncStore.ts:107</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="remove" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>remove</span><a href="#remove" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="remove.remove-1"><span class="tsd-kind-call-signature">remove</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">key</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#remove.remove-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Deletes the data at the given key.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">key</span>: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The key to delete from the store.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Implementation of <a href="../interfaces/SyncRWTransaction.html">SyncRWTransaction</a>.<a href="../interfaces/SyncRWTransaction.html#remove">remove</a></p>
+<ul>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/backends/SyncStore.ts#L112">src/backends/SyncStore.ts:112</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="stashOldValue" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>stash<wbr/>Old<wbr/>Value</span><a href="#stashOldValue" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-private">
@@ -249,7 +230,7 @@ on during the transaction.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e1a59b/src/backends/SyncStore.ts#L145">src/backends/SyncStore.ts:145</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/backends/SyncStore.ts#L141">src/backends/SyncStore.ts:141</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -273,13 +254,12 @@ on during the transaction.</p>
 <li><a href="#modifiedKeys" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>modified<wbr/>Keys</span></a></li>
 <li><a href="#originalData" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>original<wbr/>Data</span></a></li>
 <li><a href="#store" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>store</span></a></li>
-<li><a href="#_has" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_has</span></a></li>
 <li><a href="#abort" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>abort</span></a></li>
 <li><a href="#commit" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>commit</span></a></li>
-<li><a href="#del" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>del</span></a></li>
 <li><a href="#get" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get</span></a></li>
 <li><a href="#markModified" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>mark<wbr/>Modified</span></a></li>
 <li><a href="#put" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>put</span></a></li>
+<li><a href="#remove" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>remove</span></a></li>
 <li><a href="#stashOldValue" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>stash<wbr/>Old<wbr/>Value</span></a></li></ul></div></details></div>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="../modules.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1"></use></svg><span>BrowserFS</span></a>
@@ -292,8 +272,8 @@ on during the transaction.</p>
 <li><a href="../enums/ErrorCode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg>ErrorCode</a></li>
 <li><a href="../enums/FileType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg>FileType</a></li>
 <li><a href="ApiError.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>ApiError</a></li>
-<li><a href="AsyncKeyValueFile.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncKeyValueFile</a></li>
-<li><a href="AsyncKeyValueFileSystem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncKeyValueFileSystem</a></li>
+<li><a href="AsyncFile.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncFile</a></li>
+<li><a href="AsyncFileSystem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncFileSystem</a></li>
 <li><a href="AsyncMirror-1.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncMirror</a></li>
 <li><a href="BaseFile.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>BaseFile</a></li>
 <li><a href="BaseFileSystem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>BaseFileSystem</a></li>
