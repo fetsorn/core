@@ -31,7 +31,7 @@ call to the BrowserFS API.</p>
 <ul class="tsd-hierarchy">
 <li><span class="tsd-signature-type ">ErrnoException</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/ApiError.ts#L103">src/ApiError.ts:103</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/76b7696/src/ApiError.ts#L103">src/ApiError.ts:103</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -66,7 +66,7 @@ call to the BrowserFS API.</p>
 <a href="ApiError.html#ENOTDIR" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>ENOTDIR</span></a>
 <a href="ApiError.html#ENOTEMPTY" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>ENOTEMPTY</span></a>
 <a href="ApiError.html#EPERM" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>EPERM</span></a>
-<a href="ApiError.html#FileError" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>File<wbr/>Error</span></a>
+<a href="ApiError.html#OnPath" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>On<wbr/>Path</span></a>
 <a href="ApiError.html#captureStackTrace" class="tsd-index-link tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>capture<wbr/>Stack<wbr/>Trace</span></a>
 <a href="ApiError.html#fromJSON" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>fromJSON</span></a>
 </div></section></div></details></section></section>
@@ -75,7 +75,7 @@ call to the BrowserFS API.</p>
 <section class="tsd-panel tsd-member"><a id="constructor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="constructor.new_ApiError"><span class="tsd-kind-constructor-signature">new <wbr/>Api<wbr/>Error</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">type</span>, <span class="tsd-kind-parameter">message</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">path</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="ApiError.html" class="tsd-signature-type tsd-kind-class">ApiError</a><a href="#constructor.new_ApiError" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="constructor.new_ApiError"><span class="tsd-kind-constructor-signature">new <wbr/>Api<wbr/>Error</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">errno</span>, <span class="tsd-kind-parameter">message</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">path</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="ApiError.html" class="tsd-signature-type tsd-kind-class">ApiError</a><a href="#constructor.new_ApiError" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Represents a BrowserFS error. Passed back to applications after a failed
 call to the BrowserFS API.</p>
@@ -86,10 +86,7 @@ what Node returns.</p>
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">type</span>: <a href="../enums/ErrorCode.html" class="tsd-signature-type tsd-kind-enum">ErrorCode</a></h5>
-<div class="tsd-comment tsd-typography"><p>The type of the error.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
+<h5><span class="tsd-kind-parameter">errno</span>: <a href="../enums/ErrorCode.html" class="tsd-signature-type tsd-kind-enum">ErrorCode</a></h5></li>
 <li>
 <h5><span class="tsd-kind-parameter">message</span>: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = ...</span></h5>
 <div class="tsd-comment tsd-typography"><p>A descriptive error message.</p>
@@ -101,7 +98,7 @@ what Node returns.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Overrides Error.constructor</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/ApiError.ts#L160">src/ApiError.ts:160</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/76b7696/src/ApiError.ts#L159">src/ApiError.ts:159</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="cause" class="tsd-anchor"></a>
@@ -116,13 +113,13 @@ what Node returns.</p>
 <div class="tsd-signature"><span class="tsd-kind-property">code</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
 <p>Implementation of NodeJS.ErrnoException.code</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/ApiError.ts#L144">src/ApiError.ts:144</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/76b7696/src/ApiError.ts#L143">src/ApiError.ts:143</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="errno" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>errno</span><a href="#errno" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">errno</span><span class="tsd-signature-symbol">:</span> <a href="../enums/ErrorCode.html" class="tsd-signature-type tsd-kind-enum">ErrorCode</a></div><aside class="tsd-sources">
 <p>Implementation of NodeJS.ErrnoException.errno</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/ApiError.ts#L143">src/ApiError.ts:143</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/76b7696/src/ApiError.ts#L159">src/ApiError.ts:159</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="message" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>message</span><a href="#message" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">message</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
@@ -142,20 +139,20 @@ what Node returns.</p>
 <div class="tsd-signature"><span class="tsd-kind-property">path</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
 <p>Implementation of NodeJS.ErrnoException.path</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/ApiError.ts#L145">src/ApiError.ts:145</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/76b7696/src/ApiError.ts#L159">src/ApiError.ts:159</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="stack" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>stack</span><a href="#stack" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">stack</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
 <p>Implementation of NodeJS.ErrnoException.stack</p>
 <p>Overrides Error.stack</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/ApiError.ts#L148">src/ApiError.ts:148</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/76b7696/src/ApiError.ts#L147">src/ApiError.ts:147</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="syscall" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>syscall</span><a href="#syscall" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">syscall</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#39;&#39;</span></div><aside class="tsd-sources">
 <p>Implementation of NodeJS.ErrnoException.syscall</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/ApiError.ts#L147">src/ApiError.ts:147</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/76b7696/src/ApiError.ts#L146">src/ApiError.ts:146</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="prepareStackTrace" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <code class="tsd-tag ts-flagOptional">Optional</code> <span>prepare<wbr/>Stack<wbr/>Trace</span><a href="#prepareStackTrace" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">prepare<wbr/>Stack<wbr/>Trace</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">err</span>, <span class="tsd-kind-parameter">stackTraces</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span></div>
@@ -200,7 +197,7 @@ what Node returns.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/ApiError.ts#L188">src/ApiError.ts:188</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/76b7696/src/ApiError.ts#L185">src/ApiError.ts:185</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="toJSON" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>toJSON</span><a href="#toJSON" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -208,7 +205,7 @@ what Node returns.</p>
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">ApiErrorJSON</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/ApiError.ts#L175">src/ApiError.ts:175</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/76b7696/src/ApiError.ts#L172">src/ApiError.ts:172</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="toString" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>to<wbr/>String</span><a href="#toString" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -218,7 +215,7 @@ what Node returns.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/ApiError.ts#L171">src/ApiError.ts:171</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/76b7696/src/ApiError.ts#L168">src/ApiError.ts:168</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="EACCES" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>EACCES</span><a href="#EACCES" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -231,7 +228,7 @@ what Node returns.</p>
 <h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="ApiError.html" class="tsd-signature-type tsd-kind-class">ApiError</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/ApiError.ts#L115">src/ApiError.ts:115</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/76b7696/src/ApiError.ts#L115">src/ApiError.ts:115</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="EEXIST" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>EEXIST</span><a href="#EEXIST" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -244,7 +241,7 @@ what Node returns.</p>
 <h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="ApiError.html" class="tsd-signature-type tsd-kind-class">ApiError</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/ApiError.ts#L123">src/ApiError.ts:123</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/76b7696/src/ApiError.ts#L123">src/ApiError.ts:123</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="EISDIR" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>EISDIR</span><a href="#EISDIR" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -257,7 +254,7 @@ what Node returns.</p>
 <h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="ApiError.html" class="tsd-signature-type tsd-kind-class">ApiError</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/ApiError.ts#L127">src/ApiError.ts:127</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/76b7696/src/ApiError.ts#L127">src/ApiError.ts:127</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="ENOENT" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>ENOENT</span><a href="#ENOENT" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -270,7 +267,7 @@ what Node returns.</p>
 <h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="ApiError.html" class="tsd-signature-type tsd-kind-class">ApiError</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/ApiError.ts#L119">src/ApiError.ts:119</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/76b7696/src/ApiError.ts#L119">src/ApiError.ts:119</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="ENOTDIR" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>ENOTDIR</span><a href="#ENOTDIR" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -283,7 +280,7 @@ what Node returns.</p>
 <h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="ApiError.html" class="tsd-signature-type tsd-kind-class">ApiError</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/ApiError.ts#L131">src/ApiError.ts:131</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/76b7696/src/ApiError.ts#L131">src/ApiError.ts:131</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="ENOTEMPTY" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>ENOTEMPTY</span><a href="#ENOTEMPTY" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -296,7 +293,7 @@ what Node returns.</p>
 <h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="ApiError.html" class="tsd-signature-type tsd-kind-class">ApiError</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/ApiError.ts#L139">src/ApiError.ts:139</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/76b7696/src/ApiError.ts#L139">src/ApiError.ts:139</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="EPERM" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>EPERM</span><a href="#EPERM" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -309,11 +306,11 @@ what Node returns.</p>
 <h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="ApiError.html" class="tsd-signature-type tsd-kind-class">ApiError</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/ApiError.ts#L135">src/ApiError.ts:135</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="FileError" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>File<wbr/>Error</span><a href="#FileError" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/76b7696/src/ApiError.ts#L135">src/ApiError.ts:135</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="OnPath" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>On<wbr/>Path</span><a href="#OnPath" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="FileError.FileError-1"><span class="tsd-kind-call-signature">File<wbr/>Error</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">code</span>, <span class="tsd-kind-parameter">path</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="ApiError.html" class="tsd-signature-type tsd-kind-class">ApiError</a><a href="#FileError.FileError-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="OnPath.OnPath-1"><span class="tsd-kind-call-signature">On<wbr/>Path</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">code</span>, <span class="tsd-kind-parameter">path</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="ApiError.html" class="tsd-signature-type tsd-kind-class">ApiError</a><a href="#OnPath.OnPath-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
@@ -324,7 +321,7 @@ what Node returns.</p>
 <h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="ApiError.html" class="tsd-signature-type tsd-kind-class">ApiError</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/ApiError.ts#L111">src/ApiError.ts:111</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/76b7696/src/ApiError.ts#L111">src/ApiError.ts:111</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="captureStackTrace" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>capture<wbr/>Stack<wbr/>Trace</span><a href="#captureStackTrace" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -356,7 +353,7 @@ what Node returns.</p>
 <h5><span class="tsd-kind-parameter">json</span>: <span class="tsd-signature-type ">ApiErrorJSON</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="ApiError.html" class="tsd-signature-type tsd-kind-class">ApiError</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/ApiError.ts#L104">src/ApiError.ts:104</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/76b7696/src/ApiError.ts#L104">src/ApiError.ts:104</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -397,14 +394,17 @@ what Node returns.</p>
 <li><a href="#ENOTDIR" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>ENOTDIR</span></a></li>
 <li><a href="#ENOTEMPTY" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>ENOTEMPTY</span></a></li>
 <li><a href="#EPERM" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>EPERM</span></a></li>
-<li><a href="#FileError" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>File<wbr/>Error</span></a></li>
+<li><a href="#OnPath" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>On<wbr/>Path</span></a></li>
 <li><a href="#captureStackTrace" class="tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>capture<wbr/>Stack<wbr/>Trace</span></a></li>
 <li><a href="#fromJSON" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>fromJSON</span></a></li></ul></div></details></div>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="../modules.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1"></use></svg><span>BrowserFS</span></a>
 <ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base="..">
+<li><a href="../modules.html#BigIntStats"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg>BigIntStats</a></li>
+<li><a href="../modules.html#Stats"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg>Stats</a></li>
 <li><a href="../modules.html#default"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg>default</a></li>
 <li><a href="../modules/AsyncMirror.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg>AsyncMirror</a></li>
+<li><a href="../modules/fs.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg>fs</a></li>
 <li><a href="../enums/ActionType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg>ActionType</a></li>
 <li><a href="../enums/ErrorCode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg>ErrorCode</a></li>
 <li><a href="../enums/FileType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg>FileType</a></li>
@@ -412,7 +412,6 @@ what Node returns.</p>
 <li><a href="AsyncFile.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncFile</a></li>
 <li><a href="AsyncFileSystem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncFileSystem</a></li>
 <li><a href="AsyncStoreFileSystem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncStoreFileSystem</a></li>
-<li><a href="BigIntStats.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>BigIntStats</a></li>
 <li><a href="Cred.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>Cred</a></li>
 <li><a href="File.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>File</a></li>
 <li><a href="FileFlag.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>FileFlag</a></li>
@@ -422,8 +421,6 @@ what Node returns.</p>
 <li><a href="IndexFileInode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>IndexFileInode</a></li>
 <li><a href="IndexInode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>IndexInode</a></li>
 <li><a href="NoSyncFile.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>NoSyncFile</a></li>
-<li><a href="PreloadFile.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>PreloadFile</a></li>
-<li><a href="SimpleSyncRWTransaction.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>SimpleSyncRWTransaction</a></li>
 <li>Loading...</li></ul></nav></div></div></div>
 <div class="tsd-generator">
 <p>Generated using <a href="https://typedoc.org/" rel="noopener" target="_blank">TypeDoc</a></p></div>
