@@ -18,18 +18,18 @@
 <section class="tsd-panel tsd-comment">
 <div class="tsd-comment tsd-typography"><p>Represents one of the following file flags. A convenience object.</p>
 <ul>
-<li><code>&#39;r&#39;</code> - Open file for reading. An exception occurs if the file does not exist.</li>
-<li><code>&#39;r+&#39;</code> - Open file for reading and writing. An exception occurs if the file does not exist.</li>
-<li><code>&#39;rs&#39;</code> - Open file for reading in synchronous mode. Instructs the filesystem to not cache writes.</li>
-<li><code>&#39;rs+&#39;</code> - Open file for reading and writing, and opens the file in synchronous mode.</li>
-<li><code>&#39;w&#39;</code> - Open file for writing. The file is created (if it does not exist) or truncated (if it exists).</li>
-<li><code>&#39;wx&#39;</code> - Like &#39;w&#39; but opens the file in exclusive mode.</li>
-<li><code>&#39;w+&#39;</code> - Open file for reading and writing. The file is created (if it does not exist) or truncated (if it exists).</li>
-<li><code>&#39;wx+&#39;</code> - Like &#39;w+&#39; but opens the file in exclusive mode.</li>
-<li><code>&#39;a&#39;</code> - Open file for appending. The file is created if it does not exist.</li>
-<li><code>&#39;ax&#39;</code> - Like &#39;a&#39; but opens the file in exclusive mode.</li>
-<li><code>&#39;a+&#39;</code> - Open file for reading and appending. The file is created if it does not exist.</li>
-<li><code>&#39;ax+&#39;</code> - Like &#39;a+&#39; but opens the file in exclusive mode.</li>
+<li>r: 	Open file for reading. An exception occurs if the file does not exist.</li>
+<li>r+: 	Open file for reading and writing. An exception occurs if the file does not exist.</li>
+<li>rs: 	Open file for reading in synchronous mode. Instructs the filesystem to not cache writes.</li>
+<li>rs+: 	Open file for reading and writing, and opens the file in synchronous mode.</li>
+<li>w: 	Open file for writing. The file is created (if it does not exist) or truncated (if it exists).</li>
+<li>wx: 	Like &#39;w&#39; but opens the file in exclusive mode.</li>
+<li>w+: 	Open file for reading and writing. The file is created (if it does not exist) or truncated (if it exists).</li>
+<li>wx+: 	Like &#39;w+&#39; but opens the file in exclusive mode.</li>
+<li>a: 	Open file for appending. The file is created if it does not exist.</li>
+<li>ax: 	Like &#39;a&#39; but opens the file in exclusive mode.</li>
+<li>a+: 	Open file for reading and appending. The file is created if it does not exist.</li>
+<li>ax+: 	Like &#39;a+&#39; but opens the file in exclusive mode.</li>
 </ul>
 <p>Exclusive mode ensures that the file path is newly created.</p>
 </div>
@@ -39,7 +39,7 @@
 <ul class="tsd-hierarchy">
 <li><span class="target">FileFlag</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L36">src/file.ts:36</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L63">src/file.ts:63</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -56,10 +56,12 @@
 <a href="FileFlag.html#validFlagStrs" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>valid<wbr/>Flag<wbr/>Strs</span></a>
 </div></section>
 <section class="tsd-index-section">
+<h3 class="tsd-index-heading">Accessors</h3>
+<div class="tsd-index-list"><a href="FileFlag.html#mode" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>mode</span></a>
+</div></section>
+<section class="tsd-index-section">
 <h3 class="tsd-index-heading">Methods</h3>
-<div class="tsd-index-list"><a href="FileFlag.html#getFlagString" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Flag<wbr/>String</span></a>
-<a href="FileFlag.html#getMode" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Mode</span></a>
-<a href="FileFlag.html#isAppendable" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>is<wbr/>Appendable</span></a>
+<div class="tsd-index-list"><a href="FileFlag.html#isAppendable" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>is<wbr/>Appendable</span></a>
 <a href="FileFlag.html#isExclusive" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>is<wbr/>Exclusive</span></a>
 <a href="FileFlag.html#isReadable" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>is<wbr/>Readable</span></a>
 <a href="FileFlag.html#isSynchronous" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>is<wbr/>Synchronous</span></a>
@@ -67,8 +69,9 @@
 <a href="FileFlag.html#isWriteable" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>is<wbr/>Writeable</span></a>
 <a href="FileFlag.html#pathExistsAction" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>path<wbr/>Exists<wbr/>Action</span></a>
 <a href="FileFlag.html#pathNotExistsAction" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>path<wbr/>Not<wbr/>Exists<wbr/>Action</span></a>
-<a href="FileFlag.html#StringFromNumber" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>String<wbr/>From<wbr/>Number</span></a>
-<a href="FileFlag.html#getFileFlag" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>File<wbr/>Flag</span></a>
+<a href="FileFlag.html#toString" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>to<wbr/>String</span></a>
+<a href="FileFlag.html#FromString" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>From<wbr/>String</span></a>
+<a href="FileFlag.html#NumberToString" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>Number<wbr/>To<wbr/>String</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Constructors</h2>
@@ -92,41 +95,30 @@
 <h4>Throw</h4><p>when the flag is invalid</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L62">src/file.ts:62</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L89">src/file.ts:89</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="flagStr" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>flag<wbr/>Str</span><a href="#flagStr" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">flag<wbr/>Str</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L56">src/file.ts:56</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L83">src/file.ts:83</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="flagCache" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <code class="tsd-tag ts-flagPrivate">Private</code> <span>flag<wbr/>Cache</span><a href="#flagCache" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">flag<wbr/>Cache</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><a href="FileFlag.html" class="tsd-signature-type tsd-kind-class">FileFlag</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L38">src/file.ts:38</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L65">src/file.ts:65</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="validFlagStrs" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <code class="tsd-tag ts-flagPrivate">Private</code> <span>valid<wbr/>Flag<wbr/>Strs</span><a href="#validFlagStrs" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">valid<wbr/>Flag<wbr/>Strs</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = ...</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L40">src/file.ts:40</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L67">src/file.ts:67</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
-<h2>Methods</h2>
-<section class="tsd-panel tsd-member"><a id="getFlagString" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>get<wbr/>Flag<wbr/>String</span><a href="#getFlagString" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<h2>Accessors</h2>
+<section class="tsd-panel tsd-member"><a id="mode" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>mode</span><a href="#mode" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="getFlagString.getFlagString-1"><span class="tsd-kind-call-signature">get<wbr/>Flag<wbr/>String</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><a href="#getFlagString.getFlagString-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Get the underlying flag string for this flag.</p>
-</div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L117">src/file.ts:117</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="getMode" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>get<wbr/>Mode</span><a href="#getMode" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="getMode.getMode-1"><span class="tsd-kind-call-signature">get<wbr/>Mode</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#getMode.getMode-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature" id="mode.mode-1"><span class="tsd-signature-symbol">get</span> mode<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Get the equivalent mode (0b0xxx: read, write, execute)
 Note: Execute will always be 0</p>
@@ -134,7 +126,9 @@ Note: Execute will always be 0</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L125">src/file.ts:125</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L152">src/file.ts:152</a></li></ul></aside></li></ul></section></section>
+<section class="tsd-panel-group tsd-member-group">
+<h2>Methods</h2>
 <section class="tsd-panel tsd-member"><a id="isAppendable" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>is<wbr/>Appendable</span><a href="#isAppendable" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -145,7 +139,7 @@ Note: Execute will always be 0</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L156">src/file.ts:156</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L183">src/file.ts:183</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="isExclusive" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>is<wbr/>Exclusive</span><a href="#isExclusive" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -156,7 +150,7 @@ Note: Execute will always be 0</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L168">src/file.ts:168</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L195">src/file.ts:195</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="isReadable" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>is<wbr/>Readable</span><a href="#isReadable" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -167,7 +161,7 @@ Note: Execute will always be 0</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L138">src/file.ts:138</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L165">src/file.ts:165</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="isSynchronous" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>is<wbr/>Synchronous</span><a href="#isSynchronous" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -178,7 +172,7 @@ Note: Execute will always be 0</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L162">src/file.ts:162</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L189">src/file.ts:189</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="isTruncating" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>is<wbr/>Truncating</span><a href="#isTruncating" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -189,7 +183,7 @@ Note: Execute will always be 0</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L150">src/file.ts:150</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L177">src/file.ts:177</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="isWriteable" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>is<wbr/>Writeable</span><a href="#isWriteable" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -200,7 +194,7 @@ Note: Execute will always be 0</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L144">src/file.ts:144</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L171">src/file.ts:171</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="pathExistsAction" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>path<wbr/>Exists<wbr/>Action</span><a href="#pathExistsAction" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -212,7 +206,7 @@ appropriate response to the path existing.</p>
 <h4 class="tsd-returns-title">Returns <a href="../enums/ActionType.html" class="tsd-signature-type tsd-kind-enum">ActionType</a></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L175">src/file.ts:175</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L202">src/file.ts:202</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="pathNotExistsAction" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>path<wbr/>Not<wbr/>Exists<wbr/>Action</span><a href="#pathNotExistsAction" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -224,31 +218,22 @@ appropriate response to the path not existing.</p>
 <h4 class="tsd-returns-title">Returns <a href="../enums/ActionType.html" class="tsd-signature-type tsd-kind-enum">ActionType</a></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L188">src/file.ts:188</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="StringFromNumber" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>String<wbr/>From<wbr/>Number</span><a href="#StringFromNumber" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L217">src/file.ts:217</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="toString" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>to<wbr/>String</span><a href="#toString" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="StringFromNumber.StringFromNumber-1"><span class="tsd-kind-call-signature">String<wbr/>From<wbr/>Number</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">flag</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><a href="#StringFromNumber.StringFromNumber-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="toString.toString-1"><span class="tsd-kind-call-signature">to<wbr/>String</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><a href="#toString.toString-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">flag</span>: <span class="tsd-signature-type">number</span></h5>
-<div class="tsd-comment tsd-typography"><p>The number representing the flag</p>
+<div class="tsd-comment tsd-typography"><p>Get the underlying flag string for this flag.</p>
 </div>
-<div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><p>The string representing the flag</p>
-
-<div class="tsd-comment tsd-typography">
-<h4>Throw</h4><p>when the flag number is invalid</p>
-</div><aside class="tsd-sources">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L77">src/file.ts:77</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="getFileFlag" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>get<wbr/>File<wbr/>Flag</span><a href="#getFileFlag" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L144">src/file.ts:144</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="FromString" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>From<wbr/>String</span><a href="#FromString" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="getFileFlag.getFileFlag-1"><span class="tsd-kind-call-signature">get<wbr/>File<wbr/>Flag</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">flag</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="FileFlag.html" class="tsd-signature-type tsd-kind-class">FileFlag</a><a href="#getFileFlag.getFileFlag-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="FromString.FromString-1"><span class="tsd-kind-call-signature">From<wbr/>String</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">flag</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="FileFlag.html" class="tsd-signature-type tsd-kind-class">FileFlag</a><a href="#FromString.FromString-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Get an object representing the given file flag.</p>
 </div>
@@ -266,7 +251,27 @@ appropriate response to the path not existing.</p>
 <h4>Throw</h4><p>when the flag string is invalid</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L48">src/file.ts:48</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L75">src/file.ts:75</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="NumberToString" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>Number<wbr/>To<wbr/>String</span><a href="#NumberToString" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="NumberToString.NumberToString-1"><span class="tsd-kind-call-signature">Number<wbr/>To<wbr/>String</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">flag</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><a href="#NumberToString.NumberToString-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">flag</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The number representing the flag</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><p>The string representing the flag</p>
+
+<div class="tsd-comment tsd-typography">
+<h4>Throw</h4><p>when the flag number is invalid</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L104">src/file.ts:104</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -290,8 +295,7 @@ appropriate response to the path not existing.</p>
 <li><a href="#flagStr" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>flag<wbr/>Str</span></a></li>
 <li><a href="#flagCache" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>flag<wbr/>Cache</span></a></li>
 <li><a href="#validFlagStrs" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>valid<wbr/>Flag<wbr/>Strs</span></a></li>
-<li><a href="#getFlagString" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Flag<wbr/>String</span></a></li>
-<li><a href="#getMode" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Mode</span></a></li>
+<li><a href="#mode" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>mode</span></a></li>
 <li><a href="#isAppendable" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>is<wbr/>Appendable</span></a></li>
 <li><a href="#isExclusive" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>is<wbr/>Exclusive</span></a></li>
 <li><a href="#isReadable" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>is<wbr/>Readable</span></a></li>
@@ -300,32 +304,33 @@ appropriate response to the path not existing.</p>
 <li><a href="#isWriteable" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>is<wbr/>Writeable</span></a></li>
 <li><a href="#pathExistsAction" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>path<wbr/>Exists<wbr/>Action</span></a></li>
 <li><a href="#pathNotExistsAction" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>path<wbr/>Not<wbr/>Exists<wbr/>Action</span></a></li>
-<li><a href="#StringFromNumber" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>String<wbr/>From<wbr/>Number</span></a></li>
-<li><a href="#getFileFlag" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>File<wbr/>Flag</span></a></li></ul></div></details></div>
+<li><a href="#toString" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>to<wbr/>String</span></a></li>
+<li><a href="#FromString" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>From<wbr/>String</span></a></li>
+<li><a href="#NumberToString" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>Number<wbr/>To<wbr/>String</span></a></li></ul></div></details></div>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="../modules.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1"></use></svg><span>BrowserFS</span></a>
 <ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base="..">
 <li><a href="../modules.html#default"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg>default</a></li>
 <li><a href="../modules/AsyncMirror.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg>AsyncMirror</a></li>
-<li><a href="../modules/FolderAdapter.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg>FolderAdapter</a></li>
-<li><a href="../modules/OverlayFS.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg>OverlayFS</a></li>
 <li><a href="../enums/ActionType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg>ActionType</a></li>
 <li><a href="../enums/ErrorCode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg>ErrorCode</a></li>
 <li><a href="../enums/FileType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg>FileType</a></li>
 <li><a href="ApiError.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>ApiError</a></li>
 <li><a href="AsyncFile.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncFile</a></li>
 <li><a href="AsyncFileSystem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncFileSystem</a></li>
-<li><a href="AsyncMirror-1.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncMirror</a></li>
-<li><a href="BaseFile.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>BaseFile</a></li>
-<li><a href="BaseFileSystem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>BaseFileSystem</a></li>
+<li><a href="AsyncStoreFileSystem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncStoreFileSystem</a></li>
 <li><a href="BigIntStats.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>BigIntStats</a></li>
 <li><a href="Cred.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>Cred</a></li>
+<li><a href="File.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>File</a></li>
 <li><a href="FileFlag.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>FileFlag</a></li>
 <li><a href="FileIndex.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>FileIndex</a></li>
 <li><a href="FileSystem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>FileSystem</a></li>
-<li><a href="FolderAdapter-1.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>FolderAdapter</a></li>
-<li><a href="InMemory.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>InMemory</a></li>
 <li><a href="IndexDirInode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>IndexDirInode</a></li>
+<li><a href="IndexFileInode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>IndexFileInode</a></li>
+<li><a href="IndexInode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>IndexInode</a></li>
+<li><a href="NoSyncFile.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>NoSyncFile</a></li>
+<li><a href="PreloadFile.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>PreloadFile</a></li>
+<li><a href="SimpleSyncRWTransaction.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>SimpleSyncRWTransaction</a></li>
 <li>Loading...</li></ul></nav></div></div></div>
 <div class="tsd-generator">
 <p>Generated using <a href="https://typedoc.org/" rel="noopener" target="_blank">TypeDoc</a></p></div>

@@ -16,8 +16,7 @@
 <li><a href="NoSyncFile.html">NoSyncFile</a></li></ul>
 <h1>Class NoSyncFile&lt;T&gt;</h1></div>
 <section class="tsd-panel tsd-comment">
-<div class="tsd-comment tsd-typography"><p>File class for the InMemory and XHR file systems.
-Doesn&#39;t sync to anything, so it works nicely for memory-only files.</p>
+<div class="tsd-comment tsd-typography"><p>For the filesystems which do not sync to anything..</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></section> 
 <section class="tsd-panel">
@@ -30,13 +29,9 @@ Doesn&#39;t sync to anything, so it works nicely for memory-only files.</p>
 <ul class="tsd-hierarchy">
 <li><a href="PreloadFile.html" class="tsd-signature-type tsd-kind-class">PreloadFile</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span>
 <ul class="tsd-hierarchy">
-<li><span class="target">NoSyncFile</span></li></ul></li></ul></section>
-<section class="tsd-panel">
-<h4>Implements</h4>
-<ul class="tsd-hierarchy">
-<li><a href="../interfaces/File.html" class="tsd-signature-type tsd-kind-interface">File</a></li></ul></section><aside class="tsd-sources">
+<li><span class="target">NoSyncFile</span></li></ul></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L716">src/file.ts:716</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L749">src/file.ts:749</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -50,15 +45,21 @@ Doesn&#39;t sync to anything, so it works nicely for memory-only files.</p>
 <h3 class="tsd-index-heading">Properties</h3>
 <div class="tsd-index-list"><a href="NoSyncFile.html#_buffer" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_buffer</span></a>
 <a href="NoSyncFile.html#_dirty" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_dirty</span></a>
-<a href="NoSyncFile.html#_flag" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_flag</span></a>
-<a href="NoSyncFile.html#_fs" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_fs</span></a>
-<a href="NoSyncFile.html#_path" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_path</span></a>
-<a href="NoSyncFile.html#_pos" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_pos</span></a>
-<a href="NoSyncFile.html#_stat" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_stat</span></a>
+<a href="NoSyncFile.html#_position" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_position</span></a>
+<a href="NoSyncFile.html#flag" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>flag</span></a>
+<a href="NoSyncFile.html#fs" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>fs</span></a>
+<a href="NoSyncFile.html#path" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>path</span></a>
+<a href="NoSyncFile.html#stats" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>stats</span></a>
+</div></section>
+<section class="tsd-index-section">
+<h3 class="tsd-index-heading">Accessors</h3>
+<div class="tsd-index-list"><a href="NoSyncFile.html#buffer" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>buffer</span></a>
+<a href="NoSyncFile.html#position" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>position</span></a>
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Methods</h3>
-<div class="tsd-index-list"><a href="NoSyncFile.html#advancePos" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>advance<wbr/>Pos</span></a>
+<div class="tsd-index-list"><a href="NoSyncFile.html#_setType" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Type</span></a>
+<a href="NoSyncFile.html#_setTypeSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Type<wbr/>Sync</span></a>
 <a href="NoSyncFile.html#chmod" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>chmod</span></a>
 <a href="NoSyncFile.html#chmodSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>chmod<wbr/>Sync</span></a>
 <a href="NoSyncFile.html#chown" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>chown</span></a>
@@ -67,16 +68,10 @@ Doesn&#39;t sync to anything, so it works nicely for memory-only files.</p>
 <a href="NoSyncFile.html#closeSync" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>close<wbr/>Sync</span></a>
 <a href="NoSyncFile.html#datasync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>datasync</span></a>
 <a href="NoSyncFile.html#datasyncSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>datasync<wbr/>Sync</span></a>
-<a href="NoSyncFile.html#getBuffer" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Buffer</span></a>
-<a href="NoSyncFile.html#getFlag" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Flag</span></a>
-<a href="NoSyncFile.html#getPath" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Path</span></a>
-<a href="NoSyncFile.html#getPos" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Pos</span></a>
-<a href="NoSyncFile.html#getStats" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Stats</span></a>
 <a href="NoSyncFile.html#isDirty" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>is<wbr/>Dirty</span></a>
 <a href="NoSyncFile.html#read" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>read</span></a>
 <a href="NoSyncFile.html#readSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>read<wbr/>Sync</span></a>
 <a href="NoSyncFile.html#resetDirty" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>reset<wbr/>Dirty</span></a>
-<a href="NoSyncFile.html#setPos" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>set<wbr/>Pos</span></a>
 <a href="NoSyncFile.html#stat" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>stat</span></a>
 <a href="NoSyncFile.html#statSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>stat<wbr/>Sync</span></a>
 <a href="NoSyncFile.html#sync" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>sync</span></a>
@@ -116,70 +111,148 @@ Doesn&#39;t sync to anything, so it works nicely for memory-only files.</p>
 <h4 class="tsd-returns-title">Returns <a href="NoSyncFile.html" class="tsd-signature-type tsd-kind-class">NoSyncFile</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <p>Overrides <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#constructor">constructor</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L717">src/file.ts:717</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L750">src/file.ts:750</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="_buffer" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_buffer</span><a href="#_buffer" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">_buffer</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">Uint8Array</span></div><aside class="tsd-sources">
+<div class="tsd-signature"><span class="tsd-kind-property">_buffer</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">Uint8Array</span><span class="tsd-signature-symbol"> = ...</span></div><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#_buffer">_buffer</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L374">src/file.ts:374</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L427">src/file.ts:427</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="_dirty" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_dirty</span><a href="#_dirty" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">_dirty</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#_dirty">_dirty</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L375">src/file.ts:375</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="_flag" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_flag</span><a href="#_flag" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">_flag</span><span class="tsd-signature-symbol">:</span> <a href="FileFlag.html" class="tsd-signature-type tsd-kind-class">FileFlag</a></div><aside class="tsd-sources">
-<p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#_flag">_flag</a></p>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L403">src/file.ts:403</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="_position" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_position</span><a href="#_position" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">_position</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div><aside class="tsd-sources">
+<p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#_position">_position</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L373">src/file.ts:373</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="_fs" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_fs</span><a href="#_fs" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">_fs</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type tsd-kind-type-parameter">T</span></div><aside class="tsd-sources">
-<p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#_fs">_fs</a></p>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L402">src/file.ts:402</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="flag" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>flag</span><a href="#flag" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">flag</span><span class="tsd-signature-symbol">:</span> <a href="FileFlag.html" class="tsd-signature-type tsd-kind-class">FileFlag</a></div><aside class="tsd-sources">
+<p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#flag">flag</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L369">src/file.ts:369</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="_path" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_path</span><a href="#_path" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">_path</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
-<p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#_path">_path</a></p>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L425">src/file.ts:425</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="fs" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>fs</span><a href="#fs" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">fs</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type tsd-kind-type-parameter">T</span></div>
+<div class="tsd-comment tsd-typography"><p>The file system that created the file.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#fs">fs</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L371">src/file.ts:371</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="_pos" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_pos</span><a href="#_pos" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">_pos</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div><aside class="tsd-sources">
-<p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#_pos">_pos</a></p>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L420">src/file.ts:420</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="path" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>path</span><a href="#path" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">path</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>Path to the file</p>
+</div>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#path">path</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L370">src/file.ts:370</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="_stat" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_stat</span><a href="#_stat" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">_stat</span><span class="tsd-signature-symbol">:</span> <a href="Stats.html" class="tsd-signature-type tsd-kind-class">Stats</a></div><aside class="tsd-sources">
-<p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#_stat">_stat</a></p>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L424">src/file.ts:424</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="stats" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>stats</span><a href="#stats" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">stats</span><span class="tsd-signature-symbol">:</span> <a href="Stats.html" class="tsd-signature-type tsd-kind-class">Stats</a></div>
+<div class="tsd-comment tsd-typography"><p>The stats object for the given file.
+  PreloadFile will mutate this object. Note that this object must contain
+  the appropriate mode that the file was opened as.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#stats">stats</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L372">src/file.ts:372</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L426">src/file.ts:426</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
-<h2>Methods</h2>
-<section class="tsd-panel tsd-member tsd-is-inherited"><a id="advancePos" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>advance<wbr/>Pos</span><a href="#advancePos" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<h2>Accessors</h2>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="buffer" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>buffer</span><a href="#buffer" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="advancePos.advancePos-1"><span class="tsd-kind-call-signature">advance<wbr/>Pos</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">delta</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#advancePos.advancePos-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature" id="buffer.buffer-1"><span class="tsd-signature-symbol">get</span> buffer<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Uint8Array</span></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Advance the current file position by the indicated number of positions.</p>
+<div class="tsd-comment tsd-typography"><p>Get the underlying buffer for this file. Mutating not recommended and will mess up dirty tracking.</p>
+</div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Uint8Array</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Inherited from PreloadFile.buffer</p>
+<ul>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L450">src/file.ts:450</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="position" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>position</span><a href="#position" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-inherited">
+<li class="tsd-signature" id="position.position-1"><span class="tsd-signature-symbol">get</span> position<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Get the current file position.</p>
+<p>We emulate the following bug mentioned in the Node documentation:</p>
+<blockquote>
+<p>On Linux, positional writes don&#39;t work when the file is opened in append
+  mode. The kernel ignores the position argument and always appends the data
+  to the end of the file.</p>
+</blockquote>
+</div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><p>The current file position.</p>
+
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Inherited from PreloadFile.position</p>
+<ul>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L463">src/file.ts:463</a></li></ul></aside></li>
+<li class="tsd-signature" id="position.position-2"><span class="tsd-signature-symbol">set</span> position<span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">newPos</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Set the file position.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">delta</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+<h5><span class="tsd-kind-parameter">newPos</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>new position</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#advancePos">advancePos</a></p>
+<p>Inherited from PreloadFile.position</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L452">src/file.ts:452</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L474">src/file.ts:474</a></li></ul></aside></li></ul></section></section>
+<section class="tsd-panel-group tsd-member-group">
+<h2>Methods</h2>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="_setType" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>_set<wbr/>Type</span><a href="#_setType" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-inherited">
+<li class="tsd-signature tsd-anchor-link" id="_setType._setType-1"><span class="tsd-kind-call-signature">_set<wbr/>Type</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">type</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#_setType._setType-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description"><code class="tsd-tag ts-flagInternal">Internal</code> 
+<div class="tsd-comment tsd-typography"><p>Set the file type</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">type</span>: <a href="../enums/FileType.html" class="tsd-signature-type tsd-kind-enum">FileType</a></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#_setType">_setType</a></p>
+<ul>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L705">src/file.ts:705</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="_setTypeSync" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>_set<wbr/>Type<wbr/>Sync</span><a href="#_setTypeSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-inherited">
+<li class="tsd-signature tsd-anchor-link" id="_setTypeSync._setTypeSync-1"><span class="tsd-kind-call-signature">_set<wbr/>Type<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">type</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#_setTypeSync._setTypeSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description"><code class="tsd-tag ts-flagInternal">Internal</code> 
+<div class="tsd-comment tsd-typography"><p>Set the file type</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">type</span>: <a href="../enums/FileType.html" class="tsd-signature-type tsd-kind-enum">FileType</a></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#_setTypeSync">_setTypeSync</a></p>
+<ul>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L711">src/file.ts:711</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="chmod" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>chmod</span><a href="#chmod" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -191,13 +264,15 @@ Doesn&#39;t sync to anything, so it works nicely for memory-only files.</p>
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">mode</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
+<h5><span class="tsd-kind-parameter">mode</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>the mode</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/File.html">File</a>.<a href="../interfaces/File.html#chmod">chmod</a></p>
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#chmod">chmod</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L660">src/file.ts:660</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L640">src/file.ts:640</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="chmodSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>chmod<wbr/>Sync</span><a href="#chmodSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -209,13 +284,13 @@ Doesn&#39;t sync to anything, so it works nicely for memory-only files.</p>
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">mode</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
+<h5><span class="tsd-kind-parameter">mode</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/File.html">File</a>.<a href="../interfaces/File.html#chmodSync">chmodSync</a></p>
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#chmodSync">chmodSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L668">src/file.ts:668</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L648">src/file.ts:648</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="chown" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>chown</span><a href="#chown" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -227,15 +302,16 @@ Doesn&#39;t sync to anything, so it works nicely for memory-only files.</p>
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">uid</span>: <span class="tsd-signature-type">number</span></h5></li>
+<h5><span class="tsd-kind-parameter">uid</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">gid</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
+<h5><span class="tsd-kind-parameter">gid</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/File.html">File</a>.<a href="../interfaces/File.html#chown">chown</a></p>
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#chown">chown</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L682">src/file.ts:682</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L662">src/file.ts:662</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="chownSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>chown<wbr/>Sync</span><a href="#chownSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -247,15 +323,16 @@ Doesn&#39;t sync to anything, so it works nicely for memory-only files.</p>
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">uid</span>: <span class="tsd-signature-type">number</span></h5></li>
+<h5><span class="tsd-kind-parameter">uid</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">gid</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
+<h5><span class="tsd-kind-parameter">gid</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/File.html">File</a>.<a href="../interfaces/File.html#chownSync">chownSync</a></p>
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#chownSync">chownSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L691">src/file.ts:691</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L671">src/file.ts:671</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="close" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>close</span><a href="#close" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -265,10 +342,9 @@ Doesn&#39;t sync to anything, so it works nicely for memory-only files.</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/File.html">File</a>.<a href="../interfaces/File.html#close">close</a></p>
 <p>Overrides <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#close">close</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L737">src/file.ts:737</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L768">src/file.ts:768</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="closeSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>close<wbr/>Sync</span><a href="#closeSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -278,104 +354,35 @@ Doesn&#39;t sync to anything, so it works nicely for memory-only files.</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/File.html">File</a>.<a href="../interfaces/File.html#closeSync">closeSync</a></p>
 <p>Overrides <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#closeSync">closeSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L743">src/file.ts:743</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L774">src/file.ts:774</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="datasync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>datasync</span><a href="#datasync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
 <li class="tsd-signature tsd-anchor-link" id="datasync.datasync-1"><span class="tsd-kind-call-signature">datasync</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#datasync.datasync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p><strong>Supplementary</strong>: Asynchronous <code>datasync</code>.</p>
+<div class="tsd-comment tsd-typography"><p>Asynchronous <code>datasync</code>.</p>
 <p>Default implementation maps to <code>sync</code>.</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/File.html">File</a>.<a href="../interfaces/File.html#datasync">datasync</a></p>
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#datasync">datasync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L333">src/file.ts:333</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L336">src/file.ts:336</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="datasyncSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>datasync<wbr/>Sync</span><a href="#datasyncSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
 <li class="tsd-signature tsd-anchor-link" id="datasyncSync.datasyncSync-1"><span class="tsd-kind-call-signature">datasync<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#datasyncSync.datasyncSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p><strong>Supplementary</strong>: Synchronous <code>datasync</code>.</p>
+<div class="tsd-comment tsd-typography"><p>Synchronous <code>datasync</code>.</p>
 <p>Default implementation maps to <code>syncSync</code>.</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/File.html">File</a>.<a href="../interfaces/File.html#datasyncSync">datasyncSync</a></p>
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#datasyncSync">datasyncSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L336">src/file.ts:336</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member tsd-is-inherited"><a id="getBuffer" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>get<wbr/>Buffer</span><a href="#getBuffer" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="getBuffer.getBuffer-1"><span class="tsd-kind-call-signature">get<wbr/>Buffer</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Uint8Array</span><a href="#getBuffer.getBuffer-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>NONSTANDARD: Get the underlying buffer for this file. !!DO NOT MUTATE!! Will mess up dirty tracking.</p>
-</div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Uint8Array</span></h4>
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#getBuffer">getBuffer</a></p>
-<ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L409">src/file.ts:409</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member tsd-is-inherited"><a id="getFlag" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>get<wbr/>Flag</span><a href="#getFlag" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="getFlag.getFlag-1"><span class="tsd-kind-call-signature">get<wbr/>Flag</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="FileFlag.html" class="tsd-signature-type tsd-kind-class">FileFlag</a><a href="#getFlag.getFlag-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<h4 class="tsd-returns-title">Returns <a href="FileFlag.html" class="tsd-signature-type tsd-kind-class">FileFlag</a></h4><aside class="tsd-sources">
-<p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#getFlag">getFlag</a></p>
-<ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L420">src/file.ts:420</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member tsd-is-inherited"><a id="getPath" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>get<wbr/>Path</span><a href="#getPath" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="getPath.getPath-1"><span class="tsd-kind-call-signature">get<wbr/>Path</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><a href="#getPath.getPath-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Get the path to this file.</p>
-</div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><p>[String] The path to the file.</p>
-
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#getPath">getPath</a></p>
-<ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L428">src/file.ts:428</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member tsd-is-inherited"><a id="getPos" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>get<wbr/>Pos</span><a href="#getPos" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="getPos.getPos-1"><span class="tsd-kind-call-signature">get<wbr/>Pos</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#getPos.getPos-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Get the current file position.</p>
-<p>We emulate the following bug mentioned in the Node documentation:</p>
-<blockquote>
-<p>On Linux, positional writes don&#39;t work when the file is opened in append
-  mode. The kernel ignores the position argument and always appends the data
-  to the end of the file.</p>
-</blockquote>
-</div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><p>[Number] The current file position.</p>
-
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/File.html">File</a>.<a href="../interfaces/File.html#getPos">getPos</a></p>
-<p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#getPos">getPos</a></p>
-<ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L441">src/file.ts:441</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member tsd-is-inherited"><a id="getStats" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>get<wbr/>Stats</span><a href="#getStats" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="getStats.getStats-1"><span class="tsd-kind-call-signature">get<wbr/>Stats</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Stats.html" class="tsd-signature-type tsd-kind-class">Stats</a><a href="#getStats.getStats-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>NONSTANDARD: Get underlying stats for this file. !!DO NOT MUTATE!!</p>
-</div>
-<h4 class="tsd-returns-title">Returns <a href="Stats.html" class="tsd-signature-type tsd-kind-class">Stats</a></h4>
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#getStats">getStats</a></p>
-<ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L416">src/file.ts:416</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L345">src/file.ts:345</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="isDirty" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>is<wbr/>Dirty</span><a href="#isDirty" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -384,35 +391,55 @@ Doesn&#39;t sync to anything, so it works nicely for memory-only files.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#isDirty">isDirty</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L700">src/file.ts:700</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L694">src/file.ts:694</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="read" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>read</span><a href="#read" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="read.read-1"><span class="tsd-kind-call-signature">read</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">buffer</span>, <span class="tsd-kind-parameter">offset</span>, <span class="tsd-kind-parameter">length</span>, <span class="tsd-kind-parameter">position</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span><br/><span>    </span><span class="tsd-kind-property">buffer</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Uint8Array</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">bytesRead</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">&gt;</span><a href="#read.read-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="read.read-1"><span class="tsd-kind-call-signature">read</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">TBuffer</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">buffer</span>, <span class="tsd-kind-parameter">offset</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">length</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">position</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span><br/><span>    </span><span class="tsd-kind-property">buffer</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">TBuffer</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">bytesRead</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">&gt;</span><a href="#read.read-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Read data from the file.</p>
 </div>
+<section class="tsd-panel">
+<h4>Type Parameters</h4>
+<ul class="tsd-type-parameter-list">
+<li>
+<h4><span class="tsd-kind-type-parameter">TBuffer</span><span class="tsd-signature-symbol"> extends </span><span class="tsd-signature-type ">Uint8Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">TBuffer</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">buffer</span>: <span class="tsd-signature-type ">Uint8Array</span></h5></li>
+<h5><span class="tsd-kind-parameter">buffer</span>: <span class="tsd-signature-type tsd-kind-type-parameter">TBuffer</span></h5>
+<div class="tsd-comment tsd-typography"><p>The buffer that the data will be
+  written to.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">offset</span>: <span class="tsd-signature-type">number</span></h5></li>
+<h5><span class="tsd-kind-parameter">offset</span>: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+<div class="tsd-comment tsd-typography"><p>The offset within the buffer where writing will
+  start.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">length</span>: <span class="tsd-signature-type">number</span></h5></li>
+<h5><span class="tsd-kind-parameter">length</span>: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = ...</span></h5>
+<div class="tsd-comment tsd-typography"><p>An integer specifying the number of bytes to read.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">position</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span><br/><span>    </span><span class="tsd-kind-property">buffer</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Uint8Array</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">bytesRead</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">&gt;</span></h4>
+<h5><span class="tsd-kind-parameter">position</span>: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+<div class="tsd-comment tsd-typography"><p>An integer specifying where to begin reading from
+  in the file. If position is null, data will be read from the current file
+  position.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span><br/><span>    </span><span class="tsd-kind-property">buffer</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">TBuffer</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">bytesRead</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/File.html">File</a>.<a href="../interfaces/File.html#read">read</a></p>
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#read">read</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L623">src/file.ts:623</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L601">src/file.ts:601</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="readSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>read<wbr/>Sync</span><a href="#readSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="readSync.readSync-1"><span class="tsd-kind-call-signature">read<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">buffer</span>, <span class="tsd-kind-parameter">offset</span>, <span class="tsd-kind-parameter">length</span>, <span class="tsd-kind-parameter">position</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#readSync.readSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="readSync.readSync-1"><span class="tsd-kind-call-signature">read<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">buffer</span>, <span class="tsd-kind-parameter">offset</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">length</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">position</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#readSync.readSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Read data from the file.</p>
 </div>
@@ -420,20 +447,34 @@ Doesn&#39;t sync to anything, so it works nicely for memory-only files.</p>
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">buffer</span>: <span class="tsd-signature-type ">Uint8Array</span></h5></li>
+<h5><span class="tsd-kind-parameter">buffer</span>: <span class="tsd-signature-type ">Uint8Array</span></h5>
+<div class="tsd-comment tsd-typography"><p>The buffer that the data will be
+  written to.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">offset</span>: <span class="tsd-signature-type">number</span></h5></li>
+<h5><span class="tsd-kind-parameter">offset</span>: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+<div class="tsd-comment tsd-typography"><p>The offset within the buffer where writing will start.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">length</span>: <span class="tsd-signature-type">number</span></h5></li>
+<h5><span class="tsd-kind-parameter">length</span>: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = ...</span></h5>
+<div class="tsd-comment tsd-typography"><p>An integer specifying the number of bytes to read.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">position</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><p>[Number]</p>
+<h5><span class="tsd-kind-parameter">position</span>: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+<div class="tsd-comment tsd-typography"><p>An integer specifying where to begin reading from
+  in the file. If position is null, data will be read from the current file
+  position.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><p>number of bytes written</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/File.html">File</a>.<a href="../interfaces/File.html#readSync">readSync</a></p>
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#readSync">readSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L639">src/file.ts:639</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L621">src/file.ts:621</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="resetDirty" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>reset<wbr/>Dirty</span><a href="#resetDirty" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -445,24 +486,7 @@ Doesn&#39;t sync to anything, so it works nicely for memory-only files.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#resetDirty">resetDirty</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L707">src/file.ts:707</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member tsd-is-inherited"><a id="setPos" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>set<wbr/>Pos</span><a href="#setPos" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="setPos.setPos-1"><span class="tsd-kind-call-signature">set<wbr/>Pos</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">newPos</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#setPos.setPos-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Set the file position.</p>
-</div>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">newPos</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#setPos">setPos</a></p>
-<ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L460">src/file.ts:460</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L701">src/file.ts:701</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="stat" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>stat</span><a href="#stat" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -472,10 +496,9 @@ Doesn&#39;t sync to anything, so it works nicely for memory-only files.</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Stats.html" class="tsd-signature-type tsd-kind-class">Stats</a><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/File.html">File</a>.<a href="../interfaces/File.html#stat">stat</a></p>
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#stat">stat</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L500">src/file.ts:500</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L481">src/file.ts:481</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="statSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>stat<wbr/>Sync</span><a href="#statSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -485,10 +508,9 @@ Doesn&#39;t sync to anything, so it works nicely for memory-only files.</p>
 </div>
 <h4 class="tsd-returns-title">Returns <a href="Stats.html" class="tsd-signature-type tsd-kind-class">Stats</a></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/File.html">File</a>.<a href="../interfaces/File.html#statSync">statSync</a></p>
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#statSync">statSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L507">src/file.ts:507</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L488">src/file.ts:488</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="sync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>sync</span><a href="#sync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -498,10 +520,9 @@ Doesn&#39;t sync to anything, so it works nicely for memory-only files.</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/File.html">File</a>.<a href="../interfaces/File.html#sync">sync</a></p>
 <p>Overrides <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#sync">sync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L724">src/file.ts:724</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L756">src/file.ts:756</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="syncSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>sync<wbr/>Sync</span><a href="#syncSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -511,10 +532,9 @@ Doesn&#39;t sync to anything, so it works nicely for memory-only files.</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/File.html">File</a>.<a href="../interfaces/File.html#syncSync">syncSync</a></p>
 <p>Overrides <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#syncSync">syncSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L730">src/file.ts:730</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L762">src/file.ts:762</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="truncate" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>truncate</span><a href="#truncate" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -526,13 +546,13 @@ Doesn&#39;t sync to anything, so it works nicely for memory-only files.</p>
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">len</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
+<h5><span class="tsd-kind-parameter">len</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/File.html">File</a>.<a href="../interfaces/File.html#truncate">truncate</a></p>
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#truncate">truncate</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L516">src/file.ts:516</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L496">src/file.ts:496</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="truncateSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>truncate<wbr/>Sync</span><a href="#truncateSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -544,19 +564,19 @@ Doesn&#39;t sync to anything, so it works nicely for memory-only files.</p>
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">len</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
+<h5><span class="tsd-kind-parameter">len</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/File.html">File</a>.<a href="../interfaces/File.html#truncateSync">truncateSync</a></p>
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#truncateSync">truncateSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L527">src/file.ts:527</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L507">src/file.ts:507</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="utimes" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>utimes</span><a href="#utimes" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
 <li class="tsd-signature tsd-anchor-link" id="utimes.utimes-1"><span class="tsd-kind-call-signature">utimes</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">atime</span>, <span class="tsd-kind-parameter">mtime</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#utimes.utimes-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p><strong>Optional</strong>: Change the file timestamps of the file.</p>
+<div class="tsd-comment tsd-typography"><p>Change the file timestamps of the file.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
@@ -567,16 +587,15 @@ Doesn&#39;t sync to anything, so it works nicely for memory-only files.</p>
 <h5><span class="tsd-kind-parameter">mtime</span>: <span class="tsd-signature-type ">Date</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/File.html">File</a>.<a href="../interfaces/File.html#utimes">utimes</a></p>
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#utimes">utimes</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L351">src/file.ts:351</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L680">src/file.ts:680</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="utimesSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>utimes<wbr/>Sync</span><a href="#utimesSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
 <li class="tsd-signature tsd-anchor-link" id="utimesSync.utimesSync-1"><span class="tsd-kind-call-signature">utimes<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">atime</span>, <span class="tsd-kind-parameter">mtime</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#utimesSync.utimesSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p><strong>Optional</strong>: Change the file timestamps of the file.</p>
+<div class="tsd-comment tsd-typography"><p>Change the file timestamps of the file.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
@@ -587,14 +606,13 @@ Doesn&#39;t sync to anything, so it works nicely for memory-only files.</p>
 <h5><span class="tsd-kind-parameter">mtime</span>: <span class="tsd-signature-type ">Date</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/File.html">File</a>.<a href="../interfaces/File.html#utimesSync">utimesSync</a></p>
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#utimesSync">utimesSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L354">src/file.ts:354</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L684">src/file.ts:684</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="write" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>write</span><a href="#write" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="write.write-1"><span class="tsd-kind-call-signature">write</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">buffer</span>, <span class="tsd-kind-parameter">offset</span>, <span class="tsd-kind-parameter">length</span>, <span class="tsd-kind-parameter">position</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><a href="#write.write-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="write.write-1"><span class="tsd-kind-call-signature">write</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">buffer</span>, <span class="tsd-kind-parameter">offset</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">length</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">position</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><a href="#write.write-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Write buffer to the file.
 Note that it is unsafe to use fs.write multiple times on the same file
@@ -604,23 +622,37 @@ without waiting for the callback.</p>
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">buffer</span>: <span class="tsd-signature-type ">Uint8Array</span></h5></li>
+<h5><span class="tsd-kind-parameter">buffer</span>: <span class="tsd-signature-type ">Uint8Array</span></h5>
+<div class="tsd-comment tsd-typography"><p>Uint8Array containing the data to write to
+ the file.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">offset</span>: <span class="tsd-signature-type">number</span></h5></li>
+<h5><span class="tsd-kind-parameter">offset</span>: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+<div class="tsd-comment tsd-typography"><p>Offset in the buffer to start reading data from.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">length</span>: <span class="tsd-signature-type">number</span></h5></li>
+<h5><span class="tsd-kind-parameter">length</span>: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = ...</span></h5>
+<div class="tsd-comment tsd-typography"><p>The amount of bytes to write to the file.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">position</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
+<h5><span class="tsd-kind-parameter">position</span>: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+<div class="tsd-comment tsd-typography"><p>Offset from the beginning of the file where this
+  data should be written. If position is null, the data will be written at
+  the current position.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/File.html">File</a>.<a href="../interfaces/File.html#write">write</a></p>
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#write">write</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L564">src/file.ts:564</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L542">src/file.ts:542</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="writeSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>write<wbr/>Sync</span><a href="#writeSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="writeSync.writeSync-1"><span class="tsd-kind-call-signature">write<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">buffer</span>, <span class="tsd-kind-parameter">offset</span>, <span class="tsd-kind-parameter">length</span>, <span class="tsd-kind-parameter">position</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#writeSync.writeSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="writeSync.writeSync-1"><span class="tsd-kind-call-signature">write<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">buffer</span>, <span class="tsd-kind-parameter">offset</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">length</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">position</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#writeSync.writeSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Write buffer to the file.
 Note that it is unsafe to use fs.writeSync multiple times on the same file
@@ -630,20 +662,34 @@ without waiting for the callback.</p>
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">buffer</span>: <span class="tsd-signature-type ">Uint8Array</span></h5></li>
+<h5><span class="tsd-kind-parameter">buffer</span>: <span class="tsd-signature-type ">Uint8Array</span></h5>
+<div class="tsd-comment tsd-typography"><p>Uint8Array containing the data to write to
+ the file.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">offset</span>: <span class="tsd-signature-type">number</span></h5></li>
+<h5><span class="tsd-kind-parameter">offset</span>: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+<div class="tsd-comment tsd-typography"><p>Offset in the buffer to start reading data from.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">length</span>: <span class="tsd-signature-type">number</span></h5></li>
+<h5><span class="tsd-kind-parameter">length</span>: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = ...</span></h5>
+<div class="tsd-comment tsd-typography"><p>The amount of bytes to write to the file.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">position</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><p>[Number]</p>
+<h5><span class="tsd-kind-parameter">position</span>: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+<div class="tsd-comment tsd-typography"><p>Offset from the beginning of the file where this
+  data should be written. If position is null, the data will be written at
+  the current position.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><p>bytes written</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Implementation of <a href="../interfaces/File.html">File</a>.<a href="../interfaces/File.html#writeSync">writeSync</a></p>
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#writeSync">writeSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/file.ts#L581">src/file.ts:581</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/file.ts#L559">src/file.ts:559</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -666,12 +712,15 @@ without waiting for the callback.</p>
 <li><a href="#constructor" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-512"></use></svg><span>constructor</span></a></li>
 <li><a href="#_buffer" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_buffer</span></a></li>
 <li><a href="#_dirty" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_dirty</span></a></li>
-<li><a href="#_flag" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_flag</span></a></li>
-<li><a href="#_fs" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_fs</span></a></li>
-<li><a href="#_path" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_path</span></a></li>
-<li><a href="#_pos" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_pos</span></a></li>
-<li><a href="#_stat" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_stat</span></a></li>
-<li><a href="#advancePos" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>advance<wbr/>Pos</span></a></li>
+<li><a href="#_position" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_position</span></a></li>
+<li><a href="#flag" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>flag</span></a></li>
+<li><a href="#fs" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>fs</span></a></li>
+<li><a href="#path" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>path</span></a></li>
+<li><a href="#stats" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>stats</span></a></li>
+<li><a href="#buffer" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>buffer</span></a></li>
+<li><a href="#position" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>position</span></a></li>
+<li><a href="#_setType" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Type</span></a></li>
+<li><a href="#_setTypeSync" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_set<wbr/>Type<wbr/>Sync</span></a></li>
 <li><a href="#chmod" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>chmod</span></a></li>
 <li><a href="#chmodSync" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>chmod<wbr/>Sync</span></a></li>
 <li><a href="#chown" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>chown</span></a></li>
@@ -680,16 +729,10 @@ without waiting for the callback.</p>
 <li><a href="#closeSync" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>close<wbr/>Sync</span></a></li>
 <li><a href="#datasync" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>datasync</span></a></li>
 <li><a href="#datasyncSync" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>datasync<wbr/>Sync</span></a></li>
-<li><a href="#getBuffer" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Buffer</span></a></li>
-<li><a href="#getFlag" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Flag</span></a></li>
-<li><a href="#getPath" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Path</span></a></li>
-<li><a href="#getPos" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Pos</span></a></li>
-<li><a href="#getStats" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Stats</span></a></li>
 <li><a href="#isDirty" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>is<wbr/>Dirty</span></a></li>
 <li><a href="#read" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>read</span></a></li>
 <li><a href="#readSync" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>read<wbr/>Sync</span></a></li>
 <li><a href="#resetDirty" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>reset<wbr/>Dirty</span></a></li>
-<li><a href="#setPos" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>set<wbr/>Pos</span></a></li>
 <li><a href="#stat" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>stat</span></a></li>
 <li><a href="#statSync" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>stat<wbr/>Sync</span></a></li>
 <li><a href="#sync" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>sync</span></a></li>
@@ -705,25 +748,25 @@ without waiting for the callback.</p>
 <ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base="..">
 <li><a href="../modules.html#default"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg>default</a></li>
 <li><a href="../modules/AsyncMirror.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg>AsyncMirror</a></li>
-<li><a href="../modules/FolderAdapter.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg>FolderAdapter</a></li>
-<li><a href="../modules/OverlayFS.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg>OverlayFS</a></li>
 <li><a href="../enums/ActionType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg>ActionType</a></li>
 <li><a href="../enums/ErrorCode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg>ErrorCode</a></li>
 <li><a href="../enums/FileType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg>FileType</a></li>
 <li><a href="ApiError.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>ApiError</a></li>
 <li><a href="AsyncFile.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncFile</a></li>
 <li><a href="AsyncFileSystem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncFileSystem</a></li>
-<li><a href="AsyncMirror-1.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncMirror</a></li>
-<li><a href="BaseFile.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>BaseFile</a></li>
-<li><a href="BaseFileSystem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>BaseFileSystem</a></li>
+<li><a href="AsyncStoreFileSystem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncStoreFileSystem</a></li>
 <li><a href="BigIntStats.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>BigIntStats</a></li>
 <li><a href="Cred.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>Cred</a></li>
+<li><a href="File.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>File</a></li>
 <li><a href="FileFlag.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>FileFlag</a></li>
 <li><a href="FileIndex.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>FileIndex</a></li>
 <li><a href="FileSystem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>FileSystem</a></li>
-<li><a href="FolderAdapter-1.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>FolderAdapter</a></li>
-<li><a href="InMemory.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>InMemory</a></li>
 <li><a href="IndexDirInode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>IndexDirInode</a></li>
+<li><a href="IndexFileInode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>IndexFileInode</a></li>
+<li><a href="IndexInode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>IndexInode</a></li>
+<li><a href="NoSyncFile.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>NoSyncFile</a></li>
+<li><a href="PreloadFile.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>PreloadFile</a></li>
+<li><a href="SimpleSyncRWTransaction.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>SimpleSyncRWTransaction</a></li>
 <li>Loading...</li></ul></nav></div></div></div>
 <div class="tsd-generator">
 <p>Generated using <a href="https://typedoc.org/" rel="noopener" target="_blank">TypeDoc</a></p></div>

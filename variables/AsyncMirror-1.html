@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>IndexInode | BrowserFS</title><meta name="description" content="Documentation for BrowserFS"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>AsyncMirror | BrowserFS</title><meta name="description" content="Documentation for BrowserFS"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
 <div class="tsd-toolbar-contents container">
 <div class="table-cell" id="tsd-search" data-base="..">
 <div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
@@ -13,61 +13,12 @@
 <div class="tsd-page-title">
 <ul class="tsd-breadcrumb">
 <li><a href="../modules.html">BrowserFS</a></li>
-<li><a href="IndexInode.html">IndexInode</a></li></ul>
-<h1>Interface IndexInode</h1></div>
-<section class="tsd-panel tsd-comment">
-<div class="tsd-comment tsd-typography"><p>Generic interface for file/directory inodes.
-Note that Stats objects are what we use for file inodes.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></section>
-<section class="tsd-panel tsd-hierarchy">
-<h4>Hierarchy</h4>
-<ul class="tsd-hierarchy">
-<li><span class="target">IndexInode</span></li></ul></section>
-<section class="tsd-panel">
-<h4>Implemented by</h4>
-<ul class="tsd-hierarchy">
-<li><a href="../classes/IndexDirInode.html" class="tsd-signature-type tsd-kind-class">IndexDirInode</a></li>
-<li><a href="../classes/IndexFileInode.html" class="tsd-signature-type tsd-kind-class">IndexFileInode</a></li></ul></section><aside class="tsd-sources">
+<li><a href="AsyncMirror-1.html">AsyncMirror</a></li></ul>
+<h1>Variable AsyncMirror</h1></div>
+<div class="tsd-signature"><span class="tsd-kind-variable">Async<wbr/>Mirror</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">Backend</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/FileSystem.html" class="tsd-signature-type tsd-kind-class">FileSystem</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type ">BackendOptionsConfig</span><span class="tsd-signature-symbol">&gt;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/FileIndex.ts#L249">src/FileIndex.ts:249</a></li></ul></aside>
-<section class="tsd-panel-group tsd-index-group">
-<section class="tsd-panel tsd-index-panel">
-<details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
-<h5 class="tsd-index-heading uppercase" role="button" aria-expanded="false" tabIndex=0><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="#icon-chevronSmall"></use></svg> Index</h5></summary>
-<div class="tsd-accordion-details">
-<section class="tsd-index-section">
-<h3 class="tsd-index-heading">Methods</h3>
-<div class="tsd-index-list"><a href="IndexInode.html#isDir" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>is<wbr/>Dir</span></a>
-<a href="IndexInode.html#isFile" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>is<wbr/>File</span></a>
-<a href="IndexInode.html#toStats" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>to<wbr/>Stats</span></a>
-</div></section></div></details></section></section>
-<section class="tsd-panel-group tsd-member-group">
-<h2>Methods</h2>
-<section class="tsd-panel tsd-member"><a id="isDir" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>is<wbr/>Dir</span><a href="#isDir" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="isDir.isDir-1"><span class="tsd-kind-call-signature">is<wbr/>Dir</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><a href="#isDir.isDir-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/FileIndex.ts#L253">src/FileIndex.ts:253</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="isFile" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>is<wbr/>File</span><a href="#isFile" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="isFile.isFile-1"><span class="tsd-kind-call-signature">is<wbr/>File</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><a href="#isFile.isFile-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/FileIndex.ts#L251">src/FileIndex.ts:251</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="toStats" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>to<wbr/>Stats</span><a href="#toStats" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="toStats.toStats-1"><span class="tsd-kind-call-signature">to<wbr/>Stats</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/Stats.html" class="tsd-signature-type tsd-kind-class">Stats</a><a href="#toStats.toStats-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<h4 class="tsd-returns-title">Returns <a href="../classes/Stats.html" class="tsd-signature-type tsd-kind-class">Stats</a></h4><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/FileIndex.ts#L255">src/FileIndex.ts:255</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/backends/AsyncMirror.ts#L54">src/backends/AsyncMirror.ts:54</a></li>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/backends/AsyncMirror.ts#L304">src/backends/AsyncMirror.ts:304</a></li></ul></aside></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -82,38 +33,31 @@ Note that Stats objects are what we use for file inodes.</p>
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><use href="#icon-checkbox"></use></svg><span>Inherited</span></label></li>
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><use href="#icon-checkbox"></use></svg><span>External</span></label></li></ul></form></div>
 <div class="tsd-theme-toggle">
-<h4 class="uppercase">Theme</h4><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
-<details open class="tsd-index-accordion tsd-page-navigation"><summary class="tsd-accordion-summary">
-<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="#icon-chevronDown"></use></svg>On This Page</h3></summary>
-<div class="tsd-accordion-details">
-<ul>
-<li><a href="#isDir" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>is<wbr/>Dir</span></a></li>
-<li><a href="#isFile" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>is<wbr/>File</span></a></li>
-<li><a href="#toStats" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>to<wbr/>Stats</span></a></li></ul></div></details></div>
+<h4 class="uppercase">Theme</h4><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div></div>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="../modules.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1"></use></svg><span>BrowserFS</span></a>
 <ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base="..">
 <li><a href="../modules.html#default"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg>default</a></li>
 <li><a href="../modules/AsyncMirror.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg>AsyncMirror</a></li>
-<li><a href="../modules/FolderAdapter.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg>FolderAdapter</a></li>
-<li><a href="../modules/OverlayFS.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg>OverlayFS</a></li>
 <li><a href="../enums/ActionType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg>ActionType</a></li>
 <li><a href="../enums/ErrorCode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg>ErrorCode</a></li>
 <li><a href="../enums/FileType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg>FileType</a></li>
 <li><a href="../classes/ApiError.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>ApiError</a></li>
 <li><a href="../classes/AsyncFile.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncFile</a></li>
 <li><a href="../classes/AsyncFileSystem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncFileSystem</a></li>
-<li><a href="../classes/AsyncMirror-1.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncMirror</a></li>
-<li><a href="../classes/BaseFile.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>BaseFile</a></li>
-<li><a href="../classes/BaseFileSystem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>BaseFileSystem</a></li>
+<li><a href="../classes/AsyncStoreFileSystem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncStoreFileSystem</a></li>
 <li><a href="../classes/BigIntStats.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>BigIntStats</a></li>
 <li><a href="../classes/Cred.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>Cred</a></li>
+<li><a href="../classes/File.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>File</a></li>
 <li><a href="../classes/FileFlag.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>FileFlag</a></li>
 <li><a href="../classes/FileIndex.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>FileIndex</a></li>
 <li><a href="../classes/FileSystem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>FileSystem</a></li>
-<li><a href="../classes/FolderAdapter-1.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>FolderAdapter</a></li>
-<li><a href="../classes/InMemory.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>InMemory</a></li>
 <li><a href="../classes/IndexDirInode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>IndexDirInode</a></li>
+<li><a href="../classes/IndexFileInode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>IndexFileInode</a></li>
+<li><a href="../classes/IndexInode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>IndexInode</a></li>
+<li><a href="../classes/NoSyncFile.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>NoSyncFile</a></li>
+<li><a href="../classes/PreloadFile.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>PreloadFile</a></li>
+<li><a href="../classes/SimpleSyncRWTransaction.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>SimpleSyncRWTransaction</a></li>
 <li>Loading...</li></ul></nav></div></div></div>
 <div class="tsd-generator">
 <p>Generated using <a href="https://typedoc.org/" rel="noopener" target="_blank">TypeDoc</a></p></div>

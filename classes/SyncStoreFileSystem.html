@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>SyncFileSystem | BrowserFS</title><meta name="description" content="Documentation for BrowserFS"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>SyncStoreFileSystem | BrowserFS</title><meta name="description" content="Documentation for BrowserFS"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
 <div class="tsd-toolbar-contents container">
 <div class="table-cell" id="tsd-search" data-base="..">
 <div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
@@ -13,22 +13,27 @@
 <div class="tsd-page-title">
 <ul class="tsd-breadcrumb">
 <li><a href="../modules.html">BrowserFS</a></li>
-<li><a href="SyncFileSystem.html">SyncFileSystem</a></li></ul>
-<h1>Class SyncFileSystem<code class="tsd-tag ts-flagAbstract">Abstract</code> </h1></div>
+<li><a href="SyncStoreFileSystem.html">SyncStoreFileSystem</a></li></ul>
+<h1>Class SyncStoreFileSystem</h1></div>
 <section class="tsd-panel tsd-comment">
-<div class="tsd-comment tsd-typography"><p>Implements the asynchronous API in terms of the synchronous API.</p>
+<div class="tsd-comment tsd-typography"><p>A &quot;Synchronous key-value file system&quot;. Stores data to/retrieves data from an
+underlying key-value store.</p>
+<p>We use a unique ID for each node in the file system. The root node has a
+fixed ID.</p>
 </div>
-<div class="tsd-comment tsd-typography"></div></section>
+<div class="tsd-comment tsd-typography">
+<h4>Todo</h4><p>Introduce Node ID caching.</p>
+
+<h4>Todo</h4><p>Check modes.</p>
+</div></section>
 <section class="tsd-panel tsd-hierarchy">
 <h4>Hierarchy</h4>
 <ul class="tsd-hierarchy">
-<li><a href="FileSystem.html" class="tsd-signature-type tsd-kind-class">FileSystem</a>
+<li><a href="SyncFileSystem.html" class="tsd-signature-type tsd-kind-class">SyncFileSystem</a>
 <ul class="tsd-hierarchy">
-<li><span class="target">SyncFileSystem</span>
-<ul class="tsd-hierarchy">
-<li><a href="SyncStoreFileSystem.html" class="tsd-signature-type tsd-kind-class">SyncStoreFileSystem</a></li></ul></li></ul></li></ul></section><aside class="tsd-sources">
+<li><span class="target">SyncStoreFileSystem</span></li></ul></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/filesystem.ts#L277">src/filesystem.ts:277</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/backends/SyncStore.ts#L202">src/backends/SyncStore.ts:202</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -36,57 +41,77 @@
 <div class="tsd-accordion-details">
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Constructors</h3>
-<div class="tsd-index-list"><a href="SyncFileSystem.html#constructor" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-512"></use></svg><span>constructor</span></a>
+<div class="tsd-index-list"><a href="SyncStoreFileSystem.html#constructor" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-512"></use></svg><span>constructor</span></a>
+</div></section>
+<section class="tsd-index-section">
+<h3 class="tsd-index-heading">Properties</h3>
+<div class="tsd-index-list"><a href="SyncStoreFileSystem.html#store" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>store</span></a>
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Accessors</h3>
-<div class="tsd-index-list"><a href="SyncFileSystem.html#metadata" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>metadata</span></a>
-<a href="SyncFileSystem.html#Name" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>Name</span></a>
+<div class="tsd-index-list"><a href="SyncStoreFileSystem.html#metadata" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>metadata</span></a>
+<a href="SyncStoreFileSystem.html#Name" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>Name</span></a>
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Methods</h3>
-<div class="tsd-index-list"><a href="SyncFileSystem.html#createFile" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>create<wbr/>File</span></a>
-<a href="SyncFileSystem.html#createFileSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>create<wbr/>File<wbr/>Sync</span></a>
-<a href="SyncFileSystem.html#exists" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>exists</span></a>
-<a href="SyncFileSystem.html#existsSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>exists<wbr/>Sync</span></a>
-<a href="SyncFileSystem.html#link" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>link</span></a>
-<a href="SyncFileSystem.html#linkSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>link<wbr/>Sync</span></a>
-<a href="SyncFileSystem.html#mkdir" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>mkdir</span></a>
-<a href="SyncFileSystem.html#mkdirSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>mkdir<wbr/>Sync</span></a>
-<a href="SyncFileSystem.html#openFile" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>open<wbr/>File</span></a>
-<a href="SyncFileSystem.html#openFileSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>open<wbr/>File<wbr/>Sync</span></a>
-<a href="SyncFileSystem.html#readdir" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>readdir</span></a>
-<a href="SyncFileSystem.html#readdirSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>readdir<wbr/>Sync</span></a>
-<a href="SyncFileSystem.html#ready" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>ready</span></a>
-<a href="SyncFileSystem.html#realpath" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>realpath</span></a>
-<a href="SyncFileSystem.html#realpathSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>realpath<wbr/>Sync</span></a>
-<a href="SyncFileSystem.html#rename" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rename</span></a>
-<a href="SyncFileSystem.html#renameSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rename<wbr/>Sync</span></a>
-<a href="SyncFileSystem.html#rmdir" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rmdir</span></a>
-<a href="SyncFileSystem.html#rmdirSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rmdir<wbr/>Sync</span></a>
-<a href="SyncFileSystem.html#stat" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>stat</span></a>
-<a href="SyncFileSystem.html#statSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>stat<wbr/>Sync</span></a>
-<a href="SyncFileSystem.html#sync" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>sync</span></a>
-<a href="SyncFileSystem.html#syncSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>sync<wbr/>Sync</span></a>
-<a href="SyncFileSystem.html#unlink" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>unlink</span></a>
-<a href="SyncFileSystem.html#unlinkSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>unlink<wbr/>Sync</span></a>
+<div class="tsd-index-list"><a href="SyncStoreFileSystem.html#_findINode" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_findINode</span></a>
+<a href="SyncStoreFileSystem.html#addNewNode" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add<wbr/>New<wbr/>Node</span></a>
+<a href="SyncStoreFileSystem.html#commitNewFile" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>commit<wbr/>New<wbr/>File</span></a>
+<a href="SyncStoreFileSystem.html#createFile" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>create<wbr/>File</span></a>
+<a href="SyncStoreFileSystem.html#createFileSync" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>create<wbr/>File<wbr/>Sync</span></a>
+<a href="SyncStoreFileSystem.html#empty" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>empty</span></a>
+<a href="SyncStoreFileSystem.html#exists" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>exists</span></a>
+<a href="SyncStoreFileSystem.html#existsSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>exists<wbr/>Sync</span></a>
+<a href="SyncStoreFileSystem.html#findINode" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>findINode</span></a>
+<a href="SyncStoreFileSystem.html#getDirListing" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Dir<wbr/>Listing</span></a>
+<a href="SyncStoreFileSystem.html#getINode" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>getINode</span></a>
+<a href="SyncStoreFileSystem.html#link" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>link</span></a>
+<a href="SyncStoreFileSystem.html#linkSync" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>link<wbr/>Sync</span></a>
+<a href="SyncStoreFileSystem.html#makeRootDirectory" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>make<wbr/>Root<wbr/>Directory</span></a>
+<a href="SyncStoreFileSystem.html#mkdir" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>mkdir</span></a>
+<a href="SyncStoreFileSystem.html#mkdirSync" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>mkdir<wbr/>Sync</span></a>
+<a href="SyncStoreFileSystem.html#openFile" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>open<wbr/>File</span></a>
+<a href="SyncStoreFileSystem.html#openFileSync" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>open<wbr/>File<wbr/>Sync</span></a>
+<a href="SyncStoreFileSystem.html#readdir" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>readdir</span></a>
+<a href="SyncStoreFileSystem.html#readdirSync" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>readdir<wbr/>Sync</span></a>
+<a href="SyncStoreFileSystem.html#ready" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>ready</span></a>
+<a href="SyncStoreFileSystem.html#realpath" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>realpath</span></a>
+<a href="SyncStoreFileSystem.html#realpathSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>realpath<wbr/>Sync</span></a>
+<a href="SyncStoreFileSystem.html#removeEntry" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>remove<wbr/>Entry</span></a>
+<a href="SyncStoreFileSystem.html#rename" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rename</span></a>
+<a href="SyncStoreFileSystem.html#renameSync" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rename<wbr/>Sync</span></a>
+<a href="SyncStoreFileSystem.html#rmdir" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rmdir</span></a>
+<a href="SyncStoreFileSystem.html#rmdirSync" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rmdir<wbr/>Sync</span></a>
+<a href="SyncStoreFileSystem.html#stat" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>stat</span></a>
+<a href="SyncStoreFileSystem.html#statSync" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>stat<wbr/>Sync</span></a>
+<a href="SyncStoreFileSystem.html#sync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>sync</span></a>
+<a href="SyncStoreFileSystem.html#syncSync" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>sync<wbr/>Sync</span></a>
+<a href="SyncStoreFileSystem.html#unlink" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>unlink</span></a>
+<a href="SyncStoreFileSystem.html#unlinkSync" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>unlink<wbr/>Sync</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Constructors</h2>
-<section class="tsd-panel tsd-member tsd-is-inherited"><a id="constructor" class="tsd-anchor"></a>
+<section class="tsd-panel tsd-member"><a id="constructor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="constructor.new_SyncFileSystem"><span class="tsd-kind-constructor-signature">new <wbr/>Sync<wbr/>File<wbr/>System</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">options</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SyncFileSystem.html" class="tsd-signature-type tsd-kind-class">SyncFileSystem</a><a href="#constructor.new_SyncFileSystem" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="constructor.new_SyncStoreFileSystem"><span class="tsd-kind-constructor-signature">new <wbr/>Sync<wbr/>Store<wbr/>File<wbr/>System</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">options</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SyncStoreFileSystem.html" class="tsd-signature-type tsd-kind-class">SyncStoreFileSystem</a><a href="#constructor.new_SyncStoreFileSystem" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">options</span>: <span class="tsd-signature-type">object</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="SyncFileSystem.html" class="tsd-signature-type tsd-kind-class">SyncFileSystem</a></h4><aside class="tsd-sources">
-<p>Inherited from <a href="FileSystem.html">FileSystem</a>.<a href="FileSystem.html#constructor">constructor</a></p>
+<h5><span class="tsd-kind-parameter">options</span>: <a href="../interfaces/SyncFileSystemOptions.html" class="tsd-signature-type tsd-kind-interface">SyncFileSystemOptions</a></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="SyncStoreFileSystem.html" class="tsd-signature-type tsd-kind-class">SyncStoreFileSystem</a></h4><aside class="tsd-sources">
+<p>Overrides <a href="SyncFileSystem.html">SyncFileSystem</a>.<a href="SyncFileSystem.html#constructor">constructor</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/filesystem.ts#L84">src/filesystem.ts:84</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/backends/SyncStore.ts#L205">src/backends/SyncStore.ts:205</a></li></ul></aside></li></ul></section></section>
+<section class="tsd-panel-group tsd-member-group">
+<h2>Properties</h2>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="store" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>store</span><a href="#store" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">store</span><span class="tsd-signature-symbol">:</span> <a href="../interfaces/SyncStore.html" class="tsd-signature-type tsd-kind-interface">SyncStore</a></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/backends/SyncStore.ts#L203">src/backends/SyncStore.ts:203</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Accessors</h2>
 <section class="tsd-panel tsd-member"><a id="metadata" class="tsd-anchor"></a>
@@ -95,23 +120,111 @@
 <li class="tsd-signature" id="metadata.metadata-1"><span class="tsd-signature-symbol">get</span> metadata<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/FileSystemMetadata.html" class="tsd-signature-type tsd-kind-interface">FileSystemMetadata</a></li>
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <a href="../interfaces/FileSystemMetadata.html" class="tsd-signature-type tsd-kind-interface">FileSystemMetadata</a></h4><aside class="tsd-sources">
-<p>Overrides FileSystem.metadata</p>
+<p>Overrides SyncFileSystem.metadata</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/filesystem.ts#L278">src/filesystem.ts:278</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/backends/SyncStore.ts#L212">src/backends/SyncStore.ts:212</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="Name" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>Name</span><a href="#Name" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
 <li class="tsd-signature" id="Name.Name-1"><span class="tsd-signature-symbol">get</span> Name<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
-<p>Inherited from FileSystem.Name</p>
+<p>Inherited from SyncFileSystem.Name</p>
 <ul>
 <li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/filesystem.ts#L68">src/filesystem.ts:68</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
-<section class="tsd-panel tsd-member"><a id="createFile" class="tsd-anchor"></a>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="_findINode" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_findINode</span><a href="#_findINode" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected">
+<li class="tsd-signature tsd-anchor-link" id="_findINode._findINode-1"><span class="tsd-kind-call-signature">_findINode</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">tx</span>, <span class="tsd-kind-parameter">parent</span>, <span class="tsd-kind-parameter">filename</span>, <span class="tsd-kind-parameter">visited</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bigint</span><a href="#_findINode._findINode-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Helper function for findINode.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">tx</span>: <a href="../interfaces/SyncROTransaction.html" class="tsd-signature-type tsd-kind-interface">SyncROTransaction</a></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">parent</span>: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The parent directory of the file we are attempting to find.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li>
+<h5><span class="tsd-kind-parameter">filename</span>: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The filename of the inode we are attempting to find, minus
+  the parent.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li>
+<h5><span class="tsd-kind-parameter">visited</span>: <span class="tsd-signature-type ">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">bigint</span></h4><p>string The ID of the file&#39;s inode in the file system.</p>
+
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/backends/SyncStore.ts#L437">src/backends/SyncStore.ts:437</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="addNewNode" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>add<wbr/>New<wbr/>Node</span><a href="#addNewNode" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected">
+<li class="tsd-signature tsd-anchor-link" id="addNewNode.addNewNode-1"><span class="tsd-kind-call-signature">add<wbr/>New<wbr/>Node</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">tx</span>, <span class="tsd-kind-parameter">data</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bigint</span><a href="#addNewNode.addNewNode-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Creates a new node under a random ID. Retries 5 times before giving up in
+the exceedingly unlikely chance that we try to reuse a random GUID.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">tx</span>: <a href="../interfaces/SyncRWTransaction.html" class="tsd-signature-type tsd-kind-interface">SyncRWTransaction</a></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">data</span>: <span class="tsd-signature-type ">Uint8Array</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">bigint</span></h4><p>The GUID that the data was stored under.</p>
+
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/backends/SyncStore.ts#L511">src/backends/SyncStore.ts:511</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="commitNewFile" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>commit<wbr/>New<wbr/>File</span><a href="#commitNewFile" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected">
+<li class="tsd-signature tsd-anchor-link" id="commitNewFile.commitNewFile-1"><span class="tsd-kind-call-signature">commit<wbr/>New<wbr/>File</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">p</span>, <span class="tsd-kind-parameter">type</span>, <span class="tsd-kind-parameter">mode</span>, <span class="tsd-kind-parameter">cred</span>, <span class="tsd-kind-parameter">data</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">default</span><a href="#commitNewFile.commitNewFile-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Commits a new file (well, a FILE or a DIRECTORY) to the file system with the given mode.
+Note: This will commit the transaction.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">p</span>: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The path to the new file.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li>
+<h5><span class="tsd-kind-parameter">type</span>: <a href="../enums/FileType.html" class="tsd-signature-type tsd-kind-enum">FileType</a></h5>
+<div class="tsd-comment tsd-typography"><p>The type of the new file.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li>
+<h5><span class="tsd-kind-parameter">mode</span>: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The mode to create the new file with.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li>
+<h5><span class="tsd-kind-parameter">cred</span>: <a href="Cred.html" class="tsd-signature-type tsd-kind-class">Cred</a></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">data</span>: <span class="tsd-signature-type ">Uint8Array</span><span class="tsd-signature-symbol"> = ...</span></h5>
+<div class="tsd-comment tsd-typography"><p>The data to store at the file&#39;s data node.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">default</span></h4><p>The Inode for the new file.</p>
+
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/backends/SyncStore.ts#L535">src/backends/SyncStore.ts:535</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="createFile" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>create<wbr/>File</span><a href="#createFile" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
+<ul class="tsd-signatures tsd-is-inherited">
 <li class="tsd-signature tsd-anchor-link" id="createFile.createFile-1"><span class="tsd-kind-call-signature">create<wbr/>File</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">flag</span>, <span class="tsd-kind-parameter">mode</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="File.html" class="tsd-signature-type tsd-kind-class">File</a><span class="tsd-signature-symbol">&gt;</span><a href="#createFile.createFile-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Create the file at path p with the given mode. Then, open it with the given
@@ -130,13 +243,13 @@ flag.</p>
 <h5><span class="tsd-kind-parameter">cred</span>: <a href="Cred.html" class="tsd-signature-type tsd-kind-class">Cred</a></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="File.html" class="tsd-signature-type tsd-kind-class">File</a><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Overrides <a href="FileSystem.html">FileSystem</a>.<a href="FileSystem.html#createFile">createFile</a></p>
+<p>Inherited from <a href="SyncFileSystem.html">SyncFileSystem</a>.<a href="SyncFileSystem.html#createFile">createFile</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/filesystem.ts#L294">src/filesystem.ts:294</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member tsd-is-inherited"><a id="createFileSync" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagAbstract">Abstract</code> <span>create<wbr/>File<wbr/>Sync</span><a href="#createFileSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="createFileSync.createFileSync-1"><span class="tsd-kind-call-signature">create<wbr/>File<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">flag</span>, <span class="tsd-kind-parameter">mode</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="File.html" class="tsd-signature-type tsd-kind-class">File</a><a href="#createFileSync.createFileSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<section class="tsd-panel tsd-member"><a id="createFileSync" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>create<wbr/>File<wbr/>Sync</span><a href="#createFileSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="createFileSync.createFileSync-1"><span class="tsd-kind-call-signature">create<wbr/>File<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">p</span>, <span class="tsd-kind-parameter">flag</span>, <span class="tsd-kind-parameter">mode</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SyncStoreFile.html" class="tsd-signature-type tsd-kind-class">SyncStoreFile</a><a href="#createFileSync.createFileSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Create the file at path p with the given mode. Then, open it with the given
 flag.</p>
@@ -145,18 +258,29 @@ flag.</p>
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li>
+<h5><span class="tsd-kind-parameter">p</span>: <span class="tsd-signature-type">string</span></h5></li>
 <li>
 <h5><span class="tsd-kind-parameter">flag</span>: <a href="FileFlag.html" class="tsd-signature-type tsd-kind-class">FileFlag</a></h5></li>
 <li>
 <h5><span class="tsd-kind-parameter">mode</span>: <span class="tsd-signature-type">number</span></h5></li>
 <li>
 <h5><span class="tsd-kind-parameter">cred</span>: <a href="Cred.html" class="tsd-signature-type tsd-kind-class">Cred</a></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="File.html" class="tsd-signature-type tsd-kind-class">File</a></h4>
+<h4 class="tsd-returns-title">Returns <a href="SyncStoreFile.html" class="tsd-signature-type tsd-kind-class">SyncStoreFile</a></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Inherited from <a href="FileSystem.html">FileSystem</a>.<a href="FileSystem.html#createFileSync">createFileSync</a></p>
+<p>Overrides <a href="SyncFileSystem.html">SyncFileSystem</a>.<a href="SyncFileSystem.html#createFileSync">createFileSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/filesystem.ts#L135">src/filesystem.ts:135</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/backends/SyncStore.ts#L312">src/backends/SyncStore.ts:312</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="empty" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>empty</span><a href="#empty" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="empty.empty-1"><span class="tsd-kind-call-signature">empty</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#empty.empty-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Delete all contents stored in the file system.</p>
+</div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/backends/SyncStore.ts#L227">src/backends/SyncStore.ts:227</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="exists" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>exists</span><a href="#exists" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -173,7 +297,7 @@ flag.</p>
 <h5><span class="tsd-kind-parameter">cred</span>: <a href="Cred.html" class="tsd-signature-type tsd-kind-class">Cred</a></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Inherited from <a href="FileSystem.html">FileSystem</a>.<a href="FileSystem.html#exists">exists</a></p>
+<p>Inherited from <a href="SyncFileSystem.html">SyncFileSystem</a>.<a href="SyncFileSystem.html#exists">exists</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/filesystem.ts#L181">src/filesystem.ts:181</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="existsSync" class="tsd-anchor"></a>
@@ -192,12 +316,89 @@ flag.</p>
 <h5><span class="tsd-kind-parameter">cred</span>: <a href="Cred.html" class="tsd-signature-type tsd-kind-class">Cred</a></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Inherited from <a href="FileSystem.html">FileSystem</a>.<a href="FileSystem.html#existsSync">existsSync</a></p>
+<p>Inherited from <a href="SyncFileSystem.html">SyncFileSystem</a>.<a href="SyncFileSystem.html#existsSync">existsSync</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/filesystem.ts#L193">src/filesystem.ts:193</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="link" class="tsd-anchor"></a>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="findINode" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>findINode</span><a href="#findINode" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected">
+<li class="tsd-signature tsd-anchor-link" id="findINode.findINode-1"><span class="tsd-kind-call-signature">findINode</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">tx</span>, <span class="tsd-kind-parameter">p</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">default</span><a href="#findINode.findINode-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Finds the Inode of the given path.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">tx</span>: <a href="../interfaces/SyncROTransaction.html" class="tsd-signature-type tsd-kind-interface">SyncROTransaction</a></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">p</span>: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The path to look up.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">default</span></h4><p>The Inode of the path p.</p>
+
+<div class="tsd-comment tsd-typography">
+<h4>Todo</h4><p>memoize/cache</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/backends/SyncStore.ts#L473">src/backends/SyncStore.ts:473</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="getDirListing" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>get<wbr/>Dir<wbr/>Listing</span><a href="#getDirListing" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected">
+<li class="tsd-signature tsd-anchor-link" id="getDirListing.getDirListing-1"><span class="tsd-kind-call-signature">get<wbr/>Dir<wbr/>Listing</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">tx</span>, <span class="tsd-kind-parameter">p</span>, <span class="tsd-kind-parameter">inode</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span><br/><span>    </span>[<span class="tsd-kind-index-signature">fileName</span>: <span class="tsd-signature-type">string</span>]<span class="tsd-signature-symbol">: </span><a href="../types/Ino.html" class="tsd-signature-type tsd-kind-type-alias">Ino</a><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span><a href="#getDirListing.getDirListing-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Given the Inode of a directory, retrieves the corresponding directory
+listing.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">tx</span>: <a href="../interfaces/SyncROTransaction.html" class="tsd-signature-type tsd-kind-interface">SyncROTransaction</a></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">p</span>: <span class="tsd-signature-type">string</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">inode</span>: <span class="tsd-signature-type ">default</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span><br/><span>    </span>[<span class="tsd-kind-index-signature">fileName</span>: <span class="tsd-signature-type">string</span>]<span class="tsd-signature-symbol">: </span><a href="../types/Ino.html" class="tsd-signature-type tsd-kind-type-alias">Ino</a><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></h4>
+<ul class="tsd-parameters">
+<li class="tsd-parameter-index-signature">
+<h5><span class="tsd-signature-symbol">[</span><span class="tsd-kind-parameter">fileName</span>: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="../types/Ino.html" class="tsd-signature-type tsd-kind-type-alias">Ino</a></h5></li></ul>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/backends/SyncStore.ts#L495">src/backends/SyncStore.ts:495</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="getINode" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>getINode</span><a href="#getINode" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected">
+<li class="tsd-signature tsd-anchor-link" id="getINode.getINode-1"><span class="tsd-kind-call-signature">getINode</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">tx</span>, <span class="tsd-kind-parameter">p</span>, <span class="tsd-kind-parameter">id</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">default</span><a href="#getINode.getINode-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Given the ID of a node, retrieves the corresponding Inode.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">tx</span>: <a href="../interfaces/SyncROTransaction.html" class="tsd-signature-type tsd-kind-interface">SyncROTransaction</a></h5>
+<div class="tsd-comment tsd-typography"><p>The transaction to use.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li>
+<h5><span class="tsd-kind-parameter">p</span>: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The corresponding path to the file (used for error messages).</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li>
+<h5><span class="tsd-kind-parameter">id</span>: <span class="tsd-signature-type">bigint</span></h5>
+<div class="tsd-comment tsd-typography"><p>The ID to look up.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">default</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/backends/SyncStore.ts#L483">src/backends/SyncStore.ts:483</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="link" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>link</span><a href="#link" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
+<ul class="tsd-signatures tsd-is-inherited">
 <li class="tsd-signature tsd-anchor-link" id="link.link-1"><span class="tsd-kind-call-signature">link</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">srcpath</span>, <span class="tsd-kind-parameter">dstpath</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#link.link-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Asynchronous <code>link</code>.</p>
@@ -213,12 +414,12 @@ flag.</p>
 <h5><span class="tsd-kind-parameter">cred</span>: <a href="Cred.html" class="tsd-signature-type tsd-kind-class">Cred</a></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Overrides <a href="FileSystem.html">FileSystem</a>.<a href="FileSystem.html#link">link</a></p>
+<p>Inherited from <a href="SyncFileSystem.html">SyncFileSystem</a>.<a href="SyncFileSystem.html#link">link</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/filesystem.ts#L318">src/filesystem.ts:318</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member tsd-is-inherited"><a id="linkSync" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagAbstract">Abstract</code> <span>link<wbr/>Sync</span><a href="#linkSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-is-inherited">
+<section class="tsd-panel tsd-member"><a id="linkSync" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>link<wbr/>Sync</span><a href="#linkSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
 <li class="tsd-signature tsd-anchor-link" id="linkSync.linkSync-1"><span class="tsd-kind-call-signature">link<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">srcpath</span>, <span class="tsd-kind-parameter">dstpath</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#linkSync.linkSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Synchronous <code>link</code>.</p>
@@ -234,12 +435,23 @@ flag.</p>
 <h5><span class="tsd-kind-parameter">cred</span>: <a href="Cred.html" class="tsd-signature-type tsd-kind-class">Cred</a></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Inherited from <a href="FileSystem.html">FileSystem</a>.<a href="FileSystem.html#linkSync">linkSync</a></p>
+<p>Overrides <a href="SyncFileSystem.html">SyncFileSystem</a>.<a href="SyncFileSystem.html#linkSync">linkSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/filesystem.ts#L261">src/filesystem.ts:261</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="mkdir" class="tsd-anchor"></a>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/backends/SyncStore.ts#L379">src/backends/SyncStore.ts:379</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="makeRootDirectory" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>make<wbr/>Root<wbr/>Directory</span><a href="#makeRootDirectory" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected">
+<li class="tsd-signature tsd-anchor-link" id="makeRootDirectory.makeRootDirectory-1"><span class="tsd-kind-call-signature">make<wbr/>Root<wbr/>Directory</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#makeRootDirectory.makeRootDirectory-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Checks if the root directory exists. Creates it if it doesn&#39;t.</p>
+</div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/backends/SyncStore.ts#L416">src/backends/SyncStore.ts:416</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="mkdir" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>mkdir</span><a href="#mkdir" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
+<ul class="tsd-signatures tsd-is-inherited">
 <li class="tsd-signature tsd-anchor-link" id="mkdir.mkdir-1"><span class="tsd-kind-call-signature">mkdir</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">mode</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#mkdir.mkdir-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Asynchronous <code>mkdir</code>.</p>
@@ -259,13 +471,13 @@ flag.</p>
 <h5><span class="tsd-kind-parameter">cred</span>: <a href="Cred.html" class="tsd-signature-type tsd-kind-class">Cred</a></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Overrides <a href="FileSystem.html">FileSystem</a>.<a href="FileSystem.html#mkdir">mkdir</a></p>
+<p>Inherited from <a href="SyncFileSystem.html">SyncFileSystem</a>.<a href="SyncFileSystem.html#mkdir">mkdir</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/filesystem.ts#L310">src/filesystem.ts:310</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member tsd-is-inherited"><a id="mkdirSync" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagAbstract">Abstract</code> <span>mkdir<wbr/>Sync</span><a href="#mkdirSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="mkdirSync.mkdirSync-1"><span class="tsd-kind-call-signature">mkdir<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">mode</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#mkdirSync.mkdirSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<section class="tsd-panel tsd-member"><a id="mkdirSync" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>mkdir<wbr/>Sync</span><a href="#mkdirSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="mkdirSync.mkdirSync-1"><span class="tsd-kind-call-signature">mkdir<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">p</span>, <span class="tsd-kind-parameter">mode</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#mkdirSync.mkdirSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Synchronous <code>mkdir</code>.</p>
 </div>
@@ -273,7 +485,7 @@ flag.</p>
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li>
+<h5><span class="tsd-kind-parameter">p</span>: <span class="tsd-signature-type">string</span></h5></li>
 <li>
 <h5><span class="tsd-kind-parameter">mode</span>: <span class="tsd-signature-type">number</span></h5>
 <div class="tsd-comment tsd-typography"><p>Mode to make the directory using. Can be ignored if
@@ -284,12 +496,12 @@ flag.</p>
 <h5><span class="tsd-kind-parameter">cred</span>: <a href="Cred.html" class="tsd-signature-type tsd-kind-class">Cred</a></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Inherited from <a href="FileSystem.html">FileSystem</a>.<a href="FileSystem.html#mkdirSync">mkdirSync</a></p>
+<p>Overrides <a href="SyncFileSystem.html">SyncFileSystem</a>.<a href="SyncFileSystem.html#mkdirSync">mkdirSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/filesystem.ts#L165">src/filesystem.ts:165</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="openFile" class="tsd-anchor"></a>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/backends/SyncStore.ts#L343">src/backends/SyncStore.ts:343</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="openFile" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>open<wbr/>File</span><a href="#openFile" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
+<ul class="tsd-signatures tsd-is-inherited">
 <li class="tsd-signature tsd-anchor-link" id="openFile.openFile-1"><span class="tsd-kind-call-signature">open<wbr/>File</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">flag</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="File.html" class="tsd-signature-type tsd-kind-class">File</a><span class="tsd-signature-symbol">&gt;</span><a href="#openFile.openFile-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Opens the file at path p with the given flag. The file must exist.</p>
@@ -308,13 +520,13 @@ flag.</p>
 <h5><span class="tsd-kind-parameter">cred</span>: <a href="Cred.html" class="tsd-signature-type tsd-kind-class">Cred</a></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="File.html" class="tsd-signature-type tsd-kind-class">File</a><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Overrides <a href="FileSystem.html">FileSystem</a>.<a href="FileSystem.html#openFile">openFile</a></p>
+<p>Inherited from <a href="SyncFileSystem.html">SyncFileSystem</a>.<a href="SyncFileSystem.html#openFile">openFile</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/filesystem.ts#L298">src/filesystem.ts:298</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member tsd-is-inherited"><a id="openFileSync" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagAbstract">Abstract</code> <span>open<wbr/>File<wbr/>Sync</span><a href="#openFileSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="openFileSync.openFileSync-1"><span class="tsd-kind-call-signature">open<wbr/>File<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">flag</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="File.html" class="tsd-signature-type tsd-kind-class">File</a><a href="#openFileSync.openFileSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<section class="tsd-panel tsd-member"><a id="openFileSync" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>open<wbr/>File<wbr/>Sync</span><a href="#openFileSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="openFileSync.openFileSync-1"><span class="tsd-kind-call-signature">open<wbr/>File<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">p</span>, <span class="tsd-kind-parameter">flag</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="SyncStoreFile.html" class="tsd-signature-type tsd-kind-class">SyncStoreFile</a><a href="#openFileSync.openFileSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Opens the file at path p with the given flag. The file must exist.</p>
 </div>
@@ -322,7 +534,7 @@ flag.</p>
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li>
+<h5><span class="tsd-kind-parameter">p</span>: <span class="tsd-signature-type">string</span></h5></li>
 <li>
 <h5><span class="tsd-kind-parameter">flag</span>: <a href="FileFlag.html" class="tsd-signature-type tsd-kind-class">FileFlag</a></h5>
 <div class="tsd-comment tsd-typography"><p>The flag to use when opening the file.</p>
@@ -330,15 +542,15 @@ flag.</p>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
 <h5><span class="tsd-kind-parameter">cred</span>: <a href="Cred.html" class="tsd-signature-type tsd-kind-class">Cred</a></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="File.html" class="tsd-signature-type tsd-kind-class">File</a></h4><p>A File object corresponding to the opened file.</p>
+<h4 class="tsd-returns-title">Returns <a href="SyncStoreFile.html" class="tsd-signature-type tsd-kind-class">SyncStoreFile</a></h4><p>A File object corresponding to the opened file.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Inherited from <a href="FileSystem.html">FileSystem</a>.<a href="FileSystem.html#openFileSync">openFileSync</a></p>
+<p>Overrides <a href="SyncFileSystem.html">SyncFileSystem</a>.<a href="SyncFileSystem.html#openFileSync">openFileSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/filesystem.ts#L123">src/filesystem.ts:123</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="readdir" class="tsd-anchor"></a>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/backends/SyncStore.ts#L317">src/backends/SyncStore.ts:317</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="readdir" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>readdir</span><a href="#readdir" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
+<ul class="tsd-signatures tsd-is-inherited">
 <li class="tsd-signature tsd-anchor-link" id="readdir.readdir-1"><span class="tsd-kind-call-signature">readdir</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><a href="#readdir.readdir-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Asynchronous <code>readdir</code>. Reads the contents of a directory.</p>
@@ -354,13 +566,13 @@ the names of the files in the directory excluding <code>&#39;.&#39;</code> and <
 <h5><span class="tsd-kind-parameter">cred</span>: <a href="Cred.html" class="tsd-signature-type tsd-kind-class">Cred</a></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Overrides <a href="FileSystem.html">FileSystem</a>.<a href="FileSystem.html#readdir">readdir</a></p>
+<p>Inherited from <a href="SyncFileSystem.html">SyncFileSystem</a>.<a href="SyncFileSystem.html#readdir">readdir</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/filesystem.ts#L314">src/filesystem.ts:314</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member tsd-is-inherited"><a id="readdirSync" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagAbstract">Abstract</code> <span>readdir<wbr/>Sync</span><a href="#readdirSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="readdirSync.readdirSync-1"><span class="tsd-kind-call-signature">readdir<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><a href="#readdirSync.readdirSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<section class="tsd-panel tsd-member"><a id="readdirSync" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>readdir<wbr/>Sync</span><a href="#readdirSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="readdirSync.readdirSync-1"><span class="tsd-kind-call-signature">readdir<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">p</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><a href="#readdirSync.readdirSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Synchronous <code>readdir</code>. Reads the contents of a directory.</p>
 </div>
@@ -368,21 +580,21 @@ the names of the files in the directory excluding <code>&#39;.&#39;</code> and <
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li>
+<h5><span class="tsd-kind-parameter">p</span>: <span class="tsd-signature-type">string</span></h5></li>
 <li>
 <h5><span class="tsd-kind-parameter">cred</span>: <a href="Cred.html" class="tsd-signature-type tsd-kind-class">Cred</a></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Inherited from <a href="FileSystem.html">FileSystem</a>.<a href="FileSystem.html#readdirSync">readdirSync</a></p>
+<p>Overrides <a href="SyncFileSystem.html">SyncFileSystem</a>.<a href="SyncFileSystem.html#readdirSync">readdirSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/filesystem.ts#L176">src/filesystem.ts:176</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="ready" class="tsd-anchor"></a>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/backends/SyncStore.ts#L347">src/backends/SyncStore.ts:347</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="ready" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>ready</span><a href="#ready" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="ready.ready-1"><span class="tsd-kind-call-signature">ready</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="SyncFileSystem.html" class="tsd-signature-type tsd-kind-class">SyncFileSystem</a><span class="tsd-signature-symbol">&gt;</span><a href="#ready.ready-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<ul class="tsd-signatures tsd-is-inherited">
+<li class="tsd-signature tsd-anchor-link" id="ready.ready-1"><span class="tsd-kind-call-signature">ready</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="SyncStoreFileSystem.html" class="tsd-signature-type tsd-kind-class">SyncStoreFileSystem</a><span class="tsd-signature-symbol">&gt;</span><a href="#ready.ready-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="SyncFileSystem.html" class="tsd-signature-type tsd-kind-class">SyncFileSystem</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
-<p>Overrides <a href="FileSystem.html">FileSystem</a>.<a href="FileSystem.html#ready">ready</a></p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="SyncStoreFileSystem.html" class="tsd-signature-type tsd-kind-class">SyncStoreFileSystem</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<p>Inherited from <a href="SyncFileSystem.html">SyncFileSystem</a>.<a href="SyncFileSystem.html#ready">ready</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/filesystem.ts#L282">src/filesystem.ts:282</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="realpath" class="tsd-anchor"></a>
@@ -402,7 +614,7 @@ the names of the files in the directory excluding <code>&#39;.&#39;</code> and <
 <h5><span class="tsd-kind-parameter">cred</span>: <a href="Cred.html" class="tsd-signature-type tsd-kind-class">Cred</a></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Inherited from <a href="FileSystem.html">FileSystem</a>.<a href="FileSystem.html#realpath">realpath</a></p>
+<p>Inherited from <a href="SyncFileSystem.html">SyncFileSystem</a>.<a href="SyncFileSystem.html#realpath">realpath</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/filesystem.ts#L207">src/filesystem.ts:207</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="realpathSync" class="tsd-anchor"></a>
@@ -422,12 +634,40 @@ the names of the files in the directory excluding <code>&#39;.&#39;</code> and <
 <h5><span class="tsd-kind-parameter">cred</span>: <a href="Cred.html" class="tsd-signature-type tsd-kind-class">Cred</a></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Inherited from <a href="FileSystem.html">FileSystem</a>.<a href="FileSystem.html#realpathSync">realpathSync</a></p>
+<p>Inherited from <a href="SyncFileSystem.html">SyncFileSystem</a>.<a href="SyncFileSystem.html#realpathSync">realpathSync</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/filesystem.ts#L232">src/filesystem.ts:232</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="rename" class="tsd-anchor"></a>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="removeEntry" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>remove<wbr/>Entry</span><a href="#removeEntry" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected">
+<li class="tsd-signature tsd-anchor-link" id="removeEntry.removeEntry-1"><span class="tsd-kind-call-signature">remove<wbr/>Entry</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">p</span>, <span class="tsd-kind-parameter">isDir</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#removeEntry.removeEntry-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Remove all traces of the given path from the file system.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">p</span>: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The path to remove from the file system.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li>
+<h5><span class="tsd-kind-parameter">isDir</span>: <span class="tsd-signature-type">boolean</span></h5>
+<div class="tsd-comment tsd-typography"><p>Does the path belong to a directory, or a file?</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li>
+<h5><span class="tsd-kind-parameter">cred</span>: <a href="Cred.html" class="tsd-signature-type tsd-kind-class">Cred</a></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+<div class="tsd-comment tsd-typography">
+<h4>Todo</h4><p>Update mtime.</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/backends/SyncStore.ts#L585">src/backends/SyncStore.ts:585</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="rename" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>rename</span><a href="#rename" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
+<ul class="tsd-signatures tsd-is-inherited">
 <li class="tsd-signature tsd-anchor-link" id="rename.rename-1"><span class="tsd-kind-call-signature">rename</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">oldPath</span>, <span class="tsd-kind-parameter">newPath</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#rename.rename-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Asynchronous rename. No arguments other than a possible exception
@@ -444,12 +684,12 @@ are given to the completion callback.</p>
 <h5><span class="tsd-kind-parameter">cred</span>: <a href="Cred.html" class="tsd-signature-type tsd-kind-class">Cred</a></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Overrides <a href="FileSystem.html">FileSystem</a>.<a href="FileSystem.html#rename">rename</a></p>
+<p>Inherited from <a href="SyncFileSystem.html">SyncFileSystem</a>.<a href="SyncFileSystem.html#rename">rename</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/filesystem.ts#L286">src/filesystem.ts:286</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member tsd-is-inherited"><a id="renameSync" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagAbstract">Abstract</code> <span>rename<wbr/>Sync</span><a href="#renameSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-is-inherited">
+<section class="tsd-panel tsd-member"><a id="renameSync" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>rename<wbr/>Sync</span><a href="#renameSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
 <li class="tsd-signature tsd-anchor-link" id="renameSync.renameSync-1"><span class="tsd-kind-call-signature">rename<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">oldPath</span>, <span class="tsd-kind-parameter">newPath</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#renameSync.renameSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Synchronous rename.</p>
@@ -465,12 +705,12 @@ are given to the completion callback.</p>
 <h5><span class="tsd-kind-parameter">cred</span>: <a href="Cred.html" class="tsd-signature-type tsd-kind-class">Cred</a></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Inherited from <a href="FileSystem.html">FileSystem</a>.<a href="FileSystem.html#renameSync">renameSync</a></p>
+<p>Overrides <a href="SyncFileSystem.html">SyncFileSystem</a>.<a href="SyncFileSystem.html#renameSync">renameSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/filesystem.ts#L98">src/filesystem.ts:98</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="rmdir" class="tsd-anchor"></a>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/backends/SyncStore.ts#L233">src/backends/SyncStore.ts:233</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="rmdir" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>rmdir</span><a href="#rmdir" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
+<ul class="tsd-signatures tsd-is-inherited">
 <li class="tsd-signature tsd-anchor-link" id="rmdir.rmdir-1"><span class="tsd-kind-call-signature">rmdir</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#rmdir.rmdir-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Asynchronous <code>rmdir</code>.</p>
@@ -484,13 +724,13 @@ are given to the completion callback.</p>
 <h5><span class="tsd-kind-parameter">cred</span>: <a href="Cred.html" class="tsd-signature-type tsd-kind-class">Cred</a></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Overrides <a href="FileSystem.html">FileSystem</a>.<a href="FileSystem.html#rmdir">rmdir</a></p>
+<p>Inherited from <a href="SyncFileSystem.html">SyncFileSystem</a>.<a href="SyncFileSystem.html#rmdir">rmdir</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/filesystem.ts#L306">src/filesystem.ts:306</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member tsd-is-inherited"><a id="rmdirSync" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagAbstract">Abstract</code> <span>rmdir<wbr/>Sync</span><a href="#rmdirSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="rmdirSync.rmdirSync-1"><span class="tsd-kind-call-signature">rmdir<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#rmdirSync.rmdirSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<section class="tsd-panel tsd-member"><a id="rmdirSync" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>rmdir<wbr/>Sync</span><a href="#rmdirSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="rmdirSync.rmdirSync-1"><span class="tsd-kind-call-signature">rmdir<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">p</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#rmdirSync.rmdirSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Synchronous <code>rmdir</code>.</p>
 </div>
@@ -498,17 +738,17 @@ are given to the completion callback.</p>
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li>
+<h5><span class="tsd-kind-parameter">p</span>: <span class="tsd-signature-type">string</span></h5></li>
 <li>
 <h5><span class="tsd-kind-parameter">cred</span>: <a href="Cred.html" class="tsd-signature-type tsd-kind-class">Cred</a></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Inherited from <a href="FileSystem.html">FileSystem</a>.<a href="FileSystem.html#rmdirSync">rmdirSync</a></p>
+<p>Overrides <a href="SyncFileSystem.html">SyncFileSystem</a>.<a href="SyncFileSystem.html#rmdirSync">rmdirSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/filesystem.ts#L153">src/filesystem.ts:153</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="stat" class="tsd-anchor"></a>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/backends/SyncStore.ts#L334">src/backends/SyncStore.ts:334</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="stat" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>stat</span><a href="#stat" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
+<ul class="tsd-signatures tsd-is-inherited">
 <li class="tsd-signature tsd-anchor-link" id="stat.stat-1"><span class="tsd-kind-call-signature">stat</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Stats.html" class="tsd-signature-type tsd-kind-class">Stats</a><span class="tsd-signature-symbol">&gt;</span><a href="#stat.stat-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Asynchronous <code>stat</code>.</p>
@@ -522,13 +762,13 @@ are given to the completion callback.</p>
 <h5><span class="tsd-kind-parameter">cred</span>: <a href="Cred.html" class="tsd-signature-type tsd-kind-class">Cred</a></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Stats.html" class="tsd-signature-type tsd-kind-class">Stats</a><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Overrides <a href="FileSystem.html">FileSystem</a>.<a href="FileSystem.html#stat">stat</a></p>
+<p>Inherited from <a href="SyncFileSystem.html">SyncFileSystem</a>.<a href="SyncFileSystem.html#stat">stat</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/filesystem.ts#L290">src/filesystem.ts:290</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member tsd-is-inherited"><a id="statSync" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagAbstract">Abstract</code> <span>stat<wbr/>Sync</span><a href="#statSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="statSync.statSync-1"><span class="tsd-kind-call-signature">stat<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Stats.html" class="tsd-signature-type tsd-kind-class">Stats</a><a href="#statSync.statSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<section class="tsd-panel tsd-member"><a id="statSync" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>stat<wbr/>Sync</span><a href="#statSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="statSync.statSync-1"><span class="tsd-kind-call-signature">stat<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">p</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Stats.html" class="tsd-signature-type tsd-kind-class">Stats</a><a href="#statSync.statSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Synchronous <code>stat</code>.</p>
 </div>
@@ -536,17 +776,17 @@ are given to the completion callback.</p>
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li>
+<h5><span class="tsd-kind-parameter">p</span>: <span class="tsd-signature-type">string</span></h5></li>
 <li>
 <h5><span class="tsd-kind-parameter">cred</span>: <a href="Cred.html" class="tsd-signature-type tsd-kind-class">Cred</a></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="Stats.html" class="tsd-signature-type tsd-kind-class">Stats</a></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Inherited from <a href="FileSystem.html">FileSystem</a>.<a href="FileSystem.html#statSync">statSync</a></p>
+<p>Overrides <a href="SyncFileSystem.html">SyncFileSystem</a>.<a href="SyncFileSystem.html#statSync">statSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/filesystem.ts#L108">src/filesystem.ts:108</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="sync" class="tsd-anchor"></a>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/backends/SyncStore.ts#L303">src/backends/SyncStore.ts:303</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="sync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>sync</span><a href="#sync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
+<ul class="tsd-signatures tsd-is-inherited">
 <li class="tsd-signature tsd-anchor-link" id="sync.sync-1"><span class="tsd-kind-call-signature">sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">data</span>, <span class="tsd-kind-parameter">stats</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#sync.sync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Synchronize the data and stats for path asynchronously</p>
@@ -562,13 +802,13 @@ are given to the completion callback.</p>
 <h5><span class="tsd-kind-parameter">stats</span>: <span class="tsd-signature-type ">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="Stats.html" class="tsd-signature-type tsd-kind-class">Stats</a><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Overrides <a href="FileSystem.html">FileSystem</a>.<a href="FileSystem.html#sync">sync</a></p>
+<p>Inherited from <a href="SyncFileSystem.html">SyncFileSystem</a>.<a href="SyncFileSystem.html#sync">sync</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/filesystem.ts#L322">src/filesystem.ts:322</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member tsd-is-inherited"><a id="syncSync" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagAbstract">Abstract</code> <span>sync<wbr/>Sync</span><a href="#syncSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="syncSync.syncSync-1"><span class="tsd-kind-call-signature">sync<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">data</span>, <span class="tsd-kind-parameter">stats</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#syncSync.syncSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<section class="tsd-panel tsd-member"><a id="syncSync" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>sync<wbr/>Sync</span><a href="#syncSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="syncSync.syncSync-1"><span class="tsd-kind-call-signature">sync<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">p</span>, <span class="tsd-kind-parameter">data</span>, <span class="tsd-kind-parameter">stats</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#syncSync.syncSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Synchronize the data and stats for path synchronously</p>
 </div>
@@ -576,19 +816,19 @@ are given to the completion callback.</p>
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li>
+<h5><span class="tsd-kind-parameter">p</span>: <span class="tsd-signature-type">string</span></h5></li>
 <li>
 <h5><span class="tsd-kind-parameter">data</span>: <span class="tsd-signature-type ">Uint8Array</span></h5></li>
 <li>
 <h5><span class="tsd-kind-parameter">stats</span>: <span class="tsd-signature-type ">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="Stats.html" class="tsd-signature-type tsd-kind-class">Stats</a><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Inherited from <a href="FileSystem.html">FileSystem</a>.<a href="FileSystem.html#syncSync">syncSync</a></p>
+<p>Overrides <a href="SyncFileSystem.html">SyncFileSystem</a>.<a href="SyncFileSystem.html#syncSync">syncSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/filesystem.ts#L271">src/filesystem.ts:271</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="unlink" class="tsd-anchor"></a>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/backends/SyncStore.ts#L356">src/backends/SyncStore.ts:356</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="unlink" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>unlink</span><a href="#unlink" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
+<ul class="tsd-signatures tsd-is-inherited">
 <li class="tsd-signature tsd-anchor-link" id="unlink.unlink-1"><span class="tsd-kind-call-signature">unlink</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#unlink.unlink-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Asynchronous <code>unlink</code>.</p>
@@ -602,13 +842,13 @@ are given to the completion callback.</p>
 <h5><span class="tsd-kind-parameter">cred</span>: <a href="Cred.html" class="tsd-signature-type tsd-kind-class">Cred</a></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Overrides <a href="FileSystem.html">FileSystem</a>.<a href="FileSystem.html#unlink">unlink</a></p>
+<p>Inherited from <a href="SyncFileSystem.html">SyncFileSystem</a>.<a href="SyncFileSystem.html#unlink">unlink</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/filesystem.ts#L302">src/filesystem.ts:302</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member tsd-is-inherited"><a id="unlinkSync" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagAbstract">Abstract</code> <span>unlink<wbr/>Sync</span><a href="#unlinkSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="unlinkSync.unlinkSync-1"><span class="tsd-kind-call-signature">unlink<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#unlinkSync.unlinkSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<section class="tsd-panel tsd-member"><a id="unlinkSync" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>unlink<wbr/>Sync</span><a href="#unlinkSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="unlinkSync.unlinkSync-1"><span class="tsd-kind-call-signature">unlink<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">p</span>, <span class="tsd-kind-parameter">cred</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#unlinkSync.unlinkSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Synchronous <code>unlink</code>.</p>
 </div>
@@ -616,14 +856,14 @@ are given to the completion callback.</p>
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li>
+<h5><span class="tsd-kind-parameter">p</span>: <span class="tsd-signature-type">string</span></h5></li>
 <li>
 <h5><span class="tsd-kind-parameter">cred</span>: <a href="Cred.html" class="tsd-signature-type tsd-kind-class">Cred</a></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<p>Inherited from <a href="FileSystem.html">FileSystem</a>.<a href="FileSystem.html#unlinkSync">unlinkSync</a></p>
+<p>Overrides <a href="SyncFileSystem.html">SyncFileSystem</a>.<a href="SyncFileSystem.html#unlinkSync">unlinkSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/filesystem.ts#L144">src/filesystem.ts:144</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/backends/SyncStore.ts#L330">src/backends/SyncStore.ts:330</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -643,34 +883,44 @@ are given to the completion callback.</p>
 <h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="#icon-chevronDown"></use></svg>On This Page</h3></summary>
 <div class="tsd-accordion-details">
 <ul>
-<li><a href="#constructor" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-512"></use></svg><span>constructor</span></a></li>
+<li><a href="#constructor" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-512"></use></svg><span>constructor</span></a></li>
+<li><a href="#store" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>store</span></a></li>
 <li><a href="#metadata" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>metadata</span></a></li>
 <li><a href="#Name" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>Name</span></a></li>
-<li><a href="#createFile" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>create<wbr/>File</span></a></li>
-<li><a href="#createFileSync" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>create<wbr/>File<wbr/>Sync</span></a></li>
+<li><a href="#_findINode" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_findINode</span></a></li>
+<li><a href="#addNewNode" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add<wbr/>New<wbr/>Node</span></a></li>
+<li><a href="#commitNewFile" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>commit<wbr/>New<wbr/>File</span></a></li>
+<li><a href="#createFile" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>create<wbr/>File</span></a></li>
+<li><a href="#createFileSync" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>create<wbr/>File<wbr/>Sync</span></a></li>
+<li><a href="#empty" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>empty</span></a></li>
 <li><a href="#exists" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>exists</span></a></li>
 <li><a href="#existsSync" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>exists<wbr/>Sync</span></a></li>
-<li><a href="#link" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>link</span></a></li>
-<li><a href="#linkSync" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>link<wbr/>Sync</span></a></li>
-<li><a href="#mkdir" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>mkdir</span></a></li>
-<li><a href="#mkdirSync" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>mkdir<wbr/>Sync</span></a></li>
-<li><a href="#openFile" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>open<wbr/>File</span></a></li>
-<li><a href="#openFileSync" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>open<wbr/>File<wbr/>Sync</span></a></li>
-<li><a href="#readdir" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>readdir</span></a></li>
-<li><a href="#readdirSync" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>readdir<wbr/>Sync</span></a></li>
-<li><a href="#ready" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>ready</span></a></li>
+<li><a href="#findINode" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>findINode</span></a></li>
+<li><a href="#getDirListing" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Dir<wbr/>Listing</span></a></li>
+<li><a href="#getINode" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>getINode</span></a></li>
+<li><a href="#link" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>link</span></a></li>
+<li><a href="#linkSync" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>link<wbr/>Sync</span></a></li>
+<li><a href="#makeRootDirectory" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>make<wbr/>Root<wbr/>Directory</span></a></li>
+<li><a href="#mkdir" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>mkdir</span></a></li>
+<li><a href="#mkdirSync" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>mkdir<wbr/>Sync</span></a></li>
+<li><a href="#openFile" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>open<wbr/>File</span></a></li>
+<li><a href="#openFileSync" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>open<wbr/>File<wbr/>Sync</span></a></li>
+<li><a href="#readdir" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>readdir</span></a></li>
+<li><a href="#readdirSync" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>readdir<wbr/>Sync</span></a></li>
+<li><a href="#ready" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>ready</span></a></li>
 <li><a href="#realpath" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>realpath</span></a></li>
 <li><a href="#realpathSync" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>realpath<wbr/>Sync</span></a></li>
-<li><a href="#rename" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rename</span></a></li>
-<li><a href="#renameSync" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rename<wbr/>Sync</span></a></li>
-<li><a href="#rmdir" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rmdir</span></a></li>
-<li><a href="#rmdirSync" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rmdir<wbr/>Sync</span></a></li>
-<li><a href="#stat" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>stat</span></a></li>
-<li><a href="#statSync" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>stat<wbr/>Sync</span></a></li>
-<li><a href="#sync" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>sync</span></a></li>
-<li><a href="#syncSync" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>sync<wbr/>Sync</span></a></li>
-<li><a href="#unlink" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>unlink</span></a></li>
-<li><a href="#unlinkSync" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>unlink<wbr/>Sync</span></a></li></ul></div></details></div>
+<li><a href="#removeEntry" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>remove<wbr/>Entry</span></a></li>
+<li><a href="#rename" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rename</span></a></li>
+<li><a href="#renameSync" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rename<wbr/>Sync</span></a></li>
+<li><a href="#rmdir" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rmdir</span></a></li>
+<li><a href="#rmdirSync" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rmdir<wbr/>Sync</span></a></li>
+<li><a href="#stat" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>stat</span></a></li>
+<li><a href="#statSync" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>stat<wbr/>Sync</span></a></li>
+<li><a href="#sync" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>sync</span></a></li>
+<li><a href="#syncSync" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>sync<wbr/>Sync</span></a></li>
+<li><a href="#unlink" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>unlink</span></a></li>
+<li><a href="#unlinkSync" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>unlink<wbr/>Sync</span></a></li></ul></div></details></div>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="../modules.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1"></use></svg><span>BrowserFS</span></a>
 <ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base="..">

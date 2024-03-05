@@ -32,7 +32,7 @@ for the former purpose, especially when directories are concerned.</p>
 <ul class="tsd-hierarchy">
 <li><span class="target">FileIndex</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/FileIndex.ts#L11">src/FileIndex.ts:11</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/FileIndex.ts#L19">src/FileIndex.ts:19</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -44,17 +44,17 @@ for the former purpose, especially when directories are concerned.</p>
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Properties</h3>
-<div class="tsd-index-list"><a href="FileIndex.html#_index" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_index</span></a>
+<div class="tsd-index-list"><a href="FileIndex.html#_index" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_index</span></a>
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Methods</h3>
-<div class="tsd-index-list"><a href="FileIndex.html#_split_path" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_split_<wbr/>path</span></a>
-<a href="FileIndex.html#addPath" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add<wbr/>Path</span></a>
+<div class="tsd-index-list"><a href="FileIndex.html#addPath" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add<wbr/>Path</span></a>
 <a href="FileIndex.html#addPathFast" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add<wbr/>Path<wbr/>Fast</span></a>
-<a href="FileIndex.html#fileIterator" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>file<wbr/>Iterator</span></a>
+<a href="FileIndex.html#forEachFile" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>for<wbr/>Each<wbr/>File</span></a>
 <a href="FileIndex.html#getInode" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Inode</span></a>
 <a href="FileIndex.html#ls" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>ls</span></a>
 <a href="FileIndex.html#removePath" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>remove<wbr/>Path</span></a>
+<a href="FileIndex.html#splitPath" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>split<wbr/>Path</span></a>
 <a href="FileIndex.html#fromListing" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>from<wbr/>Listing</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
@@ -74,37 +74,16 @@ for the former purpose, especially when directories are concerned.</p>
 <h4 class="tsd-returns-title">Returns <a href="FileIndex.html" class="tsd-signature-type tsd-kind-class">FileIndex</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/FileIndex.ts#L55">src/FileIndex.ts:55</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/FileIndex.ts#L64">src/FileIndex.ts:64</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
-<section class="tsd-panel tsd-member tsd-is-private"><a id="_index" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_index</span><a href="#_index" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">_index</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>[<span class="tsd-kind-index-signature">path</span>: <span class="tsd-signature-type">string</span>]<span class="tsd-signature-symbol">: </span><a href="IndexDirInode.html" class="tsd-signature-type tsd-kind-class">IndexDirInode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
-<div class="tsd-type-declaration">
-<h4>Type declaration</h4>
-<ul class="tsd-parameters">
-<li class="tsd-parameter-index-signature">
-<h5><span class="tsd-signature-symbol">[</span><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="IndexDirInode.html" class="tsd-signature-type tsd-kind-class">IndexDirInode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div><aside class="tsd-sources">
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="_index" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_index</span><a href="#_index" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">_index</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="IndexDirInode.html" class="tsd-signature-type tsd-kind-class">IndexDirInode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/FileIndex.ts#L50">src/FileIndex.ts:50</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/FileIndex.ts#L59">src/FileIndex.ts:59</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
-<section class="tsd-panel tsd-member tsd-is-private"><a id="_split_path" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_split_<wbr/>path</span><a href="#_split_path" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-is-private">
-<li class="tsd-signature tsd-anchor-link" id="_split_path._split_path-1"><span class="tsd-kind-call-signature">_split_<wbr/>path</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">p</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><a href="#_split_path._split_path-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Split into a (directory path, item name) pair</p>
-</div>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">p</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/FileIndex.ts#L238">src/FileIndex.ts:238</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="addPath" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>add<wbr/>Path</span><a href="#addPath" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -122,7 +101,7 @@ Creates any needed parent directories.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">inode</span>: <a href="../interfaces/IndexInode.html" class="tsd-signature-type tsd-kind-interface">IndexInode</a></h5>
+<h5><span class="tsd-kind-parameter">inode</span>: <a href="IndexInode.html" class="tsd-signature-type tsd-kind-class">IndexInode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 <div class="tsd-comment tsd-typography"><p>The inode for the
   path to add.</p>
 </div>
@@ -136,7 +115,7 @@ Creates any needed parent directories.</p>
   the new empty directories.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/FileIndex.ts#L93">src/FileIndex.ts:93</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/FileIndex.ts#L99">src/FileIndex.ts:99</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="addPathFast" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>add<wbr/>Path<wbr/>Fast</span><a href="#addPathFast" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -155,7 +134,7 @@ Creates any needed parent directories.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li>
-<h5><span class="tsd-kind-parameter">inode</span>: <a href="../interfaces/IndexInode.html" class="tsd-signature-type tsd-kind-interface">IndexInode</a></h5>
+<h5><span class="tsd-kind-parameter">inode</span>: <a href="IndexInode.html" class="tsd-signature-type tsd-kind-class">IndexInode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 <div class="tsd-comment tsd-typography"><p>The inode for the
   path to add.</p>
 </div>
@@ -169,43 +148,38 @@ Creates any needed parent directories.</p>
   the new empty directories.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/FileIndex.ts#L144">src/FileIndex.ts:144</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="fileIterator" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>file<wbr/>Iterator</span><a href="#fileIterator" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/FileIndex.ts#L150">src/FileIndex.ts:150</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="forEachFile" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>for<wbr/>Each<wbr/>File</span><a href="#forEachFile" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="fileIterator.fileIterator-1"><span class="tsd-kind-call-signature">file<wbr/>Iterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">cb</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#fileIterator.fileIterator-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="forEachFile.forEachFile-1"><span class="tsd-kind-call-signature">for<wbr/>Each<wbr/>File</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">cb</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#forEachFile.forEachFile-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Runs the given function over all files in the index.</p>
 </div>
-<section class="tsd-panel">
-<h4>Type Parameters</h4>
-<ul class="tsd-type-parameter-list">
-<li>
-<h4><span class="tsd-kind-type-parameter">T</span></h4></li></ul></section>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">cb</span>: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">file</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></h5>
+<h5><span class="tsd-kind-parameter">cb</span>: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">file</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></h5>
 <ul class="tsd-parameters">
 <li class="tsd-parameter-signature">
 <ul class="tsd-signatures">
-<li class="tsd-signature"><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">file</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+<li class="tsd-signature"><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">file</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 <li class="tsd-description">
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">file</span>: <span class="tsd-signature-type tsd-kind-type-parameter">T</span></h5></li></ul></div>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">file</span>: <span class="tsd-signature-type tsd-kind-type-parameter">T</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4></li></ul></li></ul></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/FileIndex.ts#L66">src/FileIndex.ts:66</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/FileIndex.ts#L74">src/FileIndex.ts:74</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="getInode" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>get<wbr/>Inode</span><a href="#getInode" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="getInode.getInode-1"><span class="tsd-kind-call-signature">get<wbr/>Inode</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/IndexInode.html" class="tsd-signature-type tsd-kind-interface">IndexInode</a><a href="#getInode.getInode-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="getInode.getInode-1"><span class="tsd-kind-call-signature">get<wbr/>Inode</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="IndexInode.html" class="tsd-signature-type tsd-kind-class">IndexInode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span><a href="#getInode.getInode-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Returns the inode of the given item.</p>
 </div>
@@ -214,11 +188,11 @@ Creates any needed parent directories.</p>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="../interfaces/IndexInode.html" class="tsd-signature-type tsd-kind-interface">IndexInode</a></h4><p>Returns null if the item does not exist.</p>
+<h4 class="tsd-returns-title">Returns <a href="IndexInode.html" class="tsd-signature-type tsd-kind-class">IndexInode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span></h4><p>Returns null if the item does not exist.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/FileIndex.ts#L219">src/FileIndex.ts:219</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/FileIndex.ts#L221">src/FileIndex.ts:221</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="ls" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>ls</span><a href="#ls" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -235,11 +209,11 @@ Creates any needed parent directories.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/FileIndex.ts#L207">src/FileIndex.ts:207</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/FileIndex.ts#L213">src/FileIndex.ts:213</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="removePath" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>remove<wbr/>Path</span><a href="#removePath" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="removePath.removePath-1"><span class="tsd-kind-call-signature">remove<wbr/>Path</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/IndexInode.html" class="tsd-signature-type tsd-kind-interface">IndexInode</a><a href="#removePath.removePath-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="removePath.removePath-1"><span class="tsd-kind-call-signature">remove<wbr/>Path</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="IndexInode.html" class="tsd-signature-type tsd-kind-class">IndexInode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span><a href="#removePath.removePath-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Removes the given path. Can be a file or a directory.</p>
 </div>
@@ -248,12 +222,28 @@ Creates any needed parent directories.</p>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="../interfaces/IndexInode.html" class="tsd-signature-type tsd-kind-interface">IndexInode</a></h4><p>The removed item,
+<h4 class="tsd-returns-title">Returns <a href="IndexInode.html" class="tsd-signature-type tsd-kind-class">IndexInode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span></h4><p>The removed item,
   or null if it did not exist.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/FileIndex.ts#L173">src/FileIndex.ts:173</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/FileIndex.ts#L179">src/FileIndex.ts:179</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-protected"><a id="splitPath" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>split<wbr/>Path</span><a href="#splitPath" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected">
+<li class="tsd-signature tsd-anchor-link" id="splitPath.splitPath-1"><span class="tsd-kind-call-signature">split<wbr/>Path</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">p</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><a href="#splitPath.splitPath-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Split into a (directory path, item name) pair</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">p</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/FileIndex.ts#L235">src/FileIndex.ts:235</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="fromListing" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>from<wbr/>Listing</span><a href="#fromListing" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -270,15 +260,15 @@ Creates any needed parent directories.</p>
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">listing</span>: <span class="tsd-signature-type">any</span></h5>
-<div class="tsd-comment tsd-typography"><p>Directory listing generated by tools/XHRIndexer.coffee</p>
+<h5><span class="tsd-kind-parameter">listing</span>: <span class="tsd-signature-type ">ListingTree</span></h5>
+<div class="tsd-comment tsd-typography"><p>Directory listing generated by tools</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="FileIndex.html" class="tsd-signature-type tsd-kind-class">FileIndex</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span></h4><p>A new FileIndex object.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/60439d4/src/FileIndex.ts#L17">src/FileIndex.ts:17</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/50060d7/src/FileIndex.ts#L25">src/FileIndex.ts:25</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -299,39 +289,39 @@ Creates any needed parent directories.</p>
 <div class="tsd-accordion-details">
 <ul>
 <li><a href="#constructor" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-512"></use></svg><span>constructor</span></a></li>
-<li><a href="#_index" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_index</span></a></li>
-<li><a href="#_split_path" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_split_<wbr/>path</span></a></li>
+<li><a href="#_index" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_index</span></a></li>
 <li><a href="#addPath" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add<wbr/>Path</span></a></li>
 <li><a href="#addPathFast" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add<wbr/>Path<wbr/>Fast</span></a></li>
-<li><a href="#fileIterator" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>file<wbr/>Iterator</span></a></li>
+<li><a href="#forEachFile" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>for<wbr/>Each<wbr/>File</span></a></li>
 <li><a href="#getInode" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Inode</span></a></li>
 <li><a href="#ls" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>ls</span></a></li>
 <li><a href="#removePath" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>remove<wbr/>Path</span></a></li>
+<li><a href="#splitPath" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>split<wbr/>Path</span></a></li>
 <li><a href="#fromListing" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>from<wbr/>Listing</span></a></li></ul></div></details></div>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="../modules.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1"></use></svg><span>BrowserFS</span></a>
 <ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base="..">
 <li><a href="../modules.html#default"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg>default</a></li>
 <li><a href="../modules/AsyncMirror.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg>AsyncMirror</a></li>
-<li><a href="../modules/FolderAdapter.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg>FolderAdapter</a></li>
-<li><a href="../modules/OverlayFS.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg>OverlayFS</a></li>
 <li><a href="../enums/ActionType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg>ActionType</a></li>
 <li><a href="../enums/ErrorCode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg>ErrorCode</a></li>
 <li><a href="../enums/FileType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg>FileType</a></li>
 <li><a href="ApiError.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>ApiError</a></li>
 <li><a href="AsyncFile.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncFile</a></li>
 <li><a href="AsyncFileSystem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncFileSystem</a></li>
-<li><a href="AsyncMirror-1.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncMirror</a></li>
-<li><a href="BaseFile.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>BaseFile</a></li>
-<li><a href="BaseFileSystem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>BaseFileSystem</a></li>
+<li><a href="AsyncStoreFileSystem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncStoreFileSystem</a></li>
 <li><a href="BigIntStats.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>BigIntStats</a></li>
 <li><a href="Cred.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>Cred</a></li>
+<li><a href="File.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>File</a></li>
 <li><a href="FileFlag.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>FileFlag</a></li>
 <li><a href="FileIndex.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>FileIndex</a></li>
 <li><a href="FileSystem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>FileSystem</a></li>
-<li><a href="FolderAdapter-1.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>FolderAdapter</a></li>
-<li><a href="InMemory.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>InMemory</a></li>
 <li><a href="IndexDirInode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>IndexDirInode</a></li>
+<li><a href="IndexFileInode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>IndexFileInode</a></li>
+<li><a href="IndexInode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>IndexInode</a></li>
+<li><a href="NoSyncFile.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>NoSyncFile</a></li>
+<li><a href="PreloadFile.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>PreloadFile</a></li>
+<li><a href="SimpleSyncRWTransaction.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>SimpleSyncRWTransaction</a></li>
 <li>Loading...</li></ul></nav></div></div></div>
 <div class="tsd-generator">
 <p>Generated using <a href="https://typedoc.org/" rel="noopener" target="_blank">TypeDoc</a></p></div>
