@@ -9,6 +9,25 @@ export class InMemoryStore implements SyncStore, SimpleSyncStore {
 	private store: Map<Ino, Uint8Array> = new Map();
 
 	constructor(public name: string = 'tmp') {}
+
+	public size(): number {
+		let size = this.store.size * 8;
+		for (const data of this.store.values()) {
+			size += data.byteLength;
+		}
+		return size;
+	}
+
+	public maxSize(): number {
+		if ('performance' in globalThis && 'memory' in globalThis.performance) {
+			return globalThis.performance.memory.jsHeapSizeLimit;
+		}
+
+		if ('process' in globalThis && typeof globalThis.process.memoryUsage == 'function') {
+			return globalThis.process.memoryUsage().rss;
+		}
+	}
+
 	public clear() {
 		this.store.clear();
 	}

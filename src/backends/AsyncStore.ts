@@ -64,14 +64,27 @@ export interface AsyncStore {
 	 * The name of the key-value store.
 	 */
 	name: string;
+
+	/**
+	 * The amount of data used by the store
+	 */
+	size(): Promise<number>;
+
+	/**
+	 * The amount of data that can be used by the store
+	 */
+	maxSize(): Promise<number>;
+
 	/**
 	 * Empties the key-value store completely.
 	 */
 	clear(): Promise<void>;
+
 	/**
 	 * Begins a read-write transaction.
 	 */
 	beginTransaction(type: 'readwrite'): AsyncRWTransaction;
+
 	/**
 	 * Begins a read-only transaction.
 	 */

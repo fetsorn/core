@@ -44,9 +44,9 @@ export interface FileSystemMetadata {
 	totalSpace: number;
 
 	/**
-	 * The available space
+	 * The space in use
 	 */
-	freeSpace: number;
+	usedSpace: number;
 }
 
 /**
@@ -71,7 +71,7 @@ export abstract class FileSystem {
 			synchronous: false,
 			supportsProperties: false,
 			totalSpace: 0,
-			freeSpace: 0,
+			usedSpace: 0,
 		};
 	}
 

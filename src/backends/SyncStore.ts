@@ -17,14 +17,27 @@ export interface SyncStore {
 	 * The name of the key-value store.
 	 */
 	name: string;
+
+	/**
+	 * The amount of data used by the store
+	 */
+	size(): number;
+
+	/**
+	 * The amount of data that can be used by the store
+	 */
+	maxSize(): number;
+
 	/**
 	 * Empties the key-value store completely.
 	 */
 	clear(): void;
+
 	/**
 	 * Begins a new read-only transaction.
 	 */
 	beginTransaction(type: 'readonly'): SyncROTransaction;
+
 	/**
 	 * Begins a new read-write transaction.
 	 */
@@ -58,15 +71,18 @@ export interface SyncRWTransaction extends SyncROTransaction {
 	 * @return True if storage succeeded, false otherwise.
 	 */
 	put(ino: Ino, data: Uint8Array, overwrite: boolean): boolean;
+
 	/**
 	 * Deletes the data at the given key.
 	 * @param ino The key to delete from the store.
 	 */
 	remove(ino: Ino): void;
+
 	/**
 	 * Commits the transaction.
 	 */
 	commit(): void;
+
 	/**
 	 * Aborts and rolls back the transaction.
 	 */
@@ -92,6 +108,7 @@ export class SimpleSyncRWTransaction implements SyncRWTransaction {
 	 * Allows us to roll back commits.
 	 */
 	protected originalData: Map<Ino, Uint8Array> = new Map();
+
 	/**
 	 * List of keys modified in this transaction, if any.
 	 */
@@ -215,8 +232,8 @@ export class SyncStoreFileSystem extends SyncFileSystem {
 			readonly: false,
 			supportsProperties: true,
 			synchronous: true,
-			freeSpace: 0,
-			totalSpace: 0,
+			usedSpace: this.store.size(),
+			totalSpace: this.store.maxSize(),
 		};
 	}
 
