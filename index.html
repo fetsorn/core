@@ -15,14 +15,17 @@
 <div class="tsd-panel tsd-typography"><a id="md:browserfs" class="tsd-anchor"></a><h1><a href="#md:browserfs">BrowserFS</a></h1><p>BrowserFS is an in-browser file system that emulates the <a href="http://nodejs.org/api/fs.html">Node JS file system API</a> and supports storing and retrieving files from various backends. BrowserFS also integrates nicely with other tools.</p>
 <a id="md:backends" class="tsd-anchor"></a><h2><a href="#md:backends">Backends</a></h2><p>BrowserFS is highly extensible, and includes a few built-in backends:</p>
 <ul>
-<li><code>InMemory</code>: Stores files in-memory. It is a temporary file store that clears when the user navigates away.</li>
-<li><code>Overlay</code>: Mount a read-only file system as read-write by overlaying a writable file system on top of it. Like Docker&#39;s overlayfs, it will only write changed files to the writable file system.</li>
-<li><code>AsyncMirror</code>: Use an asynchronous backend synchronously. Invaluable for Emscripten; let your Emscripten applications write to larger file stores with no additional effort!</li>
-</ul>
+<li><p><code>InMemory</code>: Stores files in-memory. It is a temporary file store that clears when the user navigates away.</p>
+</li>
+<li><p><code>Overlay</code>: Mount a read-only file system as read-write by overlaying a writable file system on top of it. Like Docker&#39;s overlayfs, it will only write changed files to the writable file system.</p>
+</li>
+<li><p><code>AsyncMirror</code>: Use an asynchronous backend synchronously. Invaluable for Emscripten; let your Emscripten applications write to larger file stores with no additional effort!</p>
 <blockquote>
 <p>[!NOTE]
-When constructed, <code>AsyncMirror</code> loads the entire contents of the async file system into a synchronous backend. It performs operations on the synchronous file system and then queues them to be mirrored onto the asynchronous backend.</p>
+When constructed, <code>AsyncMirror</code> loads the entire contents of the async file system into a synchronous backend. It performs operations synchronous file system and then queues them to be mirrored onto the asynchronous backend.</p>
 </blockquote>
+</li>
+</ul>
 <p>More backends can be defined by separate libraries, as long as they implement <code>FileSystem</code>.</p>
 <p>BrowserFS supports a number of other backends (many are provided as seperate packages under <code>@browserfs</code>).</p>
 <p>For more information, see the <a href="https://browser-fs.github.io/core">API documentation for BrowserFS</a>.</p>
