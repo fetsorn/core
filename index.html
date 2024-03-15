@@ -21,7 +21,7 @@
 </ul>
 <blockquote>
 <p>[!NOTE]
-When constructed, <code>AsyncMirror</code> loads the entire contents of the async file system into a synchronous backend. It performs operations synchronous file system and then queues them to be mirrored onto the asynchronous backend.</p>
+When constructed, <code>AsyncMirror</code> loads the entire contents of the async file system into a synchronous backend. It performs operations on the synchronous file system and then queues them to be mirrored onto the asynchronous backend.</p>
 </blockquote>
 <p>More backends can be defined by separate libraries, as long as they implement <code>FileSystem</code>.</p>
 <p>BrowserFS supports a number of other backends (many are provided as seperate packages under <code>@browserfs</code>).</p>
