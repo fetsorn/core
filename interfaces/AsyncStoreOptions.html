@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>SyncStoreFileSystemOptions | BrowserFS</title><meta name="description" content="Documentation for BrowserFS"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>AsyncStoreOptions | BrowserFS</title><meta name="description" content="Documentation for BrowserFS"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
 <div class="tsd-toolbar-contents container">
 <div class="table-cell" id="tsd-search" data-base="..">
 <div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
@@ -13,14 +13,14 @@
 <div class="tsd-page-title">
 <ul class="tsd-breadcrumb">
 <li><a href="../modules.html">BrowserFS</a></li>
-<li><a href="SyncStoreFileSystemOptions.html">SyncStoreFileSystemOptions</a></li></ul>
-<h1>Interface SyncStoreFileSystemOptions</h1></div>
+<li><a href="AsyncStoreOptions.html">AsyncStoreOptions</a></li></ul>
+<h1>Interface AsyncStoreOptions</h1></div>
 <section class="tsd-panel tsd-hierarchy">
 <h4>Hierarchy</h4>
 <ul class="tsd-hierarchy">
-<li><span class="target">SyncStoreFileSystemOptions</span></li></ul></section><aside class="tsd-sources">
+<li><span class="target">AsyncStoreOptions</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/backends/SyncStore.ts#L161">src/backends/SyncStore.ts:161</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/backends/AsyncStore.ts#L149">src/backends/AsyncStore.ts:149</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -28,18 +28,27 @@
 <div class="tsd-accordion-details">
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Properties</h3>
-<div class="tsd-index-list"><a href="SyncStoreFileSystemOptions.html#store" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>store</span></a>
+<div class="tsd-index-list"><a href="AsyncStoreOptions.html#cacheSize" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>cache<wbr/>Size?</span></a>
+<a href="AsyncStoreOptions.html#store" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>store</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
-<section class="tsd-panel tsd-member"><a id="store" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>store</span><a href="#store" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">store</span><span class="tsd-signature-symbol">:</span> <a href="SyncStore.html" class="tsd-signature-type tsd-kind-interface">SyncStore</a></div>
-<div class="tsd-comment tsd-typography"><p>The actual key-value store to read from/write to.</p>
+<section class="tsd-panel tsd-member"><a id="cacheSize" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>cache<wbr/>Size</span><a href="#cacheSize" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">cache<wbr/>Size</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-comment tsd-typography"><p>The size of the cache. If not provided, no cache will be used</p>
 </div>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/backends/SyncStore.ts#L165">src/backends/SyncStore.ts:165</a></li></ul></aside></section></section></div>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/backends/AsyncStore.ts#L158">src/backends/AsyncStore.ts:158</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="store" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>store</span><a href="#store" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">store</span><span class="tsd-signature-symbol">:</span> <a href="AsyncStore.html" class="tsd-signature-type tsd-kind-interface">AsyncStore</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="AsyncStore.html" class="tsd-signature-type tsd-kind-interface">AsyncStore</a><span class="tsd-signature-symbol">&gt;</span></div>
+<div class="tsd-comment tsd-typography"><p>Promise that resolves to the store</p>
+</div>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/backends/AsyncStore.ts#L153">src/backends/AsyncStore.ts:153</a></li></ul></aside></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -59,6 +68,7 @@
 <h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="#icon-chevronDown"></use></svg>On This Page</h3></summary>
 <div class="tsd-accordion-details">
 <ul>
+<li><a href="#cacheSize" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>cache<wbr/>Size</span></a></li>
 <li><a href="#store" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>store</span></a></li></ul></div></details></div>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="../modules.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1"></use></svg><span>BrowserFS</span></a>
@@ -66,14 +76,13 @@
 <li><a href="../modules.html#BigIntStats"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg>BigIntStats</a></li>
 <li><a href="../modules.html#Stats"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg>Stats</a></li>
 <li><a href="../modules.html#default"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg>default</a></li>
-<li><a href="../modules/AsyncMirror.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg>AsyncMirror</a></li>
 <li><a href="../modules/fs.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg>fs</a></li>
 <li><a href="../enums/ActionType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg>ActionType</a></li>
 <li><a href="../enums/ErrorCode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg>ErrorCode</a></li>
 <li><a href="../enums/FileType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg>FileType</a></li>
 <li><a href="../classes/ApiError.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>ApiError</a></li>
 <li><a href="../classes/AsyncFile.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncFile</a></li>
-<li><a href="../classes/AsyncStoreFileSystem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncStoreFileSystem</a></li>
+<li><a href="../classes/AsyncStoreFS.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncStoreFS</a></li>
 <li><a href="../classes/Cred.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>Cred</a></li>
 <li><a href="../classes/File.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>File</a></li>
 <li><a href="../classes/FileFlag.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>FileFlag</a></li>
@@ -84,6 +93,7 @@
 <li><a href="../classes/SimpleSyncRWTransaction.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>SimpleSyncRWTransaction</a></li>
 <li><a href="../classes/StatsCommon.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>StatsCommon</a></li>
 <li><a href="../classes/SyncFile.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>SyncFile</a></li>
+<li><a href="../classes/SyncStoreFS.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>SyncStoreFS</a></li>
 <li>Loading...</li></ul></nav></div></div></div>
 <div class="tsd-generator">
 <p>Generated using <a href="https://typedoc.org/" rel="noopener" target="_blank">TypeDoc</a></p></div>

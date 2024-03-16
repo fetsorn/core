@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>AsyncStoreFileSystem | BrowserFS</title><meta name="description" content="Documentation for BrowserFS"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>AsyncStoreFS | BrowserFS</title><meta name="description" content="Documentation for BrowserFS"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
 <div class="tsd-toolbar-contents container">
 <div class="table-cell" id="tsd-search" data-base="..">
 <div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
@@ -13,8 +13,8 @@
 <div class="tsd-page-title">
 <ul class="tsd-breadcrumb">
 <li><a href="../modules.html">BrowserFS</a></li>
-<li><a href="AsyncStoreFileSystem.html">AsyncStoreFileSystem</a></li></ul>
-<h1>Class AsyncStoreFileSystem</h1></div>
+<li><a href="AsyncStoreFS.html">AsyncStoreFS</a></li></ul>
+<h1>Class AsyncStoreFS</h1></div>
 <section class="tsd-panel tsd-comment">
 <div class="tsd-comment tsd-typography"><p>An &quot;Asynchronous key-value file system&quot;. Stores data to/retrieves data from
 an underlying asynchronous key-value store.</p>
@@ -25,9 +25,9 @@ an underlying asynchronous key-value store.</p>
 <ul class="tsd-hierarchy">
 <li><span class="tsd-signature-type ">AsyncFileSystem</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">this</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><a href="FileSystem.html" class="tsd-signature-type tsd-kind-class">FileSystem</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">this</span><span class="tsd-signature-symbol">&gt;</span>
 <ul class="tsd-hierarchy">
-<li><span class="target">AsyncStoreFileSystem</span></li></ul></li></ul></section><aside class="tsd-sources">
+<li><span class="target">AsyncStoreFS</span></li></ul></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/backends/AsyncStore.ts#L165">src/backends/AsyncStore.ts:165</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/backends/AsyncStore.ts#L165">src/backends/AsyncStore.ts:165</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -35,98 +35,84 @@ an underlying asynchronous key-value store.</p>
 <div class="tsd-accordion-details">
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Constructors</h3>
-<div class="tsd-index-list"><a href="AsyncStoreFileSystem.html#constructor" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-512"></use></svg><span>constructor</span></a>
+<div class="tsd-index-list"><a href="AsyncStoreFS.html#constructor" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-512"></use></svg><span>constructor</span></a>
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Properties</h3>
-<div class="tsd-index-list"><a href="AsyncStoreFileSystem.html#_cache" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_cache?</span></a>
-<a href="AsyncStoreFileSystem.html#_ready" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_ready</span></a>
-<a href="AsyncStoreFileSystem.html#store" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>store</span></a>
-</div></section>
-<section class="tsd-index-section">
-<h3 class="tsd-index-heading">Accessors</h3>
-<div class="tsd-index-list"><a href="AsyncStoreFileSystem.html#metadata" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>metadata</span></a>
+<div class="tsd-index-list"><a href="AsyncStoreFS.html#_cache" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_cache?</span></a>
+<a href="AsyncStoreFS.html#_ready" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_ready</span></a>
+<a href="AsyncStoreFS.html#store" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>store</span></a>
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Methods</h3>
-<div class="tsd-index-list"><a href="AsyncStoreFileSystem.html#_findINode" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_findINode</span></a>
-<a href="AsyncStoreFileSystem.html#_initialize" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_initialize</span></a>
-<a href="AsyncStoreFileSystem.html#addNewNode" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add<wbr/>New<wbr/>Node</span></a>
-<a href="AsyncStoreFileSystem.html#commitNewFile" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>commit<wbr/>New<wbr/>File</span></a>
-<a href="AsyncStoreFileSystem.html#createFile" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>create<wbr/>File</span></a>
-<a href="AsyncStoreFileSystem.html#createFileSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>create<wbr/>File<wbr/>Sync</span></a>
-<a href="AsyncStoreFileSystem.html#empty" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>empty</span></a>
-<a href="AsyncStoreFileSystem.html#exists" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>exists</span></a>
-<a href="AsyncStoreFileSystem.html#existsSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>exists<wbr/>Sync</span></a>
-<a href="AsyncStoreFileSystem.html#findINode" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>findINode</span></a>
-<a href="AsyncStoreFileSystem.html#getDirListing" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Dir<wbr/>Listing</span></a>
-<a href="AsyncStoreFileSystem.html#getINode" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>getINode</span></a>
-<a href="AsyncStoreFileSystem.html#link" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>link</span></a>
-<a href="AsyncStoreFileSystem.html#linkSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>link<wbr/>Sync</span></a>
-<a href="AsyncStoreFileSystem.html#makeRootDirectory" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>make<wbr/>Root<wbr/>Directory</span></a>
-<a href="AsyncStoreFileSystem.html#mkdir" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>mkdir</span></a>
-<a href="AsyncStoreFileSystem.html#mkdirSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>mkdir<wbr/>Sync</span></a>
-<a href="AsyncStoreFileSystem.html#openFile" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>open<wbr/>File</span></a>
-<a href="AsyncStoreFileSystem.html#openFileSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>open<wbr/>File<wbr/>Sync</span></a>
-<a href="AsyncStoreFileSystem.html#readdir" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>readdir</span></a>
-<a href="AsyncStoreFileSystem.html#readdirSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>readdir<wbr/>Sync</span></a>
-<a href="AsyncStoreFileSystem.html#ready" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>ready</span></a>
-<a href="AsyncStoreFileSystem.html#removeEntry" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>remove<wbr/>Entry</span></a>
-<a href="AsyncStoreFileSystem.html#rename" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rename</span></a>
-<a href="AsyncStoreFileSystem.html#renameSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rename<wbr/>Sync</span></a>
-<a href="AsyncStoreFileSystem.html#rmdir" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rmdir</span></a>
-<a href="AsyncStoreFileSystem.html#rmdirSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rmdir<wbr/>Sync</span></a>
-<a href="AsyncStoreFileSystem.html#stat" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>stat</span></a>
-<a href="AsyncStoreFileSystem.html#statSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>stat<wbr/>Sync</span></a>
-<a href="AsyncStoreFileSystem.html#sync" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>sync</span></a>
-<a href="AsyncStoreFileSystem.html#syncSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>sync<wbr/>Sync</span></a>
-<a href="AsyncStoreFileSystem.html#unlink" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>unlink</span></a>
-<a href="AsyncStoreFileSystem.html#unlinkSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>unlink<wbr/>Sync</span></a>
+<div class="tsd-index-list"><a href="AsyncStoreFS.html#_findINode" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_findINode</span></a>
+<a href="AsyncStoreFS.html#_initialize" class="tsd-index-link tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_initialize</span></a>
+<a href="AsyncStoreFS.html#addNewNode" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add<wbr/>New<wbr/>Node</span></a>
+<a href="AsyncStoreFS.html#commitNewFile" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>commit<wbr/>New<wbr/>File</span></a>
+<a href="AsyncStoreFS.html#createFile" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>create<wbr/>File</span></a>
+<a href="AsyncStoreFS.html#createFileSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>create<wbr/>File<wbr/>Sync</span></a>
+<a href="AsyncStoreFS.html#empty" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>empty</span></a>
+<a href="AsyncStoreFS.html#exists" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>exists</span></a>
+<a href="AsyncStoreFS.html#existsSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>exists<wbr/>Sync</span></a>
+<a href="AsyncStoreFS.html#findINode" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>findINode</span></a>
+<a href="AsyncStoreFS.html#getDirListing" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>get<wbr/>Dir<wbr/>Listing</span></a>
+<a href="AsyncStoreFS.html#getINode" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>getINode</span></a>
+<a href="AsyncStoreFS.html#link" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>link</span></a>
+<a href="AsyncStoreFS.html#linkSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>link<wbr/>Sync</span></a>
+<a href="AsyncStoreFS.html#makeRootDirectory" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>make<wbr/>Root<wbr/>Directory</span></a>
+<a href="AsyncStoreFS.html#metadata" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>metadata</span></a>
+<a href="AsyncStoreFS.html#mkdir" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>mkdir</span></a>
+<a href="AsyncStoreFS.html#mkdirSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>mkdir<wbr/>Sync</span></a>
+<a href="AsyncStoreFS.html#openFile" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>open<wbr/>File</span></a>
+<a href="AsyncStoreFS.html#openFileSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>open<wbr/>File<wbr/>Sync</span></a>
+<a href="AsyncStoreFS.html#readdir" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>readdir</span></a>
+<a href="AsyncStoreFS.html#readdirSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>readdir<wbr/>Sync</span></a>
+<a href="AsyncStoreFS.html#ready" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>ready</span></a>
+<a href="AsyncStoreFS.html#removeEntry" class="tsd-index-link tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>remove<wbr/>Entry</span></a>
+<a href="AsyncStoreFS.html#rename" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rename</span></a>
+<a href="AsyncStoreFS.html#renameSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rename<wbr/>Sync</span></a>
+<a href="AsyncStoreFS.html#rmdir" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rmdir</span></a>
+<a href="AsyncStoreFS.html#rmdirSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>rmdir<wbr/>Sync</span></a>
+<a href="AsyncStoreFS.html#stat" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>stat</span></a>
+<a href="AsyncStoreFS.html#statSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>stat<wbr/>Sync</span></a>
+<a href="AsyncStoreFS.html#sync" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>sync</span></a>
+<a href="AsyncStoreFS.html#syncSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>sync<wbr/>Sync</span></a>
+<a href="AsyncStoreFS.html#unlink" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>unlink</span></a>
+<a href="AsyncStoreFS.html#unlinkSync" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>unlink<wbr/>Sync</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Constructors</h2>
 <section class="tsd-panel tsd-member"><a id="constructor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="constructor.new_AsyncStoreFileSystem"><span class="tsd-kind-constructor-signature">new <wbr/>Async<wbr/>Store<wbr/>File<wbr/>System</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">__namedParameters</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="AsyncStoreFileSystem.html" class="tsd-signature-type tsd-kind-class">AsyncStoreFileSystem</a><a href="#constructor.new_AsyncStoreFileSystem" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="constructor.new_AsyncStoreFS"><span class="tsd-kind-constructor-signature">new <wbr/>Async<wbr/>StoreFS</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">__namedParameters</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="AsyncStoreFS.html" class="tsd-signature-type tsd-kind-class">AsyncStoreFS</a><a href="#constructor.new_AsyncStoreFS" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">__namedParameters</span>: <a href="../interfaces/AsyncStoreFileSystemOptions.html" class="tsd-signature-type tsd-kind-interface">AsyncStoreFileSystemOptions</a></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="AsyncStoreFileSystem.html" class="tsd-signature-type tsd-kind-class">AsyncStoreFileSystem</a></h4><aside class="tsd-sources">
+<h5><span class="tsd-kind-parameter">__namedParameters</span>: <a href="../interfaces/AsyncStoreOptions.html" class="tsd-signature-type tsd-kind-interface">AsyncStoreOptions</a></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="AsyncStoreFS.html" class="tsd-signature-type tsd-kind-class">AsyncStoreFS</a></h4><aside class="tsd-sources">
 <p>Overrides Async(FileSystem).constructor</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/backends/AsyncStore.ts#L183">src/backends/AsyncStore.ts:183</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/backends/AsyncStore.ts#L182">src/backends/AsyncStore.ts:182</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="_cache" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <code class="tsd-tag ts-flagOptional">Optional</code> <span>_cache</span><a href="#_cache" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">_cache</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type ">LRUCache</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">&gt;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/backends/AsyncStore.ts#L167">src/backends/AsyncStore.ts:167</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/backends/AsyncStore.ts#L167">src/backends/AsyncStore.ts:167</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="_ready" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_ready</span><a href="#_ready" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">_ready</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="AsyncStoreFileSystem.html" class="tsd-signature-type tsd-kind-class">AsyncStoreFileSystem</a><span class="tsd-signature-symbol">&gt;</span></div><aside class="tsd-sources">
+<div class="tsd-signature"><span class="tsd-kind-property">_ready</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="AsyncStoreFS.html" class="tsd-signature-type tsd-kind-class">AsyncStoreFS</a><span class="tsd-signature-symbol">&gt;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/backends/AsyncStore.ts#L169">src/backends/AsyncStore.ts:169</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/backends/AsyncStore.ts#L169">src/backends/AsyncStore.ts:169</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="store" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>store</span><a href="#store" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">store</span><span class="tsd-signature-symbol">:</span> <a href="../interfaces/AsyncStore.html" class="tsd-signature-type tsd-kind-interface">AsyncStore</a></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/backends/AsyncStore.ts#L166">src/backends/AsyncStore.ts:166</a></li></ul></aside></section></section>
-<section class="tsd-panel-group tsd-member-group">
-<h2>Accessors</h2>
-<section class="tsd-panel tsd-member"><a id="metadata" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>metadata</span><a href="#metadata" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
-<li class="tsd-signature" id="metadata.metadata-1"><span class="tsd-signature-symbol">get</span> metadata<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/FileSystemMetadata.html" class="tsd-signature-type tsd-kind-interface">FileSystemMetadata</a></li>
-<li class="tsd-description">
-<h4 class="tsd-returns-title">Returns <a href="../interfaces/FileSystemMetadata.html" class="tsd-signature-type tsd-kind-interface">FileSystemMetadata</a></h4><aside class="tsd-sources">
-<p>Overrides Async(FileSystem).metadata</p>
-<ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/backends/AsyncStore.ts#L176">src/backends/AsyncStore.ts:176</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/backends/AsyncStore.ts#L166">src/backends/AsyncStore.ts:166</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="_findINode" class="tsd-anchor"></a>
@@ -157,11 +143,11 @@ an underlying asynchronous key-value store.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/backends/AsyncStore.ts#L445">src/backends/AsyncStore.ts:445</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/backends/AsyncStore.ts#L444">src/backends/AsyncStore.ts:444</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="_initialize" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_initialize</span><a href="#_initialize" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected">
-<li class="tsd-signature tsd-anchor-link" id="_initialize._initialize-1"><span class="tsd-kind-call-signature">_initialize</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">store</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="AsyncStoreFileSystem.html" class="tsd-signature-type tsd-kind-class">AsyncStoreFileSystem</a><span class="tsd-signature-symbol">&gt;</span><a href="#_initialize._initialize-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="_initialize._initialize-1"><span class="tsd-kind-call-signature">_initialize</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">store</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="AsyncStoreFS.html" class="tsd-signature-type tsd-kind-class">AsyncStoreFS</a><span class="tsd-signature-symbol">&gt;</span><a href="#_initialize._initialize-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Initializes the file system. Typically called by subclasses&#39; async
 constructors.</p>
@@ -171,10 +157,10 @@ constructors.</p>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">store</span>: <a href="../interfaces/AsyncStore.html" class="tsd-signature-type tsd-kind-interface">AsyncStore</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/AsyncStore.html" class="tsd-signature-type tsd-kind-interface">AsyncStore</a><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="AsyncStoreFileSystem.html" class="tsd-signature-type tsd-kind-class">AsyncStoreFileSystem</a><span class="tsd-signature-symbol">&gt;</span></h4>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="AsyncStoreFS.html" class="tsd-signature-type tsd-kind-class">AsyncStoreFS</a><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/backends/AsyncStore.ts#L195">src/backends/AsyncStore.ts:195</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/backends/AsyncStore.ts#L194">src/backends/AsyncStore.ts:194</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="addNewNode" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>add<wbr/>New<wbr/>Node</span><a href="#addNewNode" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-private">
@@ -193,7 +179,7 @@ the exceedingly unlikely chance that we try to reuse a random ino.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/backends/AsyncStore.ts#L546">src/backends/AsyncStore.ts:546</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/backends/AsyncStore.ts#L545">src/backends/AsyncStore.ts:545</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="commitNewFile" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>commit<wbr/>New<wbr/>File</span><a href="#commitNewFile" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-private">
@@ -236,7 +222,7 @@ Note: This will commit the transaction.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Inode.html" class="tsd-signature-type tsd-kind-class">Inode</a><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/backends/AsyncStore.ts#L576">src/backends/AsyncStore.ts:576</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/backends/AsyncStore.ts#L575">src/backends/AsyncStore.ts:575</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="createFile" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>create<wbr/>File</span><a href="#createFile" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -256,7 +242,7 @@ Note: This will commit the transaction.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="File.html" class="tsd-signature-type tsd-kind-class">File</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <p>Overrides Async(FileSystem).createFile</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/backends/AsyncStore.ts#L312">src/backends/AsyncStore.ts:312</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/backends/AsyncStore.ts#L311">src/backends/AsyncStore.ts:311</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="createFileSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>create<wbr/>File<wbr/>Sync</span><a href="#createFileSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -276,7 +262,7 @@ Note: This will commit the transaction.</p>
 <h4 class="tsd-returns-title">Returns <a href="File.html" class="tsd-signature-type tsd-kind-class">File</a></h4><aside class="tsd-sources">
 <p>Inherited from Async(FileSystem).createFileSync</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/filesystem.ts#L298">src/filesystem.ts:298</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/filesystem.ts#L298">src/filesystem.ts:298</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="empty" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>empty</span><a href="#empty" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -287,7 +273,7 @@ Note: This will commit the transaction.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/backends/AsyncStore.ts#L205">src/backends/AsyncStore.ts:205</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/backends/AsyncStore.ts#L204">src/backends/AsyncStore.ts:204</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="exists" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>exists</span><a href="#exists" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -306,7 +292,7 @@ Note: This will commit the transaction.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from Async(FileSystem).exists</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/filesystem.ts#L167">src/filesystem.ts:167</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/filesystem.ts#L167">src/filesystem.ts:167</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="existsSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>exists<wbr/>Sync</span><a href="#existsSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -325,7 +311,7 @@ Note: This will commit the transaction.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from Async(FileSystem).existsSync</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/filesystem.ts#L179">src/filesystem.ts:179</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/filesystem.ts#L179">src/filesystem.ts:179</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="findINode" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>findINode</span><a href="#findINode" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-private">
@@ -350,7 +336,7 @@ Note: This will commit the transaction.</p>
 <h4>Todo</h4><p>memoize/cache</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/backends/AsyncStore.ts#L502">src/backends/AsyncStore.ts:502</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/backends/AsyncStore.ts#L501">src/backends/AsyncStore.ts:501</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="getDirListing" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>get<wbr/>Dir<wbr/>Listing</span><a href="#getDirListing" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-private">
@@ -371,7 +357,7 @@ listing.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span><br/><span>    </span>[<span class="tsd-kind-index-signature">fileName</span>: <span class="tsd-signature-type">string</span>]<span class="tsd-signature-symbol">: </span><a href="../types/Ino.html" class="tsd-signature-type tsd-kind-type-alias">Ino</a><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/backends/AsyncStore.ts#L525">src/backends/AsyncStore.ts:525</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/backends/AsyncStore.ts#L524">src/backends/AsyncStore.ts:524</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="getINode" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>getINode</span><a href="#getINode" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-private">
@@ -400,7 +386,7 @@ listing.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Inode.html" class="tsd-signature-type tsd-kind-class">Inode</a><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/backends/AsyncStore.ts#L513">src/backends/AsyncStore.ts:513</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/backends/AsyncStore.ts#L512">src/backends/AsyncStore.ts:512</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="link" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>link</span><a href="#link" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -418,7 +404,7 @@ listing.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <p>Overrides Async(FileSystem).link</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/backends/AsyncStore.ts#L386">src/backends/AsyncStore.ts:386</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/backends/AsyncStore.ts#L385">src/backends/AsyncStore.ts:385</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="linkSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>link<wbr/>Sync</span><a href="#linkSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -436,7 +422,7 @@ listing.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from Async(FileSystem).linkSync</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/filesystem.ts#L304">src/filesystem.ts:304</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/filesystem.ts#L304">src/filesystem.ts:304</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="makeRootDirectory" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>make<wbr/>Root<wbr/>Directory</span><a href="#makeRootDirectory" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-private">
@@ -447,7 +433,16 @@ listing.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/backends/AsyncStore.ts#L425">src/backends/AsyncStore.ts:425</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/backends/AsyncStore.ts#L424">src/backends/AsyncStore.ts:424</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="metadata" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>metadata</span><a href="#metadata" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="metadata.metadata-1"><span class="tsd-kind-call-signature">metadata</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/FileSystemMetadata.html" class="tsd-signature-type tsd-kind-interface">FileSystemMetadata</a><a href="#metadata.metadata-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<h4 class="tsd-returns-title">Returns <a href="../interfaces/FileSystemMetadata.html" class="tsd-signature-type tsd-kind-interface">FileSystemMetadata</a></h4><aside class="tsd-sources">
+<p>Overrides Async(FileSystem).metadata</p>
+<ul>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/backends/AsyncStore.ts#L175">src/backends/AsyncStore.ts:175</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="mkdir" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>mkdir</span><a href="#mkdir" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -465,7 +460,7 @@ listing.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <p>Overrides Async(FileSystem).mkdir</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/backends/AsyncStore.ts#L346">src/backends/AsyncStore.ts:346</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/backends/AsyncStore.ts#L345">src/backends/AsyncStore.ts:345</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="mkdirSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>mkdir<wbr/>Sync</span><a href="#mkdirSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -483,7 +478,7 @@ listing.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from Async(FileSystem).mkdirSync</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/filesystem.ts#L302">src/filesystem.ts:302</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/filesystem.ts#L302">src/filesystem.ts:302</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="openFile" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>open<wbr/>File</span><a href="#openFile" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -501,7 +496,7 @@ listing.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="File.html" class="tsd-signature-type tsd-kind-class">File</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <p>Overrides Async(FileSystem).openFile</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/backends/AsyncStore.ts#L320">src/backends/AsyncStore.ts:320</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/backends/AsyncStore.ts#L319">src/backends/AsyncStore.ts:319</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="openFileSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>open<wbr/>File<wbr/>Sync</span><a href="#openFileSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -519,7 +514,7 @@ listing.</p>
 <h4 class="tsd-returns-title">Returns <a href="File.html" class="tsd-signature-type tsd-kind-class">File</a></h4><aside class="tsd-sources">
 <p>Inherited from Async(FileSystem).openFileSync</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/filesystem.ts#L299">src/filesystem.ts:299</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/filesystem.ts#L299">src/filesystem.ts:299</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="readdir" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>readdir</span><a href="#readdir" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -535,7 +530,7 @@ listing.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <p>Overrides Async(FileSystem).readdir</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/backends/AsyncStore.ts#L352">src/backends/AsyncStore.ts:352</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/backends/AsyncStore.ts#L351">src/backends/AsyncStore.ts:351</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="readdirSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>readdir<wbr/>Sync</span><a href="#readdirSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -551,16 +546,16 @@ listing.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4><aside class="tsd-sources">
 <p>Inherited from Async(FileSystem).readdirSync</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/filesystem.ts#L303">src/filesystem.ts:303</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/filesystem.ts#L303">src/filesystem.ts:303</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="ready" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>ready</span><a href="#ready" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="ready.ready-1"><span class="tsd-kind-call-signature">ready</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="AsyncStoreFileSystem.html" class="tsd-signature-type tsd-kind-class">AsyncStoreFileSystem</a><span class="tsd-signature-symbol">&gt;</span><a href="#ready.ready-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="ready.ready-1"><span class="tsd-kind-call-signature">ready</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="AsyncStoreFS.html" class="tsd-signature-type tsd-kind-class">AsyncStoreFS</a><span class="tsd-signature-symbol">&gt;</span><a href="#ready.ready-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="AsyncStoreFileSystem.html" class="tsd-signature-type tsd-kind-class">AsyncStoreFileSystem</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="AsyncStoreFS.html" class="tsd-signature-type tsd-kind-class">AsyncStoreFS</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <p>Overrides Async(FileSystem).ready</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/backends/AsyncStore.ts#L171">src/backends/AsyncStore.ts:171</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/backends/AsyncStore.ts#L171">src/backends/AsyncStore.ts:171</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-private"><a id="removeEntry" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>remove<wbr/>Entry</span><a href="#removeEntry" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-private">
@@ -588,7 +583,7 @@ listing.</p>
 <h4>Todo</h4><p>Update mtime.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/backends/AsyncStore.ts#L632">src/backends/AsyncStore.ts:632</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/backends/AsyncStore.ts#L631">src/backends/AsyncStore.ts:631</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="rename" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>rename</span><a href="#rename" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -609,7 +604,7 @@ listing.</p>
 </div><aside class="tsd-sources">
 <p>Overrides Async(FileSystem).rename</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/backends/AsyncStore.ts#L217">src/backends/AsyncStore.ts:217</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/backends/AsyncStore.ts#L216">src/backends/AsyncStore.ts:216</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="renameSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>rename<wbr/>Sync</span><a href="#renameSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -627,7 +622,7 @@ listing.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from Async(FileSystem).renameSync</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/filesystem.ts#L296">src/filesystem.ts:296</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/filesystem.ts#L296">src/filesystem.ts:296</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="rmdir" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>rmdir</span><a href="#rmdir" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -643,7 +638,7 @@ listing.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <p>Overrides Async(FileSystem).rmdir</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/backends/AsyncStore.ts#L337">src/backends/AsyncStore.ts:337</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/backends/AsyncStore.ts#L336">src/backends/AsyncStore.ts:336</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="rmdirSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>rmdir<wbr/>Sync</span><a href="#rmdirSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -659,7 +654,7 @@ listing.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from Async(FileSystem).rmdirSync</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/filesystem.ts#L301">src/filesystem.ts:301</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/filesystem.ts#L301">src/filesystem.ts:301</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="stat" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>stat</span><a href="#stat" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -675,7 +670,7 @@ listing.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="fs.Stats.html" class="tsd-signature-type tsd-kind-class">Stats</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <p>Overrides Async(FileSystem).stat</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/backends/AsyncStore.ts#L299">src/backends/AsyncStore.ts:299</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/backends/AsyncStore.ts#L298">src/backends/AsyncStore.ts:298</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="statSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>stat<wbr/>Sync</span><a href="#statSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -691,7 +686,7 @@ listing.</p>
 <h4 class="tsd-returns-title">Returns <a href="fs.Stats.html" class="tsd-signature-type tsd-kind-class">Stats</a></h4><aside class="tsd-sources">
 <p>Inherited from Async(FileSystem).statSync</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/filesystem.ts#L297">src/filesystem.ts:297</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/filesystem.ts#L297">src/filesystem.ts:297</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="sync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>sync</span><a href="#sync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -714,7 +709,7 @@ listing.</p>
 </div><aside class="tsd-sources">
 <p>Overrides Async(FileSystem).sync</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/backends/AsyncStore.ts#L365">src/backends/AsyncStore.ts:365</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/backends/AsyncStore.ts#L364">src/backends/AsyncStore.ts:364</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="syncSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>sync<wbr/>Sync</span><a href="#syncSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -732,7 +727,7 @@ listing.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from Async(FileSystem).syncSync</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/filesystem.ts#L305">src/filesystem.ts:305</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/filesystem.ts#L305">src/filesystem.ts:305</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="unlink" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>unlink</span><a href="#unlink" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -748,7 +743,7 @@ listing.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <p>Overrides Async(FileSystem).unlink</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/backends/AsyncStore.ts#L333">src/backends/AsyncStore.ts:333</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/backends/AsyncStore.ts#L332">src/backends/AsyncStore.ts:332</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="unlinkSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>unlink<wbr/>Sync</span><a href="#unlinkSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -764,7 +759,7 @@ listing.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from Async(FileSystem).unlinkSync</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/0e87426/src/filesystem.ts#L300">src/filesystem.ts:300</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/0094f98/src/filesystem.ts#L300">src/filesystem.ts:300</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -788,7 +783,6 @@ listing.</p>
 <li><a href="#_cache" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_cache</span></a></li>
 <li><a href="#_ready" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>_ready</span></a></li>
 <li><a href="#store" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>store</span></a></li>
-<li><a href="#metadata" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>metadata</span></a></li>
 <li><a href="#_findINode" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_findINode</span></a></li>
 <li><a href="#_initialize" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>_initialize</span></a></li>
 <li><a href="#addNewNode" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>add<wbr/>New<wbr/>Node</span></a></li>
@@ -804,6 +798,7 @@ listing.</p>
 <li><a href="#link" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>link</span></a></li>
 <li><a href="#linkSync" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>link<wbr/>Sync</span></a></li>
 <li><a href="#makeRootDirectory" class="tsd-is-private"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>make<wbr/>Root<wbr/>Directory</span></a></li>
+<li><a href="#metadata" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>metadata</span></a></li>
 <li><a href="#mkdir" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>mkdir</span></a></li>
 <li><a href="#mkdirSync" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>mkdir<wbr/>Sync</span></a></li>
 <li><a href="#openFile" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>open<wbr/>File</span></a></li>
@@ -828,14 +823,13 @@ listing.</p>
 <li><a href="../modules.html#BigIntStats"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg>BigIntStats</a></li>
 <li><a href="../modules.html#Stats"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg>Stats</a></li>
 <li><a href="../modules.html#default"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg>default</a></li>
-<li><a href="../modules/AsyncMirror.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg>AsyncMirror</a></li>
 <li><a href="../modules/fs.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg>fs</a></li>
 <li><a href="../enums/ActionType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg>ActionType</a></li>
 <li><a href="../enums/ErrorCode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg>ErrorCode</a></li>
 <li><a href="../enums/FileType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg>FileType</a></li>
 <li><a href="ApiError.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>ApiError</a></li>
 <li><a href="AsyncFile.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncFile</a></li>
-<li><a href="AsyncStoreFileSystem.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncStoreFileSystem</a></li>
+<li><a href="AsyncStoreFS.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncStoreFS</a></li>
 <li><a href="Cred.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>Cred</a></li>
 <li><a href="File.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>File</a></li>
 <li><a href="FileFlag.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>FileFlag</a></li>
@@ -846,6 +840,7 @@ listing.</p>
 <li><a href="SimpleSyncRWTransaction.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>SimpleSyncRWTransaction</a></li>
 <li><a href="StatsCommon.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>StatsCommon</a></li>
 <li><a href="SyncFile.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>SyncFile</a></li>
+<li><a href="SyncStoreFS.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>SyncStoreFS</a></li>
 <li>Loading...</li></ul></nav></div></div></div>
 <div class="tsd-generator">
 <p>Generated using <a href="https://typedoc.org/" rel="noopener" target="_blank">TypeDoc</a></p></div>
