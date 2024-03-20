@@ -46,7 +46,7 @@ When configuring a mount point, you can pass in</p>
 <ol>
 <li>A string that maps to a built-in backend</li>
 <li>A <code>Backend</code> object, if the backend has no required options</li>
-<li>An object that has a <code>backend</code> property which is a <code>Backend</code> or a string that maps to a built-in backend and the options accepted by the backend</li>
+<li>An object that has the options accepted by the backend and a <code>backend</code> property which is (1) or (2)</li>
 </ol>
 </blockquote>
 <p>Here is an example that mounts the <code>Storage</code> backend from <code>@browserfs/dom</code> on <code>/</code>:</p>
