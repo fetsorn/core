@@ -22,9 +22,13 @@
 <section class="tsd-panel tsd-hierarchy">
 <h4>Hierarchy</h4>
 <ul class="tsd-hierarchy">
-<li><span class="target">Inode</span></li></ul></section><aside class="tsd-sources">
+<li><span class="target">Inode</span></li></ul></section>
+<section class="tsd-panel">
+<h4>Implements</h4>
+<ul class="tsd-hierarchy">
+<li><a href="../interfaces/StatsLike.html" class="tsd-signature-type tsd-kind-interface">StatsLike</a></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/44a5a73/src/inode.ts#L44">src/inode.ts:44</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/ee45994/src/inode.ts#L44">src/inode.ts:44</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -41,13 +45,14 @@
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Accessors</h3>
-<div class="tsd-index-list"><a href="Inode.html#atime" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>atime</span></a>
-<a href="Inode.html#ctime" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>ctime</span></a>
+<div class="tsd-index-list"><a href="Inode.html#atimeMs" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>atime<wbr/>Ms</span></a>
+<a href="Inode.html#birthtimeMs" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>birthtime<wbr/>Ms</span></a>
+<a href="Inode.html#ctimeMs" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>ctime<wbr/>Ms</span></a>
 <a href="Inode.html#data" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>data</span></a>
 <a href="Inode.html#gid" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>gid</span></a>
 <a href="Inode.html#ino" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>ino</span></a>
 <a href="Inode.html#mode" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>mode</span></a>
-<a href="Inode.html#mtime" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>mtime</span></a>
+<a href="Inode.html#mtimeMs" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>mtime<wbr/>Ms</span></a>
 <a href="Inode.html#nlink" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>nlink</span></a>
 <a href="Inode.html#size" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>size</span></a>
 <a href="Inode.html#uid" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>uid</span></a>
@@ -72,57 +77,99 @@
 <h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">buffer</span>: <span class="tsd-signature-type ">ArrayBufferLike</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="Inode.html" class="tsd-signature-type tsd-kind-class">Inode</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/44a5a73/src/inode.ts#L53">src/inode.ts:53</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/ee45994/src/inode.ts#L53">src/inode.ts:53</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member"><a id="buffer" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>buffer</span><a href="#buffer" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">buffer</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">ArrayBufferLike</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/44a5a73/src/inode.ts#L45">src/inode.ts:45</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/ee45994/src/inode.ts#L45">src/inode.ts:45</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-protected"><a id="view" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>view</span><a href="#view" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">view</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">DataView</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/44a5a73/src/inode.ts#L51">src/inode.ts:51</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/ee45994/src/inode.ts#L51">src/inode.ts:51</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Accessors</h2>
-<section class="tsd-panel tsd-member"><a id="atime" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>atime</span><a href="#atime" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<section class="tsd-panel tsd-member"><a id="atimeMs" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>atime<wbr/>Ms</span><a href="#atimeMs" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature" id="atime.atime-1"><span class="tsd-signature-symbol">get</span> atime<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+<li class="tsd-signature" id="atimeMs.atimeMs-1"><span class="tsd-signature-symbol">get</span> atimeMs<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 <li class="tsd-description">
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
+<div class="tsd-comment tsd-typography"><p>time of last access, in milliseconds since epoch</p>
+</div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Implementation of <a href="../interfaces/StatsLike.html">StatsLike</a>.<a href="../interfaces/StatsLike.html#atimeMs">atimeMs</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/44a5a73/src/inode.ts#L121">src/inode.ts:121</a></li></ul></aside></li>
-<li class="tsd-signature" id="atime.atime-2"><span class="tsd-signature-symbol">set</span> atime<span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">value</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/ee45994/src/inode.ts#L122">src/inode.ts:122</a></li></ul></aside></li>
+<li class="tsd-signature" id="atimeMs.atimeMs-2"><span class="tsd-signature-symbol">set</span> atimeMs<span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">value</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 <li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>time of last access, in milliseconds since epoch</p>
+</div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">value</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Implementation of <a href="../interfaces/StatsLike.html">StatsLike</a>.<a href="../interfaces/StatsLike.html#atimeMs">atimeMs</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/44a5a73/src/inode.ts#L125">src/inode.ts:125</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="ctime" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>ctime</span><a href="#ctime" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/ee45994/src/inode.ts#L126">src/inode.ts:126</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="birthtimeMs" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>birthtime<wbr/>Ms</span><a href="#birthtimeMs" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature" id="ctime.ctime-1"><span class="tsd-signature-symbol">get</span> ctime<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+<li class="tsd-signature" id="birthtimeMs.birthtimeMs-1"><span class="tsd-signature-symbol">get</span> birthtimeMs<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 <li class="tsd-description">
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
+<div class="tsd-comment tsd-typography"><p>time of file creation, in milliseconds since epoch</p>
+</div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Implementation of <a href="../interfaces/StatsLike.html">StatsLike</a>.<a href="../interfaces/StatsLike.html#birthtimeMs">birthtimeMs</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/44a5a73/src/inode.ts#L137">src/inode.ts:137</a></li></ul></aside></li>
-<li class="tsd-signature" id="ctime.ctime-2"><span class="tsd-signature-symbol">set</span> ctime<span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">value</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/ee45994/src/inode.ts#L130">src/inode.ts:130</a></li></ul></aside></li>
+<li class="tsd-signature" id="birthtimeMs.birthtimeMs-2"><span class="tsd-signature-symbol">set</span> birthtimeMs<span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">value</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 <li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>time of file creation, in milliseconds since epoch</p>
+</div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">value</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Implementation of <a href="../interfaces/StatsLike.html">StatsLike</a>.<a href="../interfaces/StatsLike.html#birthtimeMs">birthtimeMs</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/44a5a73/src/inode.ts#L141">src/inode.ts:141</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/ee45994/src/inode.ts#L134">src/inode.ts:134</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="ctimeMs" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>ctime<wbr/>Ms</span><a href="#ctimeMs" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature" id="ctimeMs.ctimeMs-1"><span class="tsd-signature-symbol">get</span> ctimeMs<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>time of last time file status was changed, in milliseconds since epoch</p>
+</div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Implementation of <a href="../interfaces/StatsLike.html">StatsLike</a>.<a href="../interfaces/StatsLike.html#ctimeMs">ctimeMs</a></p>
+<ul>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/ee45994/src/inode.ts#L146">src/inode.ts:146</a></li></ul></aside></li>
+<li class="tsd-signature" id="ctimeMs.ctimeMs-2"><span class="tsd-signature-symbol">set</span> ctimeMs<span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">value</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>time of last time file status was changed, in milliseconds since epoch</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">value</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Implementation of <a href="../interfaces/StatsLike.html">StatsLike</a>.<a href="../interfaces/StatsLike.html#ctimeMs">ctimeMs</a></p>
+<ul>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/ee45994/src/inode.ts#L150">src/inode.ts:150</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="data" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>data</span><a href="#data" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -130,25 +177,33 @@
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Uint8Array</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/44a5a73/src/inode.ts#L47">src/inode.ts:47</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/ee45994/src/inode.ts#L47">src/inode.ts:47</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="gid" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>gid</span><a href="#gid" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature" id="gid.gid-1"><span class="tsd-signature-symbol">get</span> gid<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 <li class="tsd-description">
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
+<div class="tsd-comment tsd-typography"><p>the id of the group that owns the file</p>
+</div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Implementation of <a href="../interfaces/StatsLike.html">StatsLike</a>.<a href="../interfaces/StatsLike.html#gid">gid</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/44a5a73/src/inode.ts#L113">src/inode.ts:113</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/ee45994/src/inode.ts#L114">src/inode.ts:114</a></li></ul></aside></li>
 <li class="tsd-signature" id="gid.gid-2"><span class="tsd-signature-symbol">set</span> gid<span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">value</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 <li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>the id of the group that owns the file</p>
+</div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">value</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Implementation of <a href="../interfaces/StatsLike.html">StatsLike</a>.<a href="../interfaces/StatsLike.html#gid">gid</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/44a5a73/src/inode.ts#L117">src/inode.ts:117</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/ee45994/src/inode.ts#L118">src/inode.ts:118</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="ino" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>ino</span><a href="#ino" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -156,7 +211,7 @@
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">bigint</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/44a5a73/src/inode.ts#L73">src/inode.ts:73</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/ee45994/src/inode.ts#L74">src/inode.ts:74</a></li></ul></aside></li>
 <li class="tsd-signature" id="ino.ino-2"><span class="tsd-signature-symbol">set</span> ino<span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">value</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 <li class="tsd-description">
 <div class="tsd-parameters">
@@ -166,43 +221,61 @@
 <h5><span class="tsd-kind-parameter">value</span>: <span class="tsd-signature-type">bigint</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/44a5a73/src/inode.ts#L77">src/inode.ts:77</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/ee45994/src/inode.ts#L78">src/inode.ts:78</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="mode" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>mode</span><a href="#mode" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature" id="mode.mode-1"><span class="tsd-signature-symbol">get</span> mode<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 <li class="tsd-description">
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
+<div class="tsd-comment tsd-typography"><p>Unix-style file mode (e.g. 0o644) that includes the item type
+Type of the item can be FILE, DIRECTORY, SYMLINK, or SOCKET</p>
+</div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Implementation of <a href="../interfaces/StatsLike.html">StatsLike</a>.<a href="../interfaces/StatsLike.html#mode">mode</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/44a5a73/src/inode.ts#L89">src/inode.ts:89</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/ee45994/src/inode.ts#L90">src/inode.ts:90</a></li></ul></aside></li>
 <li class="tsd-signature" id="mode.mode-2"><span class="tsd-signature-symbol">set</span> mode<span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">value</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 <li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Unix-style file mode (e.g. 0o644) that includes the item type
+Type of the item can be FILE, DIRECTORY, SYMLINK, or SOCKET</p>
+</div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">value</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Implementation of <a href="../interfaces/StatsLike.html">StatsLike</a>.<a href="../interfaces/StatsLike.html#mode">mode</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/44a5a73/src/inode.ts#L93">src/inode.ts:93</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="mtime" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>mtime</span><a href="#mtime" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/ee45994/src/inode.ts#L94">src/inode.ts:94</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="mtimeMs" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>mtime<wbr/>Ms</span><a href="#mtimeMs" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature" id="mtime.mtime-1"><span class="tsd-signature-symbol">get</span> mtime<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+<li class="tsd-signature" id="mtimeMs.mtimeMs-1"><span class="tsd-signature-symbol">get</span> mtimeMs<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 <li class="tsd-description">
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
+<div class="tsd-comment tsd-typography"><p>time of last modification, in milliseconds since epoch</p>
+</div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Implementation of <a href="../interfaces/StatsLike.html">StatsLike</a>.<a href="../interfaces/StatsLike.html#mtimeMs">mtimeMs</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/44a5a73/src/inode.ts#L129">src/inode.ts:129</a></li></ul></aside></li>
-<li class="tsd-signature" id="mtime.mtime-2"><span class="tsd-signature-symbol">set</span> mtime<span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">value</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/ee45994/src/inode.ts#L138">src/inode.ts:138</a></li></ul></aside></li>
+<li class="tsd-signature" id="mtimeMs.mtimeMs-2"><span class="tsd-signature-symbol">set</span> mtimeMs<span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">value</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 <li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>time of last modification, in milliseconds since epoch</p>
+</div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">value</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Implementation of <a href="../interfaces/StatsLike.html">StatsLike</a>.<a href="../interfaces/StatsLike.html#mtimeMs">mtimeMs</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/44a5a73/src/inode.ts#L133">src/inode.ts:133</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/ee45994/src/inode.ts#L142">src/inode.ts:142</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="nlink" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>nlink</span><a href="#nlink" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -210,7 +283,7 @@
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/44a5a73/src/inode.ts#L97">src/inode.ts:97</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/ee45994/src/inode.ts#L98">src/inode.ts:98</a></li></ul></aside></li>
 <li class="tsd-signature" id="nlink.nlink-2"><span class="tsd-signature-symbol">set</span> nlink<span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">value</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 <li class="tsd-description">
 <div class="tsd-parameters">
@@ -220,43 +293,61 @@
 <h5><span class="tsd-kind-parameter">value</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/44a5a73/src/inode.ts#L101">src/inode.ts:101</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/ee45994/src/inode.ts#L102">src/inode.ts:102</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="size" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>size</span><a href="#size" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature" id="size.size-1"><span class="tsd-signature-symbol">get</span> size<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 <li class="tsd-description">
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
+<div class="tsd-comment tsd-typography"><p>Size of the item in bytes.
+For directories/symlinks, this is normally the size of the struct that represents the item.</p>
+</div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Implementation of <a href="../interfaces/StatsLike.html">StatsLike</a>.<a href="../interfaces/StatsLike.html#size">size</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/44a5a73/src/inode.ts#L81">src/inode.ts:81</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/ee45994/src/inode.ts#L82">src/inode.ts:82</a></li></ul></aside></li>
 <li class="tsd-signature" id="size.size-2"><span class="tsd-signature-symbol">set</span> size<span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">value</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 <li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Size of the item in bytes.
+For directories/symlinks, this is normally the size of the struct that represents the item.</p>
+</div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">value</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Implementation of <a href="../interfaces/StatsLike.html">StatsLike</a>.<a href="../interfaces/StatsLike.html#size">size</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/44a5a73/src/inode.ts#L85">src/inode.ts:85</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/ee45994/src/inode.ts#L86">src/inode.ts:86</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="uid" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>uid</span><a href="#uid" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="tsd-signature" id="uid.uid-1"><span class="tsd-signature-symbol">get</span> uid<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 <li class="tsd-description">
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
+<div class="tsd-comment tsd-typography"><p>the id of the user that owns the file</p>
+</div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Implementation of <a href="../interfaces/StatsLike.html">StatsLike</a>.<a href="../interfaces/StatsLike.html#uid">uid</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/44a5a73/src/inode.ts#L105">src/inode.ts:105</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/ee45994/src/inode.ts#L106">src/inode.ts:106</a></li></ul></aside></li>
 <li class="tsd-signature" id="uid.uid-2"><span class="tsd-signature-symbol">set</span> uid<span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">value</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 <li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>the id of the user that owns the file</p>
+</div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
 <h5><span class="tsd-kind-parameter">value</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Implementation of <a href="../interfaces/StatsLike.html">StatsLike</a>.<a href="../interfaces/StatsLike.html#uid">uid</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/44a5a73/src/inode.ts#L109">src/inode.ts:109</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/ee45994/src/inode.ts#L110">src/inode.ts:110</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member"><a id="sizeof" class="tsd-anchor"></a>
@@ -269,7 +360,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/44a5a73/src/inode.ts#L164">src/inode.ts:164</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/ee45994/src/inode.ts#L164">src/inode.ts:164</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="toStats" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>to<wbr/>Stats</span><a href="#toStats" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -280,7 +371,7 @@
 <h4 class="tsd-returns-title">Returns <a href="fs.Stats.html" class="tsd-signature-type tsd-kind-class">Stats</a></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/44a5a73/src/inode.ts#L148">src/inode.ts:148</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/ee45994/src/inode.ts#L157">src/inode.ts:157</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="update" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>update</span><a href="#update" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -305,7 +396,7 @@ file system.</li>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/44a5a73/src/inode.ts#L178">src/inode.ts:178</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/ee45994/src/inode.ts#L178">src/inode.ts:178</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -328,13 +419,14 @@ file system.</li>
 <li><a href="#constructor" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-512"></use></svg><span>constructor</span></a></li>
 <li><a href="#buffer" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>buffer</span></a></li>
 <li><a href="#view" class="tsd-is-protected"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>view</span></a></li>
-<li><a href="#atime" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>atime</span></a></li>
-<li><a href="#ctime" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>ctime</span></a></li>
+<li><a href="#atimeMs" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>atime<wbr/>Ms</span></a></li>
+<li><a href="#birthtimeMs" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>birthtime<wbr/>Ms</span></a></li>
+<li><a href="#ctimeMs" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>ctime<wbr/>Ms</span></a></li>
 <li><a href="#data" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>data</span></a></li>
 <li><a href="#gid" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>gid</span></a></li>
 <li><a href="#ino" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>ino</span></a></li>
 <li><a href="#mode" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>mode</span></a></li>
-<li><a href="#mtime" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>mtime</span></a></li>
+<li><a href="#mtimeMs" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>mtime<wbr/>Ms</span></a></li>
 <li><a href="#nlink" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>nlink</span></a></li>
 <li><a href="#size" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>size</span></a></li>
 <li><a href="#uid" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-262144"></use></svg><span>uid</span></a></li>
