@@ -14,17 +14,11 @@
 <ul class="tsd-breadcrumb">
 <li><a href="../modules.html">BrowserFS</a></li>
 <li><a href="SyncStoreFile.html">SyncStoreFile</a></li></ul>
-<h1>Class SyncStoreFile</h1></div>
+<h1>Class SyncStoreFile<code class="tsd-tag ts-flagInternal">Internal</code> </h1></div>
 <section class="tsd-panel tsd-comment">
-<div class="tsd-comment tsd-typography"><p>An implementation of the File interface that operates on a file that is
-completely in-memory. PreloadFiles are backed by a Uint8Array.</p>
-<p>This is also an abstract class, as it lacks an implementation of &#39;sync&#39; and
-&#39;close&#39;. Each filesystem that wishes to use this file representation must
-extend this class and implement those two methods.</p>
+<div class="tsd-comment tsd-typography"><p>File backend by a SyncStoreFS</p>
 </div>
-<div class="tsd-comment tsd-typography">
-<h4>Todo</h4><p>&#39;close&#39; lever that disables functionality once closed.</p>
-</div></section>
+<div class="tsd-comment tsd-typography"></div></section>
 <section class="tsd-panel tsd-hierarchy">
 <h4>Hierarchy</h4>
 <ul class="tsd-hierarchy">
@@ -32,7 +26,7 @@ extend this class and implement those two methods.</p>
 <ul class="tsd-hierarchy">
 <li><span class="target">SyncStoreFile</span></li></ul></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/backends/SyncStore.ts#L168">src/backends/SyncStore.ts:168</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/backends/SyncStore.ts#L172">src/backends/SyncStore.ts:172</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -107,7 +101,7 @@ extend this class and implement those two methods.</p>
 <h4 class="tsd-returns-title">Returns <a href="SyncStoreFile.html" class="tsd-signature-type tsd-kind-class">SyncStoreFile</a></h4><aside class="tsd-sources">
 <p>Overrides <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#constructor">constructor</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/backends/SyncStore.ts#L169">src/backends/SyncStore.ts:169</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/backends/SyncStore.ts#L173">src/backends/SyncStore.ts:173</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="_buffer" class="tsd-anchor"></a>
@@ -115,25 +109,25 @@ extend this class and implement those two methods.</p>
 <div class="tsd-signature"><span class="tsd-kind-property">_buffer</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">Uint8Array</span><span class="tsd-signature-symbol"> = ...</span></div><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#_buffer">_buffer</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/file.ts#L469">src/file.ts:469</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/file.ts#L469">src/file.ts:469</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="_dirty" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_dirty</span><a href="#_dirty" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">_dirty</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#_dirty">_dirty</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/file.ts#L445">src/file.ts:445</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/file.ts#L445">src/file.ts:445</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="_position" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>_position</span><a href="#_position" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">_position</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#_position">_position</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/file.ts#L444">src/file.ts:444</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/file.ts#L444">src/file.ts:444</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="flag" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>flag</span><a href="#flag" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">flag</span><span class="tsd-signature-symbol">:</span> <a href="FileFlag.html" class="tsd-signature-type tsd-kind-class">FileFlag</a></div><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#flag">flag</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/file.ts#L467">src/file.ts:467</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/file.ts#L467">src/file.ts:467</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="fs" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>fs</span><a href="#fs" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">fs</span><span class="tsd-signature-symbol">:</span> <a href="SyncStoreFS.html" class="tsd-signature-type tsd-kind-class">SyncStoreFS</a></div>
@@ -142,7 +136,7 @@ extend this class and implement those two methods.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#fs">fs</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/file.ts#L462">src/file.ts:462</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/file.ts#L462">src/file.ts:462</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="path" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>path</span><a href="#path" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">path</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
@@ -151,7 +145,7 @@ extend this class and implement those two methods.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#path">path</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/file.ts#L466">src/file.ts:466</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/file.ts#L466">src/file.ts:466</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="stats" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>stats</span><a href="#stats" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">stats</span><span class="tsd-signature-symbol">:</span> <a href="fs.Stats.html" class="tsd-signature-type tsd-kind-class">Stats</a></div>
@@ -162,7 +156,7 @@ extend this class and implement those two methods.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#stats">stats</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/file.ts#L468">src/file.ts:468</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/file.ts#L468">src/file.ts:468</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Accessors</h2>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="buffer" class="tsd-anchor"></a>
@@ -176,7 +170,7 @@ extend this class and implement those two methods.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from PreloadFile.buffer</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/file.ts#L492">src/file.ts:492</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/file.ts#L492">src/file.ts:492</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="position" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>position</span><a href="#position" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -195,7 +189,7 @@ extend this class and implement those two methods.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from PreloadFile.position</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/file.ts#L505">src/file.ts:505</a></li></ul></aside></li>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/file.ts#L505">src/file.ts:505</a></li></ul></aside></li>
 <li class="tsd-signature" id="position.position-2"><span class="tsd-signature-symbol">set</span> position<span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">newPos</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Set the file position.</p>
@@ -212,7 +206,7 @@ extend this class and implement those two methods.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from PreloadFile.position</p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/file.ts#L516">src/file.ts:516</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/file.ts#L516">src/file.ts:516</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="_setType" class="tsd-anchor"></a>
@@ -231,7 +225,7 @@ extend this class and implement those two methods.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#_setType">_setType</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/file.ts#L752">src/file.ts:752</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/file.ts#L752">src/file.ts:752</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="_setTypeSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>_set<wbr/>Type<wbr/>Sync</span><a href="#_setTypeSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -248,7 +242,7 @@ extend this class and implement those two methods.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#_setTypeSync">_setTypeSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/file.ts#L758">src/file.ts:758</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/file.ts#L758">src/file.ts:758</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="chmod" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>chmod</span><a href="#chmod" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -268,7 +262,7 @@ extend this class and implement those two methods.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#chmod">chmod</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/file.ts#L687">src/file.ts:687</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/file.ts#L687">src/file.ts:687</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="chmodSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>chmod<wbr/>Sync</span><a href="#chmodSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -286,7 +280,7 @@ extend this class and implement those two methods.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#chmodSync">chmodSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/file.ts#L695">src/file.ts:695</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/file.ts#L695">src/file.ts:695</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="chown" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>chown</span><a href="#chown" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -307,7 +301,7 @@ extend this class and implement those two methods.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#chown">chown</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/file.ts#L709">src/file.ts:709</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/file.ts#L709">src/file.ts:709</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="chownSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>chown<wbr/>Sync</span><a href="#chownSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -328,7 +322,7 @@ extend this class and implement those two methods.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#chownSync">chownSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/file.ts#L718">src/file.ts:718</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/file.ts#L718">src/file.ts:718</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="close" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>close</span><a href="#close" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -340,7 +334,7 @@ extend this class and implement those two methods.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Overrides <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#close">close</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/backends/SyncStore.ts#L184">src/backends/SyncStore.ts:184</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/backends/SyncStore.ts#L188">src/backends/SyncStore.ts:188</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="closeSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>close<wbr/>Sync</span><a href="#closeSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -352,7 +346,7 @@ extend this class and implement those two methods.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Overrides <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#closeSync">closeSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/backends/SyncStore.ts#L188">src/backends/SyncStore.ts:188</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/backends/SyncStore.ts#L192">src/backends/SyncStore.ts:192</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="datasync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>datasync</span><a href="#datasync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -365,7 +359,7 @@ extend this class and implement those two methods.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#datasync">datasync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/file.ts#L378">src/file.ts:378</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/file.ts#L378">src/file.ts:378</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="datasyncSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>datasync<wbr/>Sync</span><a href="#datasyncSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -378,7 +372,7 @@ extend this class and implement those two methods.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#datasyncSync">datasyncSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/file.ts#L387">src/file.ts:387</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/file.ts#L387">src/file.ts:387</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="isDirty" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>is<wbr/>Dirty</span><a href="#isDirty" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -387,7 +381,7 @@ extend this class and implement those two methods.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#isDirty">isDirty</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/file.ts#L741">src/file.ts:741</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/file.ts#L741">src/file.ts:741</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="read" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>read</span><a href="#read" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -431,7 +425,7 @@ extend this class and implement those two methods.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#read">read</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/file.ts#L643">src/file.ts:643</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/file.ts#L643">src/file.ts:643</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="readSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>read<wbr/>Sync</span><a href="#readSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -470,7 +464,7 @@ extend this class and implement those two methods.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#readSync">readSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/file.ts#L663">src/file.ts:663</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/file.ts#L663">src/file.ts:663</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="resetDirty" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>reset<wbr/>Dirty</span><a href="#resetDirty" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -482,7 +476,7 @@ extend this class and implement those two methods.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#resetDirty">resetDirty</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/file.ts#L748">src/file.ts:748</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/file.ts#L748">src/file.ts:748</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="stat" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>stat</span><a href="#stat" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -494,7 +488,7 @@ extend this class and implement those two methods.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#stat">stat</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/file.ts#L523">src/file.ts:523</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/file.ts#L523">src/file.ts:523</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="statSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>stat<wbr/>Sync</span><a href="#statSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -506,7 +500,7 @@ extend this class and implement those two methods.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#statSync">statSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/file.ts#L530">src/file.ts:530</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/file.ts#L530">src/file.ts:530</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="sync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>sync</span><a href="#sync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -518,7 +512,7 @@ extend this class and implement those two methods.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Overrides <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#sync">sync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/backends/SyncStore.ts#L173">src/backends/SyncStore.ts:173</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/backends/SyncStore.ts#L177">src/backends/SyncStore.ts:177</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="syncSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>sync<wbr/>Sync</span><a href="#syncSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -530,7 +524,7 @@ extend this class and implement those two methods.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Overrides <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#syncSync">syncSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/backends/SyncStore.ts#L177">src/backends/SyncStore.ts:177</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/backends/SyncStore.ts#L181">src/backends/SyncStore.ts:181</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="truncate" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>truncate</span><a href="#truncate" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -548,7 +542,7 @@ extend this class and implement those two methods.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#truncate">truncate</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/file.ts#L538">src/file.ts:538</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/file.ts#L538">src/file.ts:538</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="truncateSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>truncate<wbr/>Sync</span><a href="#truncateSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -566,7 +560,7 @@ extend this class and implement those two methods.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#truncateSync">truncateSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/file.ts#L549">src/file.ts:549</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/file.ts#L549">src/file.ts:549</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="utimes" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>utimes</span><a href="#utimes" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -585,7 +579,7 @@ extend this class and implement those two methods.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#utimes">utimes</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/file.ts#L727">src/file.ts:727</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/file.ts#L727">src/file.ts:727</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="utimesSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>utimes<wbr/>Sync</span><a href="#utimesSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -604,7 +598,7 @@ extend this class and implement those two methods.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#utimesSync">utimesSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/file.ts#L731">src/file.ts:731</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/file.ts#L731">src/file.ts:731</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="write" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>write</span><a href="#write" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -644,7 +638,7 @@ without waiting for the callback.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#write">write</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/file.ts#L584">src/file.ts:584</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/file.ts#L584">src/file.ts:584</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="writeSync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>write<wbr/>Sync</span><a href="#writeSync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -685,7 +679,7 @@ without waiting for the callback.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="PreloadFile.html">PreloadFile</a>.<a href="PreloadFile.html#writeSync">writeSync</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/browser-fs/core/blob/2c60822/src/file.ts#L601">src/file.ts:601</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/browser-fs/core/blob/f442965/src/file.ts#L601">src/file.ts:601</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -751,6 +745,7 @@ without waiting for the callback.</p>
 <li><a href="ApiError.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>ApiError</a></li>
 <li><a href="AsyncFile.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncFile</a></li>
 <li><a href="AsyncFileIndexFS.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncFileIndexFS</a></li>
+<li><a href="AsyncMirrorFS.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncMirrorFS</a></li>
 <li><a href="AsyncStoreFS.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>AsyncStoreFS</a></li>
 <li><a href="Cred.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>Cred</a></li>
 <li><a href="File.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>File</a></li>
@@ -758,11 +753,10 @@ without waiting for the callback.</p>
 <li><a href="FileIndex.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>FileIndex</a></li>
 <li><a href="FileIndexFS.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>FileIndexFS</a></li>
 <li><a href="FileSystem.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>FileSystem</a></li>
+<li><a href="InMemoryStore.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>InMemoryStore</a></li>
 <li><a href="IndexDirInode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>IndexDirInode</a></li>
 <li><a href="IndexFileInode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>IndexFileInode</a></li>
 <li><a href="IndexInode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>IndexInode</a></li>
-<li><a href="Inode.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>Inode</a></li>
-<li><a href="Mutex.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>Mutex</a></li>
 <li>Loading...</li></ul></nav></div></div></div>
 <div class="tsd-generator">
 <p>Generated using <a href="https://typedoc.org/" rel="noopener" target="_blank">TypeDoc</a></p></div>
